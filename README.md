@@ -1,4 +1,4 @@
 GermanBarcodeofLife
 ===================
 
-Webportal and Data Transfer Apllications for the German Barcode of Life Project (GBOL
+Webportal and Data Transfer Applications for the German Barcode of Life Project (GBOL
