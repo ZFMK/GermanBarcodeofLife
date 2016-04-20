@@ -1,7 +1,7 @@
 GermanBarcodeofLife
 ===================
 
-                      ![GBoL Logo](https://github.com/ZFMK/GermanBarcodeofLife/WebPortal/gbol_portal/static/images/logo.png)
+![GBoL Logo](https://raw.githubusercontent.com/ZFMK/GermanBarcodeofLife/master/WebPortal/gbol_portal/static/images/logo.png)
 
 
 Sources for the German Barcode of Life Webportal
