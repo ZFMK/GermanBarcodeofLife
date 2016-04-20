@@ -1,0 +1,78 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="was-ist-gbol" class="site-content">
+			<h1 id="page-title" class="title">What is GBOL?</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					<h2><b>Welcome to the GBOL project!</b></h2>
+					<br>
+					<strong>GBOL</strong>
+					-
+					<strong class="space">G</strong> erman
+					<strong class="space">B</strong> arcode
+					<strong class="space">o</strong> f
+					<strong class="space">L</strong> ife: → Inventory and genetic characterization of animals, plants and fungi in Germany.
+				</p>
+				<p>
+					<img class="media-image media-element file-media-small" alt="" src="/static/images/Misumena.jpg" typeof="foaf:Image" title="" style="width: 220px; height: 135px; left: 190px; position: relative;">
+					<br>
+					<br>
+					The GBOL project aims at capturing the genetic diversity of animals, fungi and plants in Germany. The genetic inventory
+					of these organisms is based on their DNA barcodes (=genetic fingerprint). As a science nation, Germany has taken a leading role in an international consortium of natural history museums, zoos, herbaria,
+					<a title="Learn more about our international partners." href="/links#kooperationspartner">research organizations and government institutions</a>
+					to jointly establish the "DNA barcode library of life" (
+					<a target="_blank" href="/download?fileName=iBOL_FactSheet_German.pdf">pdf</a>).
+					Currently there are about 4.6 million
+					<a title="Erfahren Sie mehr &uuml;ber DNA Barcoding." href="/dna-barcoding/was-ist-dna-barcoding">DNA Barcodes</a> belonging to
+					ca. 250,000 described species of plants, animals and fungi recorded in the international
+					<a class="ext" href="http://v4.boldsystems.org/index.php/Public_BarcodeIndexNumber_Home" target="_blank"> BOLD database</a>
+					(January 2016). The DNA barcodes of all animals
+					<a class="ext" href="http://v4.boldsystems.org/index.php/Public_BarcodeIndexNumber_Home" target="_blank">on BOLD</a>
+					constitute about 440,000 different species hypotheses, termed
+					<a class="ext" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066213" target="_blank">BINs (barcode index number)</a>.
+					BINs are molecular entities, which are based on clustering DNA barcodes by similarity
+					and represent putative species until a taxonomic revision has revealed their species membership. The systematic assessment
+					and grouping of BINs allows to categorize and monitor their occurrence in time and space, even if they belong to yet undescribed species.
+				</p>
+				<p>
+					GBOL is a national network of various natural history museums and other
+					<a title="Learn more about GBOL institutions." href="/team/gbol-institute">biodiversity research institutions</a>
+					in Germany. The GBOL partners provide their professional taxonomic expertise and existing infrastructure (collections / biobanks,
+					databases, bioinformatics platforms and laboratories) to comprehensively collect, catalog, describe, and sequence the animal,
+					plant and fungi species in Germany. While the focus in GBOL during the first phase (2012-2015) was laid on the creation of a
+					reference database, we will now also develop different applications of DNA barcoding in the second project
+					phase (2016-2018). Sequence and metadata generated in GBOL will be integrated in the global barcode reference database "
+					<a title="Learn more about our international partners." href="/links">BOLD</a>
+					".
+				</p>
+				<p>
+					The construction of a genetic national library of biodiversity consists of two steps: First, specialized experts (taxonomists)
+					identify species based on their morphological characters. The taxonomists have an extensive knowledge of the morphology,
+					ecology, reproductive mode and life cycle of certain taxa, which proves extremely valuable for species determination.
+					In a second step, the DNA barcode will be decoded using modern DNA sequencing methods. The DNA barcode together with
+					the species profile will be made available in publicly accessible DNA barcode reference database, such as
+					<a class="ext" href="http://v4.boldsystems.org/index.php/Public_BINSearch?searchtype=records" target="_blank">BOLD</a>,
+					<a class="ext" href="http://www.ncbi.nlm.nih.gov/nuccore/" target="_blank">NCBI GenBank</a> or
+					<a class="ext" href="http://www.algaterra.org/default.htm" target="_blank">AlgaTerra</a>.
+				</p>
+				<p>
+					The professional GBOL taxonomists depend on the active support and cooperation of
+					<a title="Learn more about the registration methods for experts." href="/mitmachen/teilnahmeinfos">experienced citizen scientists and non-professional taxonomists from all over Germany</a>
+					 to meet this GBOL task.
+				</p>
+				<p>
+					More information about the GBOL-project is available in our <a href="/download?fileName=GBOL_Broschuere_2014.pdf"><strong>brochure</strong></a>!
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-1");
+		</script>
+	</div>
+</html>

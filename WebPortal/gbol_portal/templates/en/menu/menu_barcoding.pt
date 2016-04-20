@@ -1,0 +1,10 @@
+<div id="content-menu" class="block menu-li">
+	<ul>
+		<li id="menu-barcoding-1">
+		<a title="Information about the background of the species identification." href="/dna-barcoding/warum-dna-barcoding">Why DNA Barcoding?</a>
+		</li>
+		<li id="menu-barcoding-2">
+		<a title="More about the barcodes from animals and plants." href="/dna-barcoding/was-ist-dna-barcoding">What is DNA Barcoding?</a>
+		</li>
+	</ul>
+</div>

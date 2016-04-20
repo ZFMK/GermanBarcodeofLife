@@ -1,0 +1,171 @@
+<html metal:use-macro="load: master.pt">
+	<div metal:fill-slot="body" id="main" >
+		<div id="impressum-block" class="site-content">
+			<h1 id="page-title" class="title">Impressum</h1>
+			<h2>Herausgeber</h2>
+			<p>Prof. Dr. J.W. W&auml;gele, Direktor<br>
+			Zoologisches Forschungsmuseum Alexander Koenig<br>
+			Museumsmeile Bonn, Adenauerallee 160<br>
+			53113 Bonn, Germany<br>
+			Tel.: ++49 (0)228 / 9122 255<br>
+			Fax.: ++49 (0)228 / 9122 202</p>
+
+			<p>
+				Das in dieser Webseite vorgestellte Vorhaben wird mit Mitteln des Bundesministeriums f&uuml;r Bildung und
+				Forschung (<a class="ext" href="www.bmbf.de" target="_blank">www.bmbf.de</a>) als Forschung f&uuml;r Nachhaltige
+				Entwicklung (<a class="ext" href="www.fona.de" target="_blank">FONA</a>) gef&ouml;rdert. Die
+				Verantwortung f&uuml;r den Inhalt dieser Ver&ouml;ffentlichung liegt bei den Autoren.
+			</p>
+			<hr>
+
+			<h2>Die Verwendung von Daten bitte folgenderma&szlig;en zitieren:</h2>
+			<p>
+				German Barcode of Life Consortium (W&auml;gele W., Haszprunar G., Eder J., Xylander W., Borsch T.,
+				Quandt D., Grobe P., Pietsch S., Geiger M., Astrin J., Rulik B., Hausmann A., Moriniere J., Holstein J.,
+				Krogmann L., Monje C., Traunspurger W., Hohberg K., Lehmitz R., M&uuml;ller K., Nebel M., Hand R.)
+				2011 - (continuously updated): GBOL Webportal at
+				<a class="ext" href="https://www.bolgermany.de" target="_blank">https://www.bolgermany.de</a>
+				<br><br>
+				and
+				<br><br>
+				Geiger M.F., Astrin J.J., Borsch T., Burkhardt U., Grobe P., Hand R., Hausmann A., Hohberg K., Krogmann
+				L., Lutz M., Monje C., Misof B., Morinière J., M&uuml;ller K.F., Pietsch S., Quandt D., Rulik R., Scholler M.,
+				Traunspurger W., Haszprunar G., W&auml;gele J.W. How to tackle the molecular species inventory for an
+				industrialized nation – lessons from the first phase of the German Barcode of Life initiative GBOL (2012-2015)
+				Genome DOI:10.1139/gen-2015-0185 (2016, in press)
+			</p>
+			<hr>
+
+			<h2>Konzeption, Gestaltung, Umsetzung</h2>
+			<ul>
+				<li>Dr. S. Pietsch, ZFMK</li>
+				<li>Dr. P. Grobe, ZFMK</li>
+				<li>Dipl.-Biol. Wiebke Walbaum, ZFMK</li>
+				<li>TEDSOFT GMBH, Bonn:
+					<a class="ext" href="http://www.tedsoft.de" target="_blank">www.tedsoft.de</a>
+				</li>
+				<li>data in transit, Bonn:
+					<a class="ext" href="http://www.dataintransit.com" target="_blank">www.dataintransit.com</a>
+				</li>
+			</ul>
+			<hr>
+
+			<h2>Grafiken und Illustrationen</h2>
+			<ul>
+				<li>
+					Fides Friedeberg, Bonn:
+					<a class="ext" href="http://fides-friedeberg.de/" target="_blank">www.fides-friedeberg.de</a>
+				</li>
+			</ul>
+			<hr>
+
+			<h2>Fotografie &amp; Bildnachweise</h2>
+			<ul>
+				<li>A. Christian</li>
+				<li>Andrey Yurkov</li>
+				<li>BGBM</li>
+				<li>Dipl. Agrar Ing. Nina Schwarz</li>
+				<li>Dipl. Biol. Bj&ouml;rn Rulik</li>
+				<li>Dr. Bernhard Huber</li>
+				<li>Dr. Hossein Rajaei</li>
+				<li>Dr. Johannes Dambach</li>
+				<li>Dr. Jonas Zimmermann</li>
+				<li>Dr. Lars Krogmann</li>
+				<li>Dr. Markus Scholler</li>
+				<li>Dr. Martin Nebel</li>
+				<li>Dr. Matthias Geiger</li>
+				<li>Dr. Michael Raupach</li>
+				<li>Dr. Ursula Eberhardt</li>
+				<li>Fotolia: 101945370_S_CR_nicotombo</li>
+				<li>Fotolia: 37868261_L_CR_Gabriela</li>
+				<li>Fotolia: 56752292_M_CR_TwilightArtPictures</li>
+				<li>Fotolia: 64573096_L_CR DigitalGenetics</li>
+				<li>Fotolia: 79927640_L_CR_tilialucida.jpg</li>
+				<li>Fotolia: 80469374_L_CR_Soyka</li>
+				<li>Fotolia: 84777124_L_CR_Couperfield</li>
+				<li>Fotolia: 99749270_S_CR_Maksym Yemelyanov</li>
+				<li>Jan Struwe</li>
+				<li>Norbert Stapper</li>
+				<li>Prof. Dominik Begerow</li>
+				<li>Prof. Dr. Kai M&uuml;ller</li>
+				<li>Prof. Dr. Walter Traunspurger</li>
+				<li>Prof. Dr. Wolfgang B&ouml;hme</li>
+				<li>Public Domain from pixabay</li>
+				<li>Public Domain from WikiCommons</li>
+				<li>SNSB-ZSM</li>
+				<li>ZFMK</li>
+			</ul>
+			<hr>
+
+			<h2>Haftungsausschluss</h2>
+			<h3>Inhalt des Onlineangebotes</h3>
+			<p>
+				Wir &uuml;bernehmen keinerlei Gew&auml;hr f&uuml;r die Aktualit&auml;t, Korrektheit, Vollst&auml;ndigkeit
+				oder Qualit&auml;t der bereitgestellten Informationen. Haftungsanspr&uuml;che gegen das Forschungsmuseum
+				Alexander Koenig, welche sich auf Sch&auml;den materieller oder ideeller Art beziehen, die durch die
+				Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und
+				unvollst&auml;ndiger Informationen verursacht wurden, sind grunds&auml;tzlich ausgeschlossen, sofern seitens
+				des Autors kein nachweislich vors&auml;tzliches oder grob fahrl&auml;ssiges Verschulden vorliegt. Alle
+				Angebote sind freibleibend und unverbindlich. Das Forschungsmuseum Alexander Koenig beh&auml;lt es sich
+				ausdr&uuml;cklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ank&uuml;ndigung zu
+				ver&auml;ndern, zu erg&auml;nzen, zu l&ouml;schen oder die Ver&ouml;ffentlichung zeitweise oder
+				endg&uuml;ltig einzustellen.
+			</p>
+			<h3>Verweise und Links</h3>
+			<p>
+				Bei direkten oder indirekten Verweisen auf fremde Internetseiten ("Links"), die au&szligerhalb des
+				Verantwortungsbereiches des Forschungsmuseum Alexander Koenig liegen, w&uuml;rde eine Haftungsverpflichtung
+				ausschlie&szliglich in dem Fall in Kraft treten, in dem das Forschungsmuseum Alexander Koenig von den
+				Inhalten Kenntnis hat und es ihm technisch m&ouml;glich und zumutbar w&auml;re, die Nutzung im Falle
+				rechtswidriger Inhalte zu verhindern. Das Forschungsmuseum Alexander Koenig erkl&auml;rt daher ausdr&uuml;cklich,
+				dass zum Zeitpunkt der Linksetzung die entsprechenden verlinkten Seiten frei von illegalen Inhalten waren.
+				Der Autor hat keinerlei Einfluss auf die aktuelle und zuk&uuml;nftige Gestaltung und auf die Inhalte der
+				gelinkten/verkn&uuml;pften Seiten. Deshalb distanziert er sich hiermit ausdr&uuml;cklich von allen Inhalten
+				aller gelinkten /verkn&uuml;pften Seiten, die nach der Linksetzung ver&auml;ndert wurden. Diese Feststellung
+				gilt f&uuml;r alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie f&uuml;r
+				Fremdeintr&auml;ge in vom Forschungsmuseum Alexander Koenig eingerichteten G&auml;steb&uuml;chern, Diskussionsforen,
+				Linkarchiven und Mailinglisten. F&uuml;r illegale, fehlerhafte oder unvollst&auml;ndige Inhalte und insbesondere
+				f&uuml;r Sch&auml;den, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen,
+				haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der &uuml;ber Links
+				auf die jeweilige Ver&ouml;ffentlichung lediglich verweist.
+			</p>
+			<h3>Urheber- und Kennzeichenrecht</h3>
+			<p>
+				Das Forschungsmuseum Alexander Koenig ist bestrebt, in allen Publikationen die Urheberrechte der
+				verwendeten Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken,
+				Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente,
+				Videosequenzen und Texte zur&uuml;ckzugreifen. Alle innerhalb des Internetangebotes genannten und ggf.
+				durch Dritte gesch&uuml;tzten Marken- und Warenzeichen unterliegen uneingeschr&auml;nkt den Bestimmungen
+				des jeweils g&uuml;ltigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigent&uuml;mer.
+				Allein aufgrund der blo&szligen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch
+				Rechte Dritter gesch&uuml;tzt sind! Das Copyright f&uuml;r ver&ouml;ffentlichte, vom Forschungsmuseum
+				Alexander Koenig selbst erstellte Objekte bleibt allein beim Forschungsmuseum Alexander Koenig. Eine
+				Vervielf&auml;ltigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen
+				elektronischen oder gedruckten Publikationen ist ohne ausdr&uuml;ckliche Zustimmung nicht gestattet.
+			</p>
+			<h3>Rechtswirksamkeit dieses Haftungsausschlusses</h3>
+			<p>
+				Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite
+				verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht
+				mehr oder nicht vollst&auml;ndig entsprechen sollten, bleiben die &uuml;brigen Teile des Dokumentes in ihrem
+				Inhalt und ihrer G&uuml;ltigkeit davon unber&uuml;hrt.
+			</p>
+			<h2>Datenschutz</h2>
+			<p>
+				Eventuell werden Sie auf unserer Website um pers&ouml;nliche Daten gebeten. Diese werden nur gespeichert
+				und verarbeitet, soweit dies zum Zwecke Ihrer individuellen Betreuung und der Zusendung der von Ihnen
+				gew&uuml;nschten Informationen notwendig ist. Das Forschungsmuseum Alexander Koenig sichert zu, dass Ihre
+				Angaben entsprechend den geltenden datenschutzrechtlichen Bestimmungen vertraulich behandelt werden.
+			</p>
+			<h2>Hinweise zu Angaben, Angeboten, Preisen</h2>
+			<p>
+				&Auml;nderungen vorbehalten
+			</p>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+	</div>
+</html>

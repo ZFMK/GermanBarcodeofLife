@@ -1,0 +1,51 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="vision" class="site-content">
+			<h1 id="page-title" class="title">BIODIVERSIT&Auml;T - JEDE ART Z&Auml;HLT</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					Biodiversit&auml;t umfasst die Vielfalt des Lebens, von der Ebene der &Ouml;kosysteme (z.B. Wasser, Wald, Boden), über die Diversit&auml;t
+					der Arten, bis hin zur Vielfalt der Gene innerhalb einer Art. Bislang betrachten &Ouml;kologen oder Umweltgutachter oftmals
+					nur einen sehr kleinen Teil der immensen Vielfalt, wie zum Beispiel bestimmte Indikatorarten. Dies ist der Tatsache
+					geschuldet, dass es nur vergleichsweise wenige Spezialisten für viele Organismengruppen gibt und die morphologische
+					Bestimmung ein hohes Ma&szlig; an Expertise und oft auch Zeit erfordert. In GBOL haben wir die Vision, in naher Zukunft viel
+					gr&ouml;ßere Anteile der Biodiversität auf Artniveau erfassen zu k&ouml;nnen, und somit die
+					<a class="ext" href="http://ibol.org/wp-content/uploads/2014/11/GS-2013-Bericht-Erosion-Artenkenner-End-2.pdf" target="_blank">&quot;Erosion der Artenkenner&quot;</a>
+					etwas zu bremsen und neue Impulse zu setzen.
+				</p>
+				<p>
+					<h2><strong>Was w&auml;re wenn...</strong></h2>
+					<br>
+					... wir jedes Tier, jeden Pilz und jede Pflanze exakt und schnell identifizieren k&ouml;nnten, selbst anhand kleiner Gewebeproben wie einem einzelnen Blatt oder Haar?
+				</p>
+				<ul style="padding-left: 0px;">
+					<li style="text-align: justify; ">Wie viel pr&auml;ziser w&auml;ren die &Ouml;kologie, die Veterin&auml;rmedizin, die Sch&auml;dlingsbek&auml;mpfung, oder die Lebensmittelkontrolle, wenn mit effizienten Methoden rasch auch morphologisch schwer unterscheidbare Arten identifiziert werden k&ouml;nnten?</li>
+					<li style="text-align: justify; ">Wie ver&auml;ndert der Klimawandel die Naturlandschaften in Deutschland?</li>
+					<li style="text-align: justify; ">Welche Arten &uuml;berleben in unseren Naturschutzgebieten und Nationalsparks?</li>
+					<li style="text-align: justify; ">Wie stellen wir fest, welche Auswirkungen pl&ouml;tzliche Ver&auml;nderungen in der Landschaft, wie derzeit beispielsweise der rasant zunehmende Anbau von Energiepflanzen, auf das &uuml;berleben von Arten haben?</li>
+					<li style="text-align: justify; ">Solange in vielen Tier- und einigen Pflanzengruppen nur wenige Spezialisten mit aufw&auml;ndigen Methoden Arten bestimmen k&ouml;nnen, wird es auf viele dieser Fragen keine Antworten geben. Zudem geht das Wissen um die Bestimmung der Arten in Zeiten der <a class="ext" href="http://ibol.org/wp-content/uploads/2014/11/GS-2013-Bericht-Erosion-Artenkenner-End-2.pdf" target="_blank">&quot;Taxonomie-Krise&quot;</a> zunehmend verloren.</li>
+				</ul>
+				<p>
+					Die Etablierung einer schnellen, zuverl&auml;ssigen und kosteneffizienten Artidentifikation wird zu einer globalen Notwendigkeit!
+				</p>
+				<p>
+					Genau hier greift das
+					<a href="/gbol/was-ist-gbol">GBOL Projekt</a>
+					ein.
+				</p>
+				<p>
+					<img class="media-image" width="665px" src="/static/images/divbanner_logos.jpg" typeof="foaf:Image" title="" alt="">
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-2");
+		</script>
+	</div>
+</html>

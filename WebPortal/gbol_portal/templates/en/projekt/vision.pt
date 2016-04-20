@@ -1,0 +1,57 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="vision" class="site-content">
+			<h1 id="page-title" class="title">BIODIVERSITY - EVERY SPECIES COUNTS!</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					Biodiversity encompasses all varieties of life, from the level of ecosystems (such as water, forest, soil),
+					to the diversity of species and the diversity of genes within a species. Usually, ecologists and environmental
+					agencies only consider a very small part of this immense diversity, such as certain indicator species, which
+					are believed to be good predictors for the health of an ecosystem. This is due to the fact that there are
+					relatively few specialists for many groups of organisms and morphological determination requires a high level
+					of expertise and is often time consuming. In GBOL we have the vision of being able to capture much larger
+					proportions of biodiversity at the species level in the near future, and thus to curb the
+					<a class="ext" href="http://ibol.org/wp-content/uploads/2014/11/GS-2013-Bericht-Erosion-Artenkenner-End-2.pdf" target="_blank">&quot;Erosion der Artenkenner&quot;</a>
+					(also
+					<a class="ext" href="https://en.wikipedia.org/wiki/Taxonomic_impediment" target="_blank">&quot;Taxonomic Impediment&quot;</a>
+					) and to set impulses for a new science of biodiversity monitoring.
+				</p>
+				<p>
+					<h2><strong>Imagine...</strong></h2>
+					<br>
+					... a world in which you can know the name of any animal, fungus or plant, based on the analysis of small
+					fragments of an organism like single hair strands or a tiny plant leaf:
+				</p>
+				<ul style="padding-left: 0px;">
+					<li class="justify">How much more accurate would be the fields of ecology, veterinary medicine, pest control, or marine surveillance, if we could identify even morphologically indistinguishable species?</li>
+					<li class="justify">What are the effects of climate change on the natural landscape and biodiversity in Germany?</li>
+					<li class="justify">Which species survive in our nature conservation areas and national parks?</li>
+					<li class="justify">How do we monitor the effects of sudden shifts in land use, like the expanding cultivation of energy crops, on the survival of species?</li>
+					<li class="justify">These questions remain unanswered, as long as only a minority of taxonomists can reliably identify species using elaborate morphological methods! In addition, in the age of a widespread
+						<a class="ext" href="http://ibol.org/wp-content/uploads/2014/11/GS-2013-Bericht-Erosion-Artenkenner-End-2.pdf" target="_blank">&quot;taxonomy crisis&quot;</a>,
+						the taxonomic knowledge of species identification using morphological features is increasingly being be lost.</li>
+				</ul>
+				<p>
+					The establishment of a rapid, reliable and cost-effective tool for species identification to increase our knowledge of Earth´s remaining species is becoming a global need!
+				</p>
+				<p>
+					→ This is exactly, where the
+					<a href="/gbol/was-ist-gbol">GBOL project</a>
+					gets involved!
+				</p>
+				<p>
+					<img class="media-image" width="665px" src="/static/images/divbanner_logos.jpg" typeof="foaf:Image" title="" alt="">
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-2");
+		</script>
+	</div>
+</html>

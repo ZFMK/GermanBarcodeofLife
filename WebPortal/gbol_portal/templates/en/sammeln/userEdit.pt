@@ -1,0 +1,294 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="dashboard" class="site-content user-area">
+			<h1 id="page-title" class="title">User edit</h1>
+			<form id="user-regist" accept-charset="UTF-8" method="post" action="/sammeln/userEdit" enctype="multipart/form-data">
+				<input id="uid" type="hidden" name="uid" value="${form['uid']}" />
+				<fieldset tal:condition="python:form['uid']==request.session.uid">
+					<legend>Login data</legend>
+					<br />
+					<p><b>You user name is: ${structure: user}</b></p>
+					<label for="oldPw">Current password</label>
+					<br />
+					<input id="oldPw" type="password" name="oldPw" value="${form['oldPw']}" />
+					<br />
+					<div class="description">
+						Enter your current password to change e-mail address or password.
+					</div>
+					<br />
+					<label for="newPw1">Password</label>
+					<div class="password-strength">
+						<div id="password-text" class="password-strength-text" aria-live="assertive">Weak</div>
+						<div class="password-strength-title">Password strength:</div>
+						<div class="password-indicator">
+							<div id="password-bar" class="indicator" style="width: 0;"></div>
+						</div>
+					</div>
+					<br />
+					<input id="newPw1" class="small" type="password" name="pass1" value="${form['pass1']}" onkeyup="checkStrength()" onfocus="changeSuggestionBox()" />
+					<br />
+					<label for="newPw2">Confirm password</label>
+					<br />
+					<input id="newPw2" class="small" type="password" name="pass2" value="${form['pass2']}" />
+					<br />
+					<div id="password-suggestion" class="password-suggestions description" style="display: none;">
+						<p>To increase the security of the password:</p>
+						<ul>
+							<li id="sixLetter">Use at least 6 characters</li>
+							<li id="smallLetter">Use lowercase letters</li>
+							<li id="bigLetter">Use uppercase letters</li>
+							<li id="numberLetter">Use numbers</li>
+							<li id="specialLetter">Use punctuation</li>
+						</ul>
+					</div>
+					<div class="description">
+						Only when a new password is entered in both fields, it is changed.
+					</div>
+					<br />
+				</fieldset>
+
+				<fieldset tal:condition="python:1 in request.session.role">
+					<legend>Rolle</legend>
+					<br />
+					${structure: form['role_html']}
+				</fieldset>
+
+				<fieldset>
+					<legend>Contact</legend>
+					<br />
+					<label for="anrede">Salutation</label>
+					<br />
+					<input id="anrede" class="small_small" type="text" name="salutation" value="${form['salutation']}" />
+					<br />
+					<label for="titel">Title</label>
+					<br />
+					<input id="titel" class="small_small" type="text" name="title" value="${form['title']}" />
+					<br />
+					<label for="vorname">First name</label>
+					<br />
+					<input id="vorname" type="text" name="vorname" value="${form['vorname']}" />
+					<br />
+					<label for="nachname">Last name</label>
+					<br />
+					<input id="nachname" type="text" name="nachname" value="${form['nachname']}" />
+					<br />
+					<label for="phone">Phone number</label>
+					<br />
+					<input id="phone" type="text" name="phone" value="${form['phone']}" />
+					<br />
+					<label for="mail">E-mail address</label>
+					<br />
+					<input id="mail" type="text" name="mail" value="${form['mail']}" />
+					<div class="description">
+						A valid email address. All emails from the system will be sent
+						to this address. The address is not made public and will only be used
+						if you request a new password or wish to set to receive certain news
+						or notifications by e-mail.
+					</div>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<legend>Address</legend>
+					<br />
+					<label for="street">Street</label>
+					<br />
+					<input id="street" type="text" name="street" value="${form['street']}" />
+					<br />
+					<label for="zip">Zip code</label>
+					<br />
+					<input id="zip" type="text" name="zip" value="${form['zip']}" />
+					<br />
+					<label for="city">City</label>
+					<br />
+					<input id="city" type="text" name="city" value="${form['city']}" />
+					<br />
+					<label for="country">Country</label>
+					<br />
+					<input id="country" type="text" name="country" value="${form['country']}" />
+					<br /><br />
+				</fieldset>
+
+				<fieldset>
+					<legend>References</legend>
+					<br />
+					<p>For the creation of a genetic reference library of life in the
+					GBOL project we depend on working closely with taxonomic experts
+					in order to ensure safe and reliable morphological species identification.
+					To assess as quickly as possible whether you are a potential GBOL partner
+					with such qualifications, we would like to ask you to provide references
+					(including phone number) to confirm your expertise. Alternatively or
+					additionally, you could provide information of your membership in a
+					relevant association or working group or a list of your publications.</p>
+					<label for="referenzen">References</label>
+					<br />
+					<textarea id="referenzen" rows="5" cols="60" name="referenzen" width="603px" height="173px">${form['referenzen']}</textarea>
+					<br />
+					<div class="description">
+						Please enter your references here.
+					</div>
+					<br />
+				</fieldset>
+
+				<fieldset>
+					<legend>Expertise</legend>
+					<br />
+					<p>In the existing taxa list please specify your expertise for
+					specific groups of organisms. It is also possible to register expertise
+					for several taxa. In the field "Further Information on expertise"
+					you can specify your expertise if needed in more detail.
+					</p>
+					<br />
+					<div id="messageBox">
+						<ul>
+							${structure: userExpertisen}
+						</ul>
+						<br />
+						<ul>
+							${structure: expertisenRequest}
+						</ul>
+					</div>
+					<label for="expertise">Request expertise</label>
+					<br />
+					<select id="expertise" class="form-select required" name="expertise">
+						<option value="">- Select expertise -</option>
+						${structure: expertisen}
+					</select>
+					<br />
+					<div class="description">
+						Here you select the expertise that you want to apply for your profile.
+					</div>
+					<br />
+					<label for="expertiseAngaben">Further information on expertise</label><br />
+					<textarea id="expertiseAngaben" rows="5" cols="60" name="expertiseAngaben">${form['expertiseAngaben']}</textarea>
+					<br /><br />
+				</fieldset>
+
+				<fieldset>
+					<legend>Privacy settings</legend>
+					<br />
+					<p tal:condition="python:form['public']!='1'">
+						<input id="public" type="checkbox" value="1" name="public" />
+						<label for="public">Show your name (firstname, lastname) in public?</label>
+					</p>
+					<p tal:condition="python:form['public']=='1'">
+						<input id="public" type="hidden" value="1" name="public" />
+						<label for="public">Your name (firstname, lastname) will be shown in public.</label>
+					</p>
+					<br />
+				</fieldset>
+
+				<fieldset id="edit-gbol-terms" class="form-wrapper">
+					<legend>Terms and Conditions</legend>
+                    <br />
+					<label class="option" for="edit-gbol-termsofuse">I have agreed to the Terms and Conditions. </label>
+					<input id="edit-gbol-termsofuse" type="checkbox" value="1" name="gbol_termsofuse" readonly="readonly" tal:condition="python:form['termsofuse']!='1'" tal:attributes="checked True if form['termsofuse']=='1' else False" />
+					<div class="description">
+						<a href="/dateien/download/gbol_agb_201204.pdf">Terms and Conditons</a>
+					</div>
+					<br />
+				</fieldset>
+
+				<input id="edit-submit" class="form-submit" type="submit" value="speichern" name="op" />
+			</form>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			String.prototype.replaceAll = function(search, replace)
+			{
+				//if replace is null, return original string otherwise it will
+				//replace search string with 'undefined'.
+					if(!replace)
+						return this;
+					return this.replace(new RegExp('[' + search + ']', 'g'), replace);
+			};
+			function changeSuggestionBox() {
+			document.getElementById("password-suggestion").style.display = "block";
+			}
+			function checkStrength() {
+			var pw = document.getElementById("newPw1");
+			var bar = document.getElementById("password-bar");
+			var strength = 0;
+			if (pw.value.length >= 6) {
+				document.getElementById("sixLetter").style.display = "none";
+				strength = strength + 1;
+			}
+			else {
+				document.getElementById("sixLetter").style.display = "";
+			}
+			var bigLetterFlag = false;
+			var smallLetterFlag = false;
+			var numberLetterFlag = false;
+			var specialLetterFlag = false;
+			for(var i = 0; i < pw.value.length; i ++) {
+						var key = pw.value.charCodeAt(i);
+				if (key >= 65 && key <= 90) {
+					bigLetterFlag = true;
+				}
+				else if (key >= 97 && key <= 122) {
+						smallLetterFlag = true;
+				}
+				else if (key >= 48 && key <= 57) {
+						numberLetterFlag = true;
+				}
+				else if (key >= 33 && key <= 126) {
+						specialLetterFlag = true;
+				}
+			}
+			if (bigLetterFlag == true) {
+				document.getElementById("bigLetter").style.display = "none";
+				strength = strength + 1;
+			}
+			else {
+				document.getElementById("bigLetter").style.display = "";
+			}
+			if (smallLetterFlag == true) {
+				document.getElementById("smallLetter").style.display = "none";
+				strength = strength + 1;
+			}
+			else {
+				document.getElementById("smallLetter").style.display = "";
+			}
+			if (numberLetterFlag == true) {
+				document.getElementById("numberLetter").style.display = "none";
+				strength = strength + 1;
+			}
+			else {
+				document.getElementById("numberLetter").style.display = "";
+			}
+			if (specialLetterFlag == true) {
+				document.getElementById("specialLetter").style.display = "none";
+				strength = strength + 1;
+			}
+			else {
+				document.getElementById("specialLetter").style.display = "";
+			}
+			if (strength == 5) {
+					document.getElementById("password-suggestion").style.display = "none";
+				document.getElementById("password-text").innerHTML = "strong";
+			}
+			else {
+				document.getElementById("password-suggestion").style.display = "block";
+				if (strength == 3) {
+					document.getElementById("password-text").innerHTML = "okay";
+				}
+				else if (strength == 4) {
+					document.getElementById("password-text").innerHTML = "good";
+				}
+				else {
+					document.getElementById("password-text").innerHTML = "weak";
+				}
+			}
+			bar.style.width = (0 + strength * 20).toString() + "%"
+
+			}
+		setMenu("menu-sammeln-2");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+	</div>
+</html>

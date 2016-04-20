@@ -1,0 +1,26 @@
+<div id="content-menu" class="block menu-li">
+	<ul>
+		<li id="menu-admin-1">
+			<a href="/admin/certify-users">
+				Certify user
+				<span tal:content="request.session.new_users">0</span>
+			</a>
+		</li>
+		<li id="menu-admin-2">
+			<a href="/admin/certify-expertise">
+				Certify expertise
+				<span tal:content="request.session.new_expertise">0</span>
+			</a>
+		</li>
+		<li id="menu-admin-3">
+			<a href="/admin/sammeltabellen">
+				Uploaded shippings</a>
+				<span tal:content="request.session.shipping_requests">0</span>
+		</li>
+		<condition tal:condition="exists: request.session.role">
+			<li tal_condition="python: 1 in request.session.role" id="menu-admin-4">
+	  			<a href="/admin/user-management">User managment</a>
+			</li>
+		</condition>
+	</ul>
+</div>

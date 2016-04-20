@@ -1,0 +1,43 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="versandanschreiben" class="site-content user-area">
+			<h1 id="page-title" class="title">Sammeltabelle hochladen</h1>
+			<p>Bitte &uuml;berpr&uuml;fen Sie noch einmal sorgf&auml;ltig, ob Sie die 
+				richtige, zum diesem Probenpaket geh&ouml;rige Sammeltabelle hochgeladen haben.
+				Falls Sie versehentlich die falsche Sammeltabelle hochgeladen haben, 
+				k&ouml;nnen Sie diese jederzeit durch Dr&uuml;cken des „Entfernen“-Knopfs 
+				wieder l&ouml;schen und erneut das richtige Dokument hochladen. Erst beim 
+				Dr&uuml;cken des „Speichern“-Knopfs wird Ihre Probentabelle direkt per 
+				Email an den zust&auml;ndigen Taxon-Koordinator &uuml;bermittelt.</p>
+			<br />
+			<form accept-charset="UTF-8" method="post" action="/sammeln/versandanschreiben" enctype="multipart/form-data">
+				<label for="no_samples">Anzahl Proben
+					<span class="form-required" title="Diese Angabe wird ben&ouml;tigt.">*</span>
+				</label>
+				<br />
+				<input id="no_samples" class="small_small required" type="text" value="0" name="Number" />
+				<br />
+				<br />
+				<label for="select_file">Sammelliste
+					<span class="form-required" title="Diese Angabe wird ben&ouml;tigt.">*</span>
+				</label>
+				<br />
+				<input id="select_file" class="form-file" type="file" size="22" name="uploadedDoc" />
+				<div class="description">Laden Sie hier ihre Excel Datei passend zu den Proben hoch</div>
+				<br />
+				<br />
+				<input id="edit-submit" class="form-submit" type="submit" value="Absenden" name="op" />
+			</form>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-sammeln-6");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${message}</div></p>
+	</div>
+</html>

@@ -1,0 +1,62 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="dashboard" class="site-content">
+	    <h1 id="page-title" class="title">Benutzerkonto</h1>
+	    <form id="user-login" accept-charset="UTF-8" method="post" action="/sammeln/login">
+	        <div>
+		    Falls Sie noch nicht als GBOL-Partner registriert sind, füllen Sie bitte zuerst unser
+		    <a href="/sammeln/regist">Registrierungsformular</a>
+		    aus.
+		    <br>
+		    <br>
+		    <h2>Anmelden</h2>
+		    <br>
+	            <div>
+	                <label for="edit-name">
+	                    Benutzername
+	                    <span style="color:#FFA500;" title="Diese Angabe wird benötigt.">*</span>
+	                </label>
+			<br>
+	                <input id="edit-name" type="text" value="" name="name" class="small-small" />
+	                <div style="font-size:10px;">Geben Sie Ihren German Barcode of Life-Benutzernamen ein.</div>
+	            </div>
+		    <br>
+	            <div>
+	                <label for="edit-pass">
+	    		        Passwort
+	    		        <span style="color:#FFA500;" title="Diese Angabe wird benötigt.">*</span>
+	    	        </label>
+			<br>
+		        <input id="edit-pass" type="password" name="pass" class="small-small" />
+		        <div style="font-size:10px;">Geben Sie hier das zugehörige Passwort an.</div>
+	            </div>
+	            <input type="hidden" value="form-C8ya50ZIXCYyYLPDscddor7cVHrjNHBDLuo3X6XtToo" name="form_build_id" />
+	            <input type="hidden" value="user_login" name="form_id" />
+	            <div id="edit-actions">
+		        <input id="edit-submit" type="submit" value="Anmelden" name="op" />
+		            <p class="request-passwd">
+			        <a title="Ein neues Passwort per Email anfordern." href="/sammeln/passwort-vergessen">Passwort oder Benutzername vergessen?</a>
+		            </p>
+	            </div>
+	        </div>
+            </form>
+	</div>
+	<div id="left-menu" class="left-menu">
+	    <div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block">	       
+	    </div>
+            <condition tal:condition="exists:request.session.vorname">
+            	<condition tal:condition="not: request.session.vorname">
+            	    <div metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block">	        
+	    	    </div>    
+		</condition>    
+	    </condition>
+            <condition tal:condition="not: exists:request.session.vorname">
+            	<div metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block">	        
+	    	</div>        
+	    </condition>
+	</div>
+    </div>
+    <div metal:fill-slot="messages">
+        <p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+    </div>
+</html>

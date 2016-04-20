@@ -1,0 +1,149 @@
+<html metal:use-macro="load: master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="links" class="site-content">
+			<h1 id="page-title" class="title">Links</h1>
+			<h2>Sponsors</h2>
+			<ul>
+				<li class="sponsor">
+					<a title="Call website: Federal Ministry for Education and Research" href="http://www.bmbf.de/" target="_blank">
+						<img width="135" height="80" src="/static/images/bmbf.gif">
+					</a>
+					<div class="sponsor_text">
+						<span>
+						Federal Ministry for Education and Research
+						<br>
+						<a class="ext" href="http://www.bmbf.de/" target="_blank">http://www.bmbf.de/</a>
+						</span>
+					</div>
+				</li>
+			</ul>
+			<div class="field-item even" property="content:encoded">
+				<h2><a name="kooperationspartner"></a>International and National GBOL-Partners</h2>
+				<ul>
+					<li>
+						International Barcode of Life  (iBOL):
+						<a class="ext" title="Link to ibol.org" href="http://ibol.org" target="_blank">http://ibol.org</a>
+					</li>
+					<li>
+						Taxon-specific Barcode campaigns:
+						<a class="ext" title="Link to ibol.org/about-us/campaigns" href="http://ibol.org/about-us/campaigns" target="_blank">http://ibol.org/about-us/campaigns</a>
+					</li>
+					<li>
+						Country-specific Barcode campaigns:
+						<a class="ext" title="Link to ibol.org/about-us/partner-nations" href="http://ibol.org/about-us/partner-nations" target="_blank">http://ibol.org/about-us/partner-nations</a>
+					</li>
+					<li>
+						Barcoding Fauna Bavarica:
+						<a class="ext" title="Link to www.faunabavarica.de" href="http://www.faunabavarica.de" target="_blank">http://www.faunabavarica.de</a>
+					</li>
+					<li>
+						ECBOL:
+						<a class="ext" title="Link to www.ecbol.org" href="http://www.ecbol.org" target="_blank">http://www.ecbol.org</a>
+					</li>
+					<li>
+						CBOL:
+						<a class="ext" href="http://www.barcodeoflife.org/content/about/what-cbol" target="_blank">http://www.barcodeoflife.org/content/about/what-cbol</a>
+					</li>
+					<li>
+						Canadian Centre for DNA Barcoding:
+						<a class="ext" href="http://www.dnabarcoding.ca" target="_blank">http://www.dnabarcoding.ca</a>
+					</li>
+					<li>
+						Canadian Barcode of Life:
+						<a class="ext" title="Link to www.bolnet.ca" href="http://www.bolnet.ca" target="_blank">http://www.bolnet.ca</a>
+					</li>
+					<li>
+						DNA Bank Network:
+						<a class="ext" href="http://www.dnabank-network.org" target="_blank">http://www.dnabank-network.org</a>
+					</li>
+					<li>
+						Further DNA Barcoding Projects in Germany: German Consortium for the Barcode of Life (G-BOL):
+						<a class="ext" href="http://www.g-bol.de/" target="_blank">http://www.g-bol.de/</a>
+					</li>
+					<li>
+						Freshwater Diversity Identification for Europe (FREDIE):
+						<a class="ext" href="http://www.fredie.eu/" target="_blank">http://www.fredie.eu/</a>
+					</li>
+					<li>
+						Landesverband f&uuml;r H&ouml;hlen- und Karstforschung Hessen e.V.:
+						<a class="ext" href="http://www.hoehlenkataster-hessen.de/" target="_blank">http://www.hoehlenkataster-hessen.de/</a>
+					</li>
+					<li>
+						Verband der deutschen H&ouml;hlen- und Karstforscher:
+						<a class="ext" href="http://www.vdhk.de/" target="_blank">http://www.vdhk.de/</a>
+					</li>
+					<li>
+						Th&uuml;ringer Entomologenverband e.V.  (
+						<a class="ext" href="http://www.thueringer-entomologenverband.de/" target="_blank">www.thueringer-entomologenverband.de/</a>
+						)
+					</li>
+					<li>
+						Workgroup Diptera (
+						<a class="ext" href="http://www.ak-diptera.de/" target="_blank">www.ak-diptera.de/</a>
+						)
+					</li>
+					<li>
+						GeneStream Projekt (
+						<a class="ext" href="http://www.genestream.de/" target="_blank">www.genestream.de/</a>
+						)
+					</li>
+					<li>
+						Network "Nagetier-&uuml;bertragene Pathogene" (Na&Uuml;Pa-Net) (
+						<a class="ext" href="http://www.zoonosen.net/Zoonosenforschung/ProjektederZoonosenplattform/LaufendeProjekte/NaUePaNet.aspx" target="_blank">www.zoonosen.net/Zoonosenforschung/ProjektederZoonosenplattform/LaufendeProjekte/NaUePaNet.aspx</a>
+						)
+					</li>
+					<li>
+						Nieders&auml;chsisches Landesamt f&uuml;r Verbraucherschutz und Lebensmittelsicherheit (LAVES):
+						<a class="ext" href="http://www.laves.niedersachsen.de" target="_blank">http://www.laves.niedersachsen.de</a>
+					</li>
+					<li>
+						Station Linn&eacute;:
+						<a class="ext" href="http://www.stationlinne.se/de/" target="_blank">http://www.stationlinne.se/de/</a>
+					</li>
+				</ul>
+				<h2><a name="plattformen"></a>Database and Software Collaborations</h2>
+				<ul>
+					<li>
+						Diversity Workbench for storing and managing biodiversity data:
+						<a class="ext" target="_blank" href="http://www.diversityworkbench.net/Portal/Software">http://www.diversityworkbench.net/Portal/Software</a>
+					</li>
+					<li>
+						Morph•D•Base to upload, edit and annotate images:
+						<a class="ext" target="_blank" href="http://www.morphdbase.de">http://www.morphdbase.de</a>
+					</li>
+					<li>
+						Geneious for sequence analysis:
+						<a class="ext" target="_blank" href="http://www.geneious.com">http://www.geneious.com</a>
+					</li>
+				</ul>
+				<h2><a name="plattformen"></a>Further DNA Barcoding Platforms:</h2>
+				<ul>
+					<li>
+						Barcode Database (BOLD):
+						<a class="ext" href="http://www.boldsystems.org/" target="_blank">www.boldsystems.org/</a>
+					</li>
+					<li>
+						Barcode online discussion platform:
+						<a class="ext" title="Link to connect.barcodeoflife.net" href="http://connect.barcodeoflife.net" target="_blank">http://connect.barcodeoflife.net</a>
+					</li>
+					<li>
+						Barcode Blog:
+						<a class="ext" title="Link to phe.rockefeller.edu/barcode/blog" href="http://phe.rockefeller.edu/barcode/blog" target="_blank">http://phe.rockefeller.edu/barcode/blog</a>
+					</li>
+					<li>
+						Barcode of Life:
+						<a class="ext" title="Link to www.barcodeoflife.org" href="http://www.barcodeoflife.org" target="_blank">http://www.barcodeoflife.org</a>
+					</li>
+					<li>
+						New DNA Barcoding Blog:
+						<a class="ext" href="http://dna-barcoding.blogspot.ca/" target="_blank">http://dna-barcoding.blogspot.ca/</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+	</div>
+</html>

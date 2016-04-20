@@ -1,0 +1,29 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="webeditor" class="site-content">
+	<h1 id="page-title" class="title">Dashboard</h1>
+	<strong>Username or mail *</strong>
+	    <form id="pw-forgot" accept-charset="UTF-8" method="post" action="/sammeln/passwort-vergessen" enctype="multipart/form-data">
+		<input id="vorname" type="text" maxlength="255" size="60" value="" name="account">
+		<input class="form-submit" type="submit" value="Send new password via mail" name="op">
+	    </form>
+	</div>
+	<div id="left-menu" class="left-menu">
+	    <div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block">	       
+	    </div>
+            <condition tal:condition="exists:request.session.vorname">
+            	<condition tal:condition="not: request.session.vorname">
+            	    <div metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block">	        
+	    	    </div>    
+		</condition>    
+	    </condition>
+            <condition tal:condition="not: exists:request.session.vorname">
+            	<div metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block">	        
+	    	</div>        
+	    </condition>
+	</div>
+    </div>
+    <div metal:fill-slot="messages">
+        <p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+    </div>
+</html>

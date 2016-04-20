@@ -1,0 +1,16 @@
+<div id="content-menu" class="block menu-li">
+	<ul>
+		<li id="menu-mitmachen-1">
+		<a href="/mitmachen/wer-kann-mitmachen">Who can participate?</a>
+		</li>
+		<li id="menu-mitmachen-2">
+		<a title="Everything about the participation methods for experts." href="/mitmachen/teilnahmeinfos">How can I participate?</a>
+		</li>
+		<li id="menu-mitmachen-3">
+		<a title="Read what benefits a participation will bring you!" href="/mitmachen/vorteile">Benefits of a GBOL participation</a>
+		</li>
+		<li id="menu-mitmachen-4">
+		<a title="Your responsibilities as a GBOL expert." href="/mitmachen/verantwortung-der-sammler">Responsibilities of Experts</a>
+		</li>
+	</ul>
+</div>

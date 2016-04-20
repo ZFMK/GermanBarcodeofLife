@@ -1,0 +1,130 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="institute" class="site-content">
+			<h1 id="page-title" class="title">GBOL Institutes</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					<iframe src="https://www.google.com/maps/d/embed?mid=z9tVTLO-50QU.kHn2U4mqHdTE" width="640" height="480"></iframe>
+					<br>
+					<small>Here you can view the
+					<a class="ext" href="https://www.google.com/maps/d/edit?mid=z9tVTLO-50QU.kHn2U4mqHdTE" target="_blank">GBOL partners on a larger map.</a>
+					</small>
+				</p>
+				<p>
+					<strong>"Associated GBOL partners"</strong> are indicated by a <strong>yellow placemark</strong>.
+				</p>
+
+				<h2>Zoology:</h2>
+				<ul>
+					<li>
+						<a class="ext" href="https://www.apoek.uni-bonn.de/forschung/aktuell" target="_blank">INRES, Institut f&uuml;r Nutzpflanzenwissenschaften und Ressourcenschutz</a>
+					</li>
+					<li>
+						<a class="ext" title="Link to www.smnk.de" href="http://www.smnk.de" target="_blank">SMNK, Staatliches Museum für Naturkunde Karlsruhe</a>
+					</li>
+					<li>
+						<a class="ext" title="Link to www.naturkundemuseum-bw.de" href="http://www.naturkundemuseum-bw.de" target="_blank">SMNS, Staatliches Museum für Naturkunde Stuttgart</a>
+					</li>
+					<li>
+						<a class="ext" title="Link to www.zsm.mwn.de" href="http://www.zsm.mwn.de" target="_blank">ZSM, Zoologische Staatssammlung München</a>
+					</li>
+					<li>
+						<a class="ext" title="Link to www.zfmk.de" href="http://www.zfmk.de" target="_blank">ZFMK, Zoologisches Forschungsmuseum Alexander Koenig, Bonn</a>
+					</li>
+					<li>
+						<a class="ext" href="http://www.senckenberg.de/root/index.php?page_id=4774" target="_blank">Museum Dresden</a> (associated)
+					</li>
+					<li>
+						<a class="ext" href="http://www.potsdam.de/naturkundemuseum-potsdam" target="_blank">Naturkundemuseum Potsdam</a> (associated)
+					</li>
+					<li>
+						<a class="ext" href="http://www.senckenberg.de/root/index.php?page_id=15427" target="_blank">Senckenberg am Meer, Abt. DZMB, AG Molekulare Taxonomie mariner Organismen, Wilhelmshaven</a> (associated)
+					</li>
+				</ul>
+
+				<h2>Botany:</h2>
+				<ul>
+					<li>
+						<a class="ext" title="Link zu www.bgbm.org" href="http://www.bgbm.org" target="_blank">BGBM, Botanischer Garten und Botanisches Museum Berlin, Freie Universit&auml;t Berlin</a>
+					</li>
+					<li>
+						<a class="ext" href="http://www.nees.uni-bonn.de/" target="_blank">Nees-Institut, Universit&auml;t Bonn</a>
+					</li>
+					<li>
+						<a class="ext" href="http://ieb.uni-muenster.de/plantsevol" target="_blank">IEB, Universit&auml;t M&uuml;nster</a>
+					</li>
+					<li>
+						<a class="ext" href="http://www.uni-giessen.de/index.html" target="_blank">JLU, Justus Liebig Universit&auml;t Giessen</a>
+					</li>
+					<li>
+						<a class="ext" href="http://www.botanischestaatssammlung.de/" target="_blank">BSM, Botanische Staatssammlung M&uuml;nchen</a> (associated)
+					</li>
+					<li>
+						<a class="ext" href="http://www.jki.bund.de/" target="_blank">JKI, Julius K&uuml;hn-Institut</a>, Braunschweig (associated)
+					</li>
+				</ul>
+
+				<h2>Mycology:</h2>
+				<ul>
+					<li>
+						<a class="ext" href="http://www.helmholtz-hzi.de" target="_blank">Helmholtz-Zentrum f&uuml;r Infektionsforschung</a>
+					</li>
+					<li>
+						<a class="ext" href="https://www.thuenen.de/de/ueber-uns/das-institut/" target="_blank">Johann Heinrich von Th&uuml;nen-Institut für l&auml;ndl. R&auml;ume</a>
+					</li>
+					<li>
+						<a class="ext" href="http://www.ruhr-uni-bochum.de/geobot" target="_blank">Ruhr-Universit&auml;t Bochum</a>
+					</li>
+					<li>
+						<a class="ext" href="http://www.smnk.de" target="_blank">SMNK, Staatliches Museum f&uuml;r Naturkunde Karlsruhe</a>
+					</li>
+					<li>
+						<a class="ext" title="Link zu www.naturkundemuseum-bw.de" href="http://www.naturkundemuseum-bw.de" target="_blank">SMNS, Staatliches Museum f&uuml;r Naturkunde Stuttgart</a>
+					</li>
+					<li>
+						<a class="ext" href="https://www.uni-bayreuth.de/de/index.html" target="_blank">Universit&auml;t Bayreuth</a>
+					</li>
+					<li>
+						<a class="ext" href="http://www.uni-tuebingen.de" target="_blank">Universit&auml;t T&uuml;bingen</a> (associated)
+					</li>
+				</ul>
+
+				<h2>Soil organisms:</h2>
+				<ul>
+					<li>
+						<a class="ext" title="Link to www.naturkundemuseum-goerlitz.de" href="http://www.naturkundemuseum-goerlitz.de" target="_blank">SMNG, Senckenberg Museum für Naturkunde Görlitz</a>
+					</li>
+					<li>
+						<a class="ext" title="Link to www.uni-bielefeld.de" href="http://www.uni-bielefeld.de" target="_blank">Universität Bielefeld</a>
+					</li>
+				</ul>
+
+				<h2>Subterranean Fauna (Caves, artificial underground chambers, springs and ground water):</h2>
+				<ul>
+					<li>
+						<a class="ext" target="_blank" href="https://www.uni-due.de/aquatische_oekosystemforschung/aquabiodiv">UDE, Universit&auml;t Duisburg Essen</a> (associated topic)
+					</li>
+				</ul>
+
+				<h2>Development of innovative, NGS-based tools to assess Water Framework Directive relevant taxa (diatoms and benthic invertebrates):</h2>
+				<ul>
+					<li>
+						<a class="ext" href="http://www.bgbm.org/de/personal/dr-regine-jahn" target="_blank">BGBM, Botanischer Garten und Botanisches Museum Berlin, Freie Universität Berlin (Forschungsgruppe Diatomeen)</a>
+					</li>
+					<li>
+						<a class="ext" href="https://www.uni-due.de/aquatische_oekosystemforschung/metabarcoding" target="_blank">UDE, Universit&auml;t Duisburg Essen</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_team.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-team-1");
+		</script>
+	</div>
+</html>

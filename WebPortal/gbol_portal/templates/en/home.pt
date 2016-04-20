@@ -1,0 +1,120 @@
+<html metal:use-macro="load: master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="visionbox" class="block">
+			<div id="visionbox-grafik" style="background-image: url('/static/images/en/Startseitengrafik.gif'); background-position: -5px;"></div>
+			<a id="visionbox-link" title="Vision of the GBOL project" href="/gbol/vision"></a>
+		</div>
+		<div id="home-topblock">
+			<div id="projekt-token" class="token block">
+				<a title="Picture by: Dr. Martin Nebel" href="/gbol/was-ist-gbol">
+					<img width="220" height="135" src="static/images/teaserbild_subteaser/public/mn_sphagnum_subsecundum.jpg" />
+				</a>
+				<a href="/gbol/was-ist-gbol">The Project</a>
+				<div>
+					GBOL builds a comprehensive DNA Barcode reference library for the animals, plants and fungi of Germany and is developing <a title="Applications" href="/gbol/anwendungsgebiete">applications</a>, which benefit from a molecular identification system.
+				</div>
+				<span class="align-bottom-right">
+					<a title="Information about the GBOL project." href="/gbol/was-ist-gbol">Read more &raquo; </a>
+				</span>
+			</div>
+			<div id="barcoding-token" class="token block">
+				<a title="GBOL Discovery" href="/ergebnisse/ergebnisse">
+					<img width="220" height="135" src="static/images/teaserbild_subteaser/public/DiscoveryTeaser.jpg" />
+				</a>
+				<a href="/ergebnisse/ergebnisse">The Results</a>
+				<div class="field-content">
+					Explore the Inventory, show sample distribution in a map and download specimen occurrences. Gap lists can now also be generated per Federal State.
+				</div>
+				<span class="align-bottom-right">
+					<a title="Go to that page" href="/ergebnisse/ergebnisse">Show &raquo; </a>
+				</span>
+			</div>
+			<div id="team-token" class="token block">
+				<a title="Picture by: Dr. Markus Scholler" href="/team/gbol-institute">
+					<img width="220" height="135" src="static/images/teaserbild_subteaser/public/ms_weissdorn_gitterrost.jpg" />
+				</a>
+				<a href="/team/gbol-institute">The Team</a>
+				<div class="field-content">
+					Renowned natural history museums and research institutions from all over Germany collaborate in the GBOL team and coordinate different GBOL projects.
+				</div>
+				<span class="align-bottom-right">
+					<a title="More about the GBOL institutions, our organisation and our projects." href="/team/gbol-institute">Read more &raquo; </a>
+				</span>
+			</div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: block/block_mitmachen_home.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: block/block_mitmachen_angemeldet_home.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<div id="home-bottomblock">
+			<div id="mitmachen-token" class="token block">
+				<a title="Picture by: Johannes Dambach" href="/mitmachen/wer-kann-mitmachen">
+				<img width="220" height="135" src="static/images/teaserbild_subteaser/public/jd_pyrrhocoris-apterus.jpg" />
+				</a>
+				<a href="/mitmachen/wer-kann-mitmachen">Get Involved!</a>
+				<div class="field-content">
+				We are looking for experienced citizen scientists and amateur taxonomists in Germany who are interested in contributing to the completion of the genetic library of biodiversity!
+				</div>
+				<span class="align-bottom-right">
+					<a title="Important information for GBOL experts: how can you participate, benefits and responsibilities." href="/mitmachen/wer-kann-mitmachen">Read more &raquo; </a>
+				</span>
+			</div>
+			<div id="news-token" class="token block">
+				<a title="Picture by: Prof. Dr. Kai M&uuml;ller" href="/news-publikationen">
+					<img width="220" height="135" src="static/images/teaserbild_subteaser/public/km_epipactis_atropurpurea_teaser.jpg" />
+				</a>
+				<a href="/news-publikationen">News & Publications</a>
+				<div class="field-content">
+					We will keep you informed about <a href="/news/news">current research activities, progress</a>, <a href="/news/publikationen">publications</a> and events in the GBOL project.
+				</div>
+				<span class="align-bottom-right">
+					<a title="Up to date notifications and publications from the GBOL project." href="/news-publikationen">Read more &raquo; </a>
+				</span>
+			</div>
+			<div id="links-token" class="token block">
+				<a title="Picture by: Johannes Dambach" href="/links">
+					<img width="220" height="135" src="static/images/teaserbild_subteaser/public/lycosa.jpg" />
+				</a>
+				<a href="/links">Links</a>
+				<div class="field-content">
+					GBOL is part of a network of experienced partners. Our links will take you to their web pages.
+				</div>
+				<span class="align-bottom-right">
+					<a title="GBOL partner and other DNA barcoding platforms." href="/links">Read more &raquo; </a>
+				</span>
+			</div>
+			<div metal:use-macro="load: block/block_sponsoren_home.pt" id="sponsoren" class="token block"></div>
+		</div>
+		<script type="text/javascript">
+			var max_images = 7,
+				picture = Math.floor((Math.random() * max_images)+1),
+				images = new Array(),
+				i, j,
+				dia = document.getElementById("diashow");
+			$('body').addClass('front');
+			function preload() {
+				for (i = 0; i < max_images; i++) {
+					j = i+1
+					images[i] = new Image();
+					images[i].src = "/static/images/slideshow/"+j+".jpg";
+					if (i==max_images-1) {
+						setHeaderImage();
+					}
+				}
+			}
+			function setNewPicture(i){
+				dia.innerHTML=images[i].outerHTML;
+			}
+			function setHeaderImage() {
+				picture = picture + 1;
+				if (picture >= max_images){
+					picture = 0;
+				}
+				setNewPicture(picture);
+				setTimeout(setHeaderImage, 8000);
+			}
+			preload();
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+	</div>
+ </html>

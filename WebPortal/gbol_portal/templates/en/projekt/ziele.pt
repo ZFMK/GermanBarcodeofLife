@@ -1,0 +1,46 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="ziele" class="site-content">
+			<h1 id="page-title" class="title">Project Objectives</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					The GBOL consortium is working with a variety of different organisms from different geographic regions
+					in Germany. In the second project phase (2016-2018) also diatoms and other fungal groups are now included
+					that were previously represented by only a few rust fungi. Yet, all project partners have common,
+					general interests and goals:
+				</p>
+					<ol style="padding-left: 0px;">
+						<li class="justify">Building a DNA barcode library of organisms occurring in Germany with the corresponding voucher and DNA collections. </li>
+						<li class="justify">Collaboration of various taxonomists in a country-wide inventory effort.</li>
+						<li class="justify">Development of DNA barcode applications with substantial scientific, forensic, epidemiological and economic benefits.</li>
+					</ol>
+				<p>
+					<img class="media-image" width="530" height="253" src="/static/images/florfliege.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 253px; position: relative; left: 65px;" alt="">
+				</p>
+				<p>
+					Towards the end of the first phase of GBOL (2015) the DNA barcode system has undergone various practical tests in cooperation with potential users of DNA barcoding. A general summary can be found in our
+					<a class="ext" href="https://www.zfmk.de/dateien/atoms/files/verbundbericht_gbol_f2014.pdf" target="_blank">interim report for 2014</a>.
+					Among other things, the following test applications were performed:
+					<ol style="list-style-type: lower-alpha; padding-left: 0px;" start="1">
+						<li class="justify">In collaboration with a fisheries biologist and an environmental agency the macrofauna of the Sieg River near Bonn was examined by DNA barcoding and various aspects of this methodology compared to the conventional methods.</li>
+						<li class="justify">DNA meta-barcoding of environmental samples from the Eifel National Park (e.g. malaise traps, soil samples) using next generation sequencing (NGS).</li>
+						<li class="justify">Detection and determination of pest species in forestry in cooperation with the Bavarian Forest National Park.</li>
+						<li class="justify">In farm, a parasite monitoring should be tested with farm livestock based on DNA barcoding.</li>
+						<li class="justify">A DNA barcode reference library of a typical spring fauna, which is highly susceptible to climate change in the Berchtesgaden National Park was established.</li>
+					</ol>
+					In the following, second GBOL funding period (2016-2018) further field- and application studies in the context of forestry, agriculture, water quality assessment and forensics are conducted. Details on these can be
+					<a title="" href="/gbol/anwendungsgebiete">found here</a>.
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-3");
+		</script>
+	</div>
+</html>

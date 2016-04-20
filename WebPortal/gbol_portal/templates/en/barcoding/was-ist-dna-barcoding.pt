@@ -1,0 +1,63 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="was-ist-dna-barcoding" class="site-content">
+			<h1 id="page-title" class="title">What is DNA Barcoding?</h1>
+			<div class="field-item even" property="content:encoded">
+				<p style="text-align: justify; ">
+					<img class="media-image" width="540" height="298" src="/static/images/en/jd_asiat_marienkaefer.jpg" typeof="foaf:Image" title="" style="width: 540px; height: 298px;" alt="">
+				</p>
+				<p>
+					<a target="_blank" href="/download?fileName=TenReasonsBarcoding.pdf">Ten reasons for Barcoding (pdf, english)</a>
+				</p>
+				<p>
+					Everyone is familiar with industrial barcodes as unique identifiers for commercial products. Similar to these industrial barcodes, short gene segments - known as DNA barcodes – are unique for each species.
+					<a class="ext" title="Read more about DNA barcoding at wikipedia.com" href="http://en.wikipedia.org/wiki/DNA_barcoding" target="_blank">DNA barcoding</a>
+					has emerged as a global standard for fast and reliable genetic species identification of animals, plants and fungi.
+				</p>
+				<p>
+					A short DNA sequence of a specific gene, as for instance the mitochondrial COI gene, enables the identification of all animal species (i.e. birds, butterflies, fish, flies, etc.) on Earth. Species identification of land plants is enabled by the combination of two different chloroplast gene regions - matK and rbcL. Fungi species can be determined by the ITS region. The ultimate goal of DNA barcoding is to build a publicly accessible reference database with species-specific DNA barcode sequences. DNA barcoding is particularly effective to identify species-rich groups, cryptic species complexes, specific developmental stages (i.e. spores, eggs or larvae), and even parts and fragments of organisms (i.e. fly leg, plant root, fungal hyphae or hair). An established DNA barcode reference library offers even non-specialists a rapid, reliable and cost-effective tool for .
+					<a title="Information about GBOL application" href="/gbol/anwendungsgebiete">species identification with various applications</a>.
+				</p>
+				<h2 style="text-align: justify;">The following steps are essential for creating a DNA barcode database:</h2>
+				<p style="margin-left: -20px;">
+					<img class="fullwidth media-image attr__typeof__foaf:Image img__fid__118 img__view_mode__media_original attr__format__media_original" typeof="foaf:Image" title="Graphic by: Fides Friedeberg" style="width: 700px; height: 442px;" src="/static/images/en/Flowchart_web.jpg" alt="">
+				</p>
+				<ol style="padding-left: 0px;">
+					<li style="text-align: justify;">DNA barcoding projects obtain their specimens from a variety of sources:  Private collections of amateur taxonomists and museum collections (e.g. natural history museums, zoos, botanical gardens and seed banks). Museum specimens will be carefully checked for their DNA quality to ensure reliable DNA-barcoding. Fresh material collected in the field by
+					<a title="Learn more about registration methods for experts." href="/mitmachen/teilnahmeinfos">citizen scientists</a>
+					. Professional GBOL taxonomists depend on the enthusiastic and active support of qualified citizen scientists. They contribute significantly to the collection, appropriate conservation and identification of organisms for DNA barcoding.
+					<li style="text-align: justify;">For each sample, taxonomic identification and collection data (i.e. sampling location and date, geographic coordinates, collection method, collectors name, etc.) will be recorded. </li>
+					<li style="text-align: justify;">Organisms will be photographed in their natural habitat and in the laboratory.</li>
+					<li style="text-align: justify;">Vouchers will be stored in collections of the respective
+						<a href="/team/gbol-institute">GBOL institutions</a>.
+					</li>
+					<li style="text-align: justify;">In the laboratory technicians isolate a small piece of tissue from each specimen and extract DNA.</li>
+					<li style="text-align: justify;">The DNA barcode region will be isolated and replicated using a process called PCR (polymerase chain reaction) amplification.</li>
+					<li style="text-align: justify;">The DNA barcode will be generated, consisting of a few hundred base pair long sequence of four different letters (e.g. CAATCGGTAA ...). These letters represent the four nucleic acids (
+						<strong>A</strong>denin,
+						<strong>G</strong>uanin,
+						<strong>T</strong>hymin, and
+						<strong>C</strong>ytosin) constituting the DNA.
+					</li>
+					<li style="text-align: justify;">Sequences and metadata (collection data, taxonomy, photographs) of the samples will be tested for completeness and quality by professional GBOL scientists.</li>
+					<li style="text-align: justify;">GBOL data will be uploaded to the “Barcode of Life Data Systems” (BOLD) database – an international reference library of DNA barcodes.
+						<a class="ext" title="Link to www.boldsystems.org" href="http://www.boldsystems.org/" target="_blank">BOLD is an online workbench</a>
+						that facilitates collection, management, analysis, and use of DNA barcodes.
+					</li>
+				</ol>
+			</div>
+		</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_barcoding.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+		<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+	</div>
+	<script type="text/javascript">
+		setMenu("menu-barcoding-2");
+	</script>
+	</div>
+</html>
+
+
+

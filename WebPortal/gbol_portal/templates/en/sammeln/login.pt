@@ -1,0 +1,52 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+	<div id="dashboard" class="site-content">
+		<h1 id="page-title" class="title">Dashboard</h1>
+		<form id="user-login" accept-charset="UTF-8" method="post" action="/sammeln/login">
+			In case you are not registered yet, please
+			<a href="/sammeln/regist">sign up</a>
+			first.
+			<br>
+			<br>
+			<h2>Log in</h2>
+			<br>
+			<label for="edit-name" class="required">
+				User name
+			</label>
+			<br>
+			<input id="edit-name" type="text" value="" name="name" title="Required entry." class="small-small" />
+			<div style="font-size:10px;">Enter your GBOL user name.</div>
+			<br>
+			<label for="edit-pass" class="required">
+				Password
+			</label>
+			<br>
+			<input id="edit-pass" type="password" name="pass" title="Required entry." class="small-small" />
+			<div style="font-size:10px;">Enter the related password.</div>
+			<input type="hidden" value="user_login" name="form_id" />
+			<br />
+			<input id="edit-submit" type="submit" value="Anmelden" name="op" />
+			<p class="request-passwd">
+				<a title="Request a new password." href="/sammeln/passwort-vergessen">Forgot password or user name?</a>
+			</p>
+		</form>
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block">
+		</div>
+			<condition tal:condition="exists:request.session.vorname">
+				<condition tal:condition="not: request.session.vorname">
+					<div metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block">
+				</div>
+		</condition>
+		</condition>
+			<condition tal:condition="not: exists:request.session.vorname">
+				<div metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block">
+			</div>
+		</condition>
+	</div>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+	</div>
+</html>

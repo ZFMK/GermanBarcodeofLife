@@ -1,0 +1,41 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="teilnahmeinfos" class="site-content">
+
+	<h1 id="page-title" class="title">How can I participate?</h1>
+	<div class="field-item even" property="content:encoded">
+	<p style="text-align: justify;">Professional GBOL taxonomists depend on the enthusiastic and active support of qualified citizen scientists to establish a comprehensive library of biodiversity!  </p>
+	<p style="text-align: justify;">
+	<img class="media-image" width="530" height="228" src="/static/images/gbol_raupe.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 228px;" alt="">
+	</p>
+	<p style="text-align: justify;">In a few simple steps you can become an official GBOL partner:</p>
+	<ol style="padding-left: 0px;">
+	<li style="text-align: justify;">Registration as an official taxon expert in GBOL</li>
+	<li style="text-align: justify;">
+	Feedback from GBOL staff:
+	<ul >
+	<li>Introduction to sampling and data recording</li>
+	<li>Assistance in obtaining collecting permits</li>
+	<li>Allocation of GBOL-sample IDs</li>
+	</ul>
+	</li>
+	<li style="text-align: justify;">Collection of fresh animal, plant or fungi material in the field</li>
+	<li style="text-align: justify;">Conservation and taxonomic classification of the collected material</li>
+	<li style="text-align: justify;">Completion of GBOL data collection sheets with relevant additional information (habitat, time, coordinates, taxonomic classification, etc.)</li>
+	<li style="text-align: justify;">Upload the data collection sheets (Excel spreadsheet) or fill in the online data form on the GBOL webpage </li>
+	<li style="text-align: justify;">Shipment of sample material to the appropriate GBOL institution</li>
+	</ol>
+	</div>
+
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_mitmachen.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+		<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+	</div>
+	<script type="text/javascript">
+	    setMenu("menu-mitmachen-2");
+	</script>
+    </div>
+</html>

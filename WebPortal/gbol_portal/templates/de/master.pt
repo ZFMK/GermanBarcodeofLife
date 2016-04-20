@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html
+	xmlns:tal="http://xml.zope.org/namespaces/tal"
+	xmlns:metal="http://xml.zope.org/namespaces/metal"
+	xml:lang="en"
+	lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>German Barcode of Life | Deutschlands Fauna und Flora in einer einzigartigen genetischen Bibliothek</title>
+	<meta name="keywords" content="GBOL, DNA Barcoding, Tiere, Pflanzen, Pilze, Deutschland, Biodiversit&auml;t,
+		German Barcode of Life, Fauna , Flora, genetische Bibliothek, taxonomische Spezialisten">
+	<meta name="generator" content="Pyramid - http://www.pylonsproject.org/" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+	<link rel="stylesheet" href="/static/css/styles.css" />
+	<metal:js define-slot="css-head"/>
+	<script type="text/javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/js/bol.js"></script>
+	<metal:js define-slot="js-head"/>
+</head>
+<body onload="setCurrentMenu()" data-lang="de">
+	<div id="gbol-wrapper">
+		<div id="gbol-barcodedna"></div>
+		<div id="page" class="clearfix">
+			<div id="site-header">
+				<div id="logo" tal:attributes="class 'mask' if request.session.get('mask') and len(request.session.get('mask'))&gt;0 else None">
+					<a title="Startseite" rel="home" href="/">
+						<img title="Home" alt="Startpage" src="/static/images/logo.png" typeof="foaf:Image">
+					</a>
+				</div>
+				<div id="meta-header" class="gbol-metanav">
+					<div tal:condition="python: request.session.get('role')" id="currentuser">
+						Angemeldet: ${request.session.vorname} ${request.session.nachname}
+					</div>
+					<div id="metanavigation-header">
+						<ul id="secondary-menu" class="inline secondary-menu">
+							<li class="first">
+								<a title="Pflichtangaben dieser Website." href="/impressum">Impressum</a>
+							</li>
+							<li>
+								<a title="Nehmen Sie Kontakt zu uns auf!" href="/kontakt">Kontakt</a>
+							</li>
+							<li tal:condition="python: not request.session.get('role')" class="last">
+								<a title="" href="/newsletter">Newsletter</a>
+							</li>
+							<li tal:condition="python: request.session.get('role')">
+								<a title="" href="/newsletter">Newsletter</a>
+							</li>
+							<li tal:condition="python: request.session.get('role')" class="last">
+								<a title="" href="/sammeln/logout">Abmelden</a>
+							</li>
+						</ul>
+					</div>
+					<div id="country-header">
+					<form accept-charset="UTF-8" method="post">
+						<input id="german" class="button lang_button" type="submit"  value="" name="btnGerman">
+						<input id="english" class="button lang_button" type="submit" value="" name="btnEnglish">
+					</form>
+					</div>
+				</div>
+				<div id="gbol-header-element">
+					<div id="ghe-container-1">
+						<div class="ghe-1"></div>
+						<div class="ghe-2">
+							<div class="ghe-5"></div>
+							<div class="ghe-4">Deutschlands Fauna und Flora in einer einzigartigen genetischen Bibliothek.</div>
+							<div class="ghe-3"></div>
+						</div>
+					</div>
+					<div id="ghe-container-2">
+						<div id="diashow"></div>
+					</div>
+					<div id="ghe-container-3">
+						<div class="ghe-4">
+							<div id="site-menu" class="ghe-2 site-menu">
+								<ul id="main-menu" class="inline main-menu">
+									<li id="menu-gbol">
+										<a href="/gbol/was-ist-gbol">Das Projekt</a>
+										<ul>
+											<li><a href="/gbol/was-ist-gbol">Was ist GBOL&#063;</a></li>
+											<li><a href="/gbol/vision">Vision</a></li>
+											<li><a href="/gbol/ziele">Ziele des Projekts</a></li>
+											<li><a href="/gbol/anwendungsgebiete">Anwendungsgebiete</a></li>
+										</ul>
+									</li>
+									<li id="menu-barcoding">
+										<a href="/dna-barcoding/warum-dna-barcoding">DNA-Barcoding</a>
+										<ul>
+											<li><a href="/dna-barcoding/warum-dna-barcoding">Warum DNA-Barcoding&#063;</a></li>
+											<li><a href="/dna-barcoding/was-ist-dna-barcoding">Was ist DNA-Barcoding&#063;</a></li>
+										</ul>
+									</li>
+									<li id="menu-team">
+										<a href="/team/gbol-institute">Das Team</a>
+										<ul>
+											<li><a href="/team/gbol-institute">GBOL-Institute</a></li>
+											<li><a href="/team/organisation">Organisation von GBOL</a></li>
+											<li><a href="/team/projekte">GBOL-Projekte</a></li>
+											<li><a href="/team/experten">GBOL-Experten</a></li>
+										</ul>
+									</li>
+									<li id="menu-ergebnisse">
+										<a href="/ergebnisse/ergebnisse">Die Ergebnisse!</a>
+										<ul>
+											<li><a href="/ergebnisse/ergebnisse">Fundkarte und Statistiken</a></li>
+										</ul>
+									</li>
+									<li id="menu-mitmachen">
+										<a href="/mitmachen/wer-kann-mitmachen">Mitmachen!</a>
+										<ul class="pos-right">
+											<li><a href="/mitmachen/wer-kann-mitmachen">Wer kann mitmachen&#063;</a></li>
+											<li><a href="/mitmachen/teilnahmeinfos">Wie kann ich teilnehmen&#063;</a></li>
+											<li><a href="/mitmachen/vorteile">Vorteile einer Teilnahme</a></li>
+											<li><a href="/mitmachen/verantwortung-der-sammler">Verantwortung der Experten</a></li>
+										</ul>
+									</li>
+									<li id="menu-publikationen">
+										<a href="/news/news">News &amp; Publikationen</a>
+										<ul>
+											<li><a href="/news/news">News</a></li>
+											<li><a href="/news/publikationen">Publikationen</a></li>
+										</ul>
+									</li>
+									<li  id="menu-links">
+										<a href="/links">Links</a>
+									</li>
+									<li id="menu-kontakt">
+										<a href="/kontakt">Kontakt</a>
+									</li>
+									<li tal:condition="python: not request.session.get('role')" id="menu-regist">
+										<a href="/sammeln/regist">Registrieren</a>
+									</li>
+									<li tal:condition="python: request.session.get('role')" id="menu-logout" id="menu-logout">
+										<a href="/sammeln/logout">Abmelden</a>
+									</li>
+									<li tal:condition="python: not request.session.get('role')" id="menu-login" class="last">
+										<a href="/sammeln/login">Anmelden</a>
+									</li>
+									<li tal:condition="python: request.session.get('role')" id="menu-login" class="last">
+										<a href="/sammeln/dashboard">Experten-Bereich
+											<span class="circle small-circle"
+												tal:condition="request.session.new_users>0 or request.session.new_expertise>0 or request.session.shipping_requests>0"
+												tal:content="request.session.new_users+request.session.new_expertise+request.session.shipping_requests">0</span>
+										</a>
+									</li>
+								</ul>
+								<div id="main-menu_back"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div metal:define-slot="messages"></div>
+			<div metal:define-slot="body"></div>
+		</div>
+		<div id="footer-push"></div>
+	</div>
+	<div id="footer-wrapper" class="clearfix">
+		<div id="footer">
+			<div id="metanavigation-footer" class="gbol-metanav gbol-metanav-footer">
+				<ul id="secondary-menu-footer" class="inline secondary-menu">
+					<li class="first">
+						<a title="Pflichtangaben dieser Website." href="/impressum">Impressum</a>
+					</li>
+					<li >
+						<a title="Nehmen Sie Kontakt zu uns auf!" href="/kontakt">Kontakt</a>
+					</li>
+					<li class="last">
+						<a title="" href="/newsletter">Newsletter</a>
+					</li>
+				</ul>
+			</div>
+			<div id="copy-footer" class="gbol-metanav-footer">
+				&copy; 2012-2018 German Barcode of Life
+			</div>
+		</div>
+	</div>
+	<metal:js define-slot="js-foot"/>
+	</body>
+</html>
+

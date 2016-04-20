@@ -1,0 +1,11 @@
+<div id="content-menu" class="block menu-li">
+	<ul>
+		<li id="menu-barcoding-1">
+			<a title="Informationen über die Hintergründe der Artidentifzierung." href="/dna-barcoding/warum-dna-barcoding">Warum DNA-Barcoding?</a>
+		</li>
+		<li id="menu-barcoding-2">
+			<a title="Mehr über die Strichcodes für Tiere und Pflanzen." href="/dna-barcoding/was-ist-dna-barcoding">Was ist DNA-Barcoding?</a>
+		</li>
+	</ul>
+</div>
+

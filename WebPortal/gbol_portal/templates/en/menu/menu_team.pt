@@ -1,0 +1,16 @@
+<div id="content-menu" class="block menu-li">
+	<ul>
+		<li id="menu-team-1">
+		<a title="These institutions are involved in the GBOl project." href="/team/gbol-institute">GBOL Institutes</a>
+		</li>
+		<li id="menu-team-2">
+		<a title="Get an overview of the structure of GBOL." href="/team/organisation">Organization of GBOL</a>
+		</li>
+		<li id="menu-team-3">
+		<a title="Our projects and contacts." href="/team/projekte">GBOL Projects</a>
+		</li>
+		<li id="menu-team-4">
+		<a title="List of GBOL experts." href="/team/experten">GBOL Experts</a>
+		</li>
+	</ul>
+</div>

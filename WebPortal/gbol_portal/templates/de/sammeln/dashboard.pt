@@ -1,0 +1,86 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="css-head">
+		<link rel="stylesheet" href="/static/js/jquery-ui/jquery-ui.css" />
+		<style>
+			.ui-autocomplete-loading {
+				background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+			}
+		</style>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+	<div id="dashboard" class="site-content user-area">
+		<h1 id="page-title" class="title">Benutzer-Bereich</h1>
+		<h2>Guten Tag, ${uData}</h2>
+		<p>Sie befinden sich in Ihrem "Benutzer-Bereich". Hier können Sie Ihre Daten und Einstellungen ändern sowie die GBOL-Experten-Tools nutzen.</p>
+		<p>
+			Bitte informieren Sie sich als erstes über die Vorgehensweise beim
+			<a href="/sammeln/sammeln-versenden">Sammeln und Versenden</a>.
+		</p>
+		<div class="dashboard-block left">
+			<h2>Mein GBOL</h2>
+			<ul><li>
+				<a href="/sammeln/userEdit">Persönliche Daten bearbeiten</a></li>
+				<li>
+				<a href="/newsletter">Newsletter-Abonnement verwalten</a></li>
+				<li>
+				<a href="/sammeln/logout">Abmelden</a></li>
+			</ul>
+		</div>
+		<div class="dashboard-block right">
+			<h2>Sammeln und versenden</h2>
+			<ul><li>
+				<a href="/sammeln/versandmaterial-anfordern">Versandmaterial anfordern</a></li>
+				<li>
+				<a href="/sammeln/sammeltabelle-herunterladen">Sammeltabelle herunterladen</a></li>
+				<li>
+				<a href="/sammeln/versandanschreiben">Anschreiben für Probeversand erstellen</a></li>
+			</ul>
+		</div>
+		<div class="dashboard-block left" tal:condition="request.session.role in (1, 2)">
+			<h2>Anzahl neuer Benutzer</h2>
+			<span class="field-content" tal:content="request.session.new_users">0</span>
+			<p tal:condition="request.session.new_users>0">
+				<a class="red" href="/admin/certify-users">Neue Benutzer zertifizieren</a>
+			</p>
+		</div>
+		<div class="dashboard-block right" tal:condition="python: request.session.role in (1, 2)">
+			<h2>Anzahl neuer Expertisen</h2>
+			<span class="field-content" tal:content="request.session.new_expertise">0</span>
+			<p tal:condition="request.session.new_expertise>0">
+				<a class="red" href="/admin/certify-expertise">Neue Expertisen für Benutzer zertifizieren</a>
+			</p>
+		</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+	</div>
+	<metal:js fill-slot="js-foot">
+		<script src="/static/js/jquery-ui/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			setMenu("menu-sammeln-1");
+			$('#MasqUserList').autocomplete({
+				source: function(term, response){
+					try { xhr.abort(); } catch(e){}
+					xhr = $.getJSON('/admin/masq_user_list', { q: term.term }, function(data){
+						response(data); 
+					});
+				},
+				minLength: 1,
+				select: function( event, ui ) {
+					if (ui.item) {
+						$('#MasqUserList').val(ui.item.label);
+						$('#MasqUserList_ID').val(ui.item.value);
+					} else {
+						$('#MasqUserList_ID').val('');
+						$("#masq-user-form").submit(function(e) {
+							e.preventDefault();
+						});
+					}
+					return false;
+				}
+			});
+		</script>
+	</metal:js>
+</html>

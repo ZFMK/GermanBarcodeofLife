@@ -1,0 +1,33 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+	<div id="vorteile" class="site-content">
+		<h1 id="page-title" class="title">Vorteile einer GBOL-Teilnahme</h1>
+		<div class="field-item even" property="content:encoded">
+			<p style="text-align: justify; ">Die aktive Teilnahme am GBOL-Projekt bietet dem Taxon-Experten folgende M&ouml;glichkeiten und Vorteile:</p>
+			<p style="text-align: justify; ">
+			<img class="media-image" width="530" height="223" src="/static/images/ringelnatter.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 223px; position: relative; left: 65px;" alt="">
+			</p>
+			<p style="text-align: justify; "> </p>
+			<ul style="padding-left: 0px;">
+				<li style="text-align: justify; ">Sequenzdaten werden in der kostenlosen BOLD-Datenbank (zusammen mit den Metadaten und &uuml;blicherweise auch Fotos der Exemplare) ver&ouml;ffentlicht und GBOL-Partner k&ouml;nnen die Analysetools von BOLD dann nutzen, um taxonomische Fragen zu l&ouml;sen.</li>
+				<li style="text-align: justify; ">Arten mit interessanter Taxonomie k&ouml;nnen in Absprache mit dem jeweiligen GBOL-Taxon-Koordinator in h&ouml;herer Zahl als den &uuml;blichen 10 Exemplaren gesammelt und sequenziert werden.</li>
+				<li style="text-align: justify; ">M&ouml;glichkeit der Beteiligung und Ko-Autorenschaft bei gemeinsamen Publikationen mit GBOL-Mitgliedern (von GBOL erw&uuml;nscht).</li>
+				<li style="text-align: justify; ">Zuverl&auml;ssige und versierte Artenkenner erhalten eine Experten-Zertifizierung als offizielle GBOL-Partner.</li>
+				<li style="text-align: justify; ">Beim Sammeln sind die Arten- und Naturschutzgesetze zu beachten und Sammelerlaubnisse sind ggf. einzuholen. GBOL unterst&uuml;tzt seine Partner bei der Einholung von Sammlungsgenehmigungen (u.a. auch f&uuml;r verschiedene Schutzgebiete).</li>
+				<li style="text-align: justify; ">Differenzierte Sichtbarkeit der Sammlungsaktivit&auml;t auf der GBOL-Website.</li>
+				<li style="text-align: justify; ">Es werden f&uuml;r die zuk&uuml;nftige Forschung gezielt Belegexemplar-, DNA- und gefrorene Gewebe-Sammlungen der lokalen Fauna und Flora erstellt, in denen die Beitr&auml;ge der Taxon-Experten ersichtlich werden.</li>
+				<li style="text-align: justify; ">Zahlung eines Pauschalbetrages pro verwendbarem und korrekt identifiziertem Belegexemplar.</li>
+			</ul>
+		</div>
+	</div>
+	<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_mitmachen.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-mitmachen-3");
+		</script>
+	</div>
+</html>

@@ -1,0 +1,55 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="js-head">
+		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+	<div id="userManagment" class="site-content admin-area">
+		<h1 id="page-title" class="title">Nutzer Verwaltung</h1>
+		<form action="/sammeln/regist" >
+			<input type="submit" value="Nutzer anlegen" />
+		</form>
+		<br />
+		<br />
+		<div class="panel-content table-content">
+			<table width="100%" id="viewUserData" class="display">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Expertise</th>
+						<th>Rolle</th>
+						<th>Status</th>
+						<th>Erzeugt</th>
+						<th>Erstes Login</th>
+						<th>Letzter Zugriff</th>
+					</tr>
+				</thead>
+				<tbody id="Users">${structure: data}</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+	</div>
+	<script type="text/javascript">
+		$('#viewUserData').DataTable({
+			"order": [[ 0, "asc" ]],
+			"scrollX": true,
+			"columnDefs": [
+				{ "render": function ( data, type, row ) {
+					if (data.length>25) {
+						return data.substring(0,25)+'...';
+					} else {
+						return data;
+					}
+				}, "targets": 2 }
+			]
+		});
+		setMenu("menu-sammeln-11");
+	</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+	</div>
+</html>

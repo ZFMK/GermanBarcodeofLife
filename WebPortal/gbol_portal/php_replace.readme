@@ -1,0 +1,8 @@
+using py-scripts to write excel files. 
+
+needed (configuration) changes:
+
+production.ini: template_collection_sheet = Sammeltabelle_GBOL_2016-02-04.xlsx
+viewsSammler.py line 741: 'XlsFile': trancKey + ".xlsx"
+
+new template in xlsx format, data cells not formated

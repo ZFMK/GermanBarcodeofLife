@@ -1,0 +1,47 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="js-head">
+	<script type="text/javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/js/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="/static/js/ckeditor/adapters/jquery.js"></script>
+	<script type="text/javascript">
+		jQuery('#reset_cke').click(function() {
+			CKEDITOR.instances.InstanceName.setData("${structure: html}");
+		});
+	</script>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+		<div id="publikationen" class="site-content">
+			<h1 id="page-title" class="title">Publications</h1>
+			<div tal:condition="python: request.session.get('role') and 4 in request.session.role" id="editor">
+				<form method="post" >
+				<textarea cols="80" id="editor1" name="content" rows="10">
+					${structure: html}
+				</textarea>
+				<button id="reset_cke">${structure: cancel}</button>
+				<input value=" Send " name="edit${structure: post_id}" type="submit">
+				</form>
+				<script type="text/javascript">
+					$(function(){
+						CKEDITOR.replace( 'content', {
+							filebrowserImageBrowseUrl: '/static/js/ckeditor/filemanager/index.html',
+							removeDialogTabs: 'link:upload;image:upload',
+							language: 'en'
+						}); 
+					});
+				</script>
+				<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+			</div>
+			<br>
+			<div id="PubsArea">${structure: pubcontent}</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_news.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-news-2");
+		</script>
+	</div>
+</html>

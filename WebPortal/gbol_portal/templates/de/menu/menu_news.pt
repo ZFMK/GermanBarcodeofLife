@@ -1,0 +1,10 @@
+<div id="content-menu" class="block menu-li">
+	<ul>
+		<li id="menu-news-1">
+			<a href="/news/news">News</a>
+		</li>
+		<li id="menu-news-2">
+			<a href="/news/publikationen">Publikationen</a>
+		</li>
+	</ul>
+</div>

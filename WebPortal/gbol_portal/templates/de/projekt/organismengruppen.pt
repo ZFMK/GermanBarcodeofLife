@@ -1,0 +1,173 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="organismengruppe" class="site-content">
+			<h1 id="page-title" class="title">Tiere</h1>
+			<div class="field-content">
+				<ul style="padding-left: 0px;">
+					<li>
+					Acoelomorpha (<a class="ext" title="Link zu Wikipedia-Artikel: Acoelomorpha" target="_blank" href="http://de.wikipedia.org/wiki/Acoelomorpha">http://de.wikipedia.org/wiki/Acoelomorpha</a>)
+					</li>
+					<li>
+					Amphibia (<a class="ext" title="Link zu Wikipedia-Artikel: Amphibia" target="_blank" href="http://de.wikipedia.org/wiki/Amphibia">http://de.wikipedia.org/wiki/Amphibien</a>)
+					</li>
+					<li>
+					Annelida (<a class="ext" title="Link zu Wikipedia-Artikel: Annelida" target="_blank" href="http://de.wikipedia.org/wiki/Annelida">http://de.wikipedia.org/wiki/Ringelwürmer</a>)
+					</li>
+					<li>
+					Arachnida (<a class="ext" title="Link zu Wikipedia-Artikel: Arachnida" target="_blank" href="http://de.wikipedia.org/wiki/Arachnida">http://de.wikipedia.org/wiki/Spinnentiere</a>)
+					</li>
+					<li>
+					Archaeognatha (<a class="ext" title="Link zu Wikipedia-Artikel: Archaeognatha" target="_blank" href="http://de.wikipedia.org/wiki/Archaeognatha">http://de.wikipedia.org/wiki/Felsenspringer</a>)
+					</li>
+					<li>
+					Auchenorrhyncha (<a class="ext" title="Link zu Wikipedia-Artikel: Auchenorrhyncha" target="_blank" href="http://de.wikipedia.org/wiki/Auchenorrhyncha">http://de.wikipedia.org/wiki/Zikaden</a>)
+					</li>
+					<li>
+					Aves (<a class="ext" title="Link zu Wikipedia-Artikel: Aves" target="_blank" href="http://de.wikipedia.org/wiki/Aves">http://de.wikipedia.org/wiki/Vögel</a>)
+					</li>
+					<li>
+					Bryozoa (<a class="ext" title="Link zu Wikipedia-Artikel: Bryozoa" target="_blank" href="http://de.wikipedia.org/wiki/Bryozoa">http://de.wikipedia.org/wiki/Moostierchen</a>)
+					</li>
+					<li>
+					Cnidaria (<a class="ext" title="Link zu Wikipedia-Artikel: Cnidaria" target="_blank" href="http://de.wikipedia.org/wiki/Cnidaria">http://de.wikipedia.org/wiki/Nesseltiere</a>)
+					</li>
+					<li>
+					Coleoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Coleoptera" target="_blank" href="http://de.wikipedia.org/wiki/Coleoptera">http://de.wikipedia.org/wiki/Käfer</a>)
+					</li>
+					<li>
+					Collembola (<a class="ext" title="Link zu Wikipedia-Artikel: Collembola" target="_blank" href="http://de.wikipedia.org/wiki/Collembola">http://de.wikipedia.org/wiki/Springschwänze</a>)
+					</li>
+					<li>
+					Crustacea (<a class="ext" title="Link zu Wikipedia-Artikel: Crustacea" target="_blank" href="http://de.wikipedia.org/wiki/Crustacea">http://de.wikipedia.org/wiki/Krebstiere</a>)
+					</li>
+					<li>
+					Dermaptera (<a class="ext" title="Link zu Wikipedia-Artikel: Dermaptera" target="_blank" href="http://de.wikipedia.org/wiki/Dermaptera">http://de.wikipedia.org/wiki/Ohrwürmer</a>)
+					</li>
+					<li>
+					Dictyoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Dictyoptera" target="_blank" href="http://de.wikipedia.org/wiki/Dictyoptera">http://de.wikipedia.org/wiki/Dictyoptera</a>)
+					</li>
+					<li>
+					Diptera (<a class="ext" title="Link zu Wikipedia-Artikel: Diptera" target="_blank" href="http://de.wikipedia.org/wiki/Diptera">http://de.wikipedia.org/wiki/Zweiflügler</a>)
+					</li>
+					<li>
+					Entognatha (<a class="ext" title="Link zu Wikipedia-Artikel: Entognatha" target="_blank" href="http://de.wikipedia.org/wiki/Entognatha">http://de.wikipedia.org/wiki/Sackkiefler</a>)
+					</li>
+					<li>
+					Ephemeroptera (<a class="ext" title="Link zu Wikipedia-Artikel: Ephemeroptera" target="_blank" href="http://de.wikipedia.org/wiki/Ephemeroptera">http://de.wikipedia.org/wiki/Eintagsfliegen</a>)
+					</li>
+					<li>
+					Heteroptera (<a class="ext" title="Link zu Wikipedia-Artikel: Heteroptera" target="_blank" href="http://de.wikipedia.org/wiki/Heteroptera">http://de.wikipedia.org/wiki/Wanzen</a>)
+					</li>
+					<li>
+					Hymenoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Hymenoptera" target="_blank" href="http://de.wikipedia.org/wiki/Hymenoptera">http://de.wikipedia.org/wiki/Hautflügler</a>)
+					</li>
+					<li>
+					Isopoda (<a class="ext" title="Link zu Wikipedia-Artikel: Isopoda" target="_blank" href="http://de.wikipedia.org/wiki/Isopoda">http://de.wikipedia.org/wiki/Asseln</a>)
+					</li>
+					<li>
+					Lepidoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Lepidoptera" target="_blank" href="http://de.wikipedia.org/wiki/Lepidoptera">http://de.wikipedia.org/wiki/Schmetterlinge</a>)
+					</li>
+					<li>
+					Mammalia (<a class="ext" title="Link zu Wikipedia-Artikel: Mammalia" target="_blank" href="http://de.wikipedia.org/wiki/Mammalia">http://de.wikipedia.org/wiki/Säugetiere</a>)
+					</li>
+					<li>
+					Mecoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Mecoptera" target="_blank" href="http://de.wikipedia.org/wiki/Mecoptera">http://de.wikipedia.org/wiki/Schnabelfliegen</a>)
+					</li>
+					<li>
+					Megaloptera (<a class="ext" title="Link zu Wikipedia-Artikel: Megaloptera" target="_blank" href="http://de.wikipedia.org/wiki/Megaloptera">http://de.wikipedia.org/wiki/Großflügler</a>)
+					</li>
+					<li>
+					Mesostigmata (<a class="ext" title="Link zu Wikipedia-Artikel: Mesostigmata" target="_blank" href="http://de.wikipedia.org/wiki/Mesostigmata">http://en.wikipedia.org/wiki/Mesostigmata</a>)
+					</li>
+					<li>
+					Mollusca (<a class="ext" title="Link zu Wikipedia-Artikel: Mollusca" target="_blank" href="http://de.wikipedia.org/wiki/Mollusca">http://de.wikipedia.org/wiki/Weichtiere</a>)
+					</li>
+					<li>
+					Myriapoda (<a class="ext" title="Link zu Wikipedia-Artikel: Myriapoda" target="_blank" href="http://de.wikipedia.org/wiki/Myriapoda">http://de.wikipedia.org/wiki/Tausendfüßer</a>)
+					</li>
+					<li>
+					Nemathelminthes (<a class="ext" title="Link zu Wikipedia-Artikel: Nemathelminthes" target="_blank" href="http://de.wikipedia.org/wiki/Nemathelminthes">http://de.wikipedia.org/wiki/Schlauchwürmer</a>)
+					</li>
+					<li>
+					Nematoda (<a class="ext" title="Link zu Wikipedia-Artikel: Nematoda" target="_blank" href="http://de.wikipedia.org/wiki/Nematoda">http://de.wikipedia.org/wiki/Fadenwürmer</a>)
+					</li>
+					<li>
+					Nemertini (<a class="ext" title="Link zu Wikipedia-Artikel: Nemertini" target="_blank" href="http://de.wikipedia.org/wiki/Nemertini">http://de.wikipedia.org/wiki/Schnurwürmer</a>)
+					</li>
+					<li>
+					Neuroptera (<a class="ext" title="Link zu Wikipedia-Artikel: Neuroptera" target="_blank" href="http://de.wikipedia.org/wiki/Neuroptera">http://de.wikipedia.org/wiki/Netzflügler</a>)
+					</li>
+					<li>
+					Odonata (<a class="ext" title="Link zu Wikipedia-Artikel: Odonata" target="_blank" href="http://de.wikipedia.org/wiki/Odonata">http://de.wikipedia.org/wiki/Libellen</a>)
+					</li>
+					<li>
+					Oribatida (<a class="ext" title="Link zu Wikipedia-Artikel: Oribatida" target="_blank" href="http://de.wikipedia.org/wiki/Oribatida">http://de.wikipedia.org/wiki/Hornmilben</a>)
+					</li>
+					<li>
+					Orthoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Orthoptera" target="_blank" href="http://de.wikipedia.org/wiki/Orthoptera">http://de.wikipedia.org/wiki/Springschrecken</a>)
+					</li>
+					<li>
+					Phthiraptera (<a class="ext" title="Link zu Wikipedia-Artikel: Phthiraptera" target="_blank" href="http://de.wikipedia.org/wiki/Phthiraptera">http://de.wikipedia.org/wiki/Tierläuse</a>)
+					</li>
+					<li>
+					Pisces (<a class="ext" title="Link zu Wikipedia-Artikel: Pisces" target="_blank" href="http://de.wikipedia.org/wiki/Pisces">http://de.wikipedia.org/wiki/Fische</a>)
+					</li>
+					<li>
+					Planipennia (<a class="ext" title="Link zu Wikipedia-Artikel: Planipennia" target="_blank" href="http://de.wikipedia.org/wiki/Planipennia">http://de.wikipedia.org/wiki/Netzflügler</a>)
+					</li>
+					<li>
+					Plathelminthes (<a class="ext" title="Link zu Wikipedia-Artikel: Plathelminthes" target="_blank" href="http://de.wikipedia.org/wiki/Plathelminthes">http://de.wikipedia.org/wiki/Plattwürmer</a>)
+					</li>
+					<li>
+					Plecoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Plecoptera" target="_blank" href="http://de.wikipedia.org/wiki/Plecoptera">http://de.wikipedia.org/wiki/Steinfliegen</a>)
+					</li>
+					<li>
+					Porifera (<a class="ext" title="Link zu Wikipedia-Artikel: Porifera" target="_blank" href="http://de.wikipedia.org/wiki/Porifera">http://de.wikipedia.org/wiki/Schwämme</a>)
+					</li>
+					<li>
+					Pscocoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Pscocoptera" target="_blank" href="http://de.wikipedia.org/wiki/Pscocoptera">http://de.wikipedia.org/wiki/Staubläuse</a>)
+					</li>
+					<li>
+					Raphidioptera (<a class="ext" title="Link zu Wikipedia-Artikel: Raphidioptera" target="_blank" href="http://de.wikipedia.org/wiki/Raphidioptera">http://de.wikipedia.org/wiki/Kamelhalsfliegen</a>)
+					</li>
+					<li>
+					Reptilia (<a class="ext" title="Link zu Wikipedia-Artikel: Reptilia" target="_blank" href="http://de.wikipedia.org/wiki/Reptilia">http://de.wikipedia.org/wiki/Reptilien</a>)
+					</li>
+					<li>
+					Rhynchota (<a class="ext" title="Link zu Wikipedia-Artikel: Rhynchota" target="_blank" href="http://de.wikipedia.org/wiki/Rhynchota">http://de.wikipedia.org/wiki/Schnabelkerfe</a>)
+					</li>
+					<li>
+					Siphonaptera (<a class="ext" title="Link zu Wikipedia-Artikel: Siphonaptera" target="_blank" href="http://de.wikipedia.org/wiki/Siphonaptera">http://de.wikipedia.org/wiki/Flöhe</a>)
+					</li>
+					<li>
+					Strepsiptera (<a class="ext" title="Link zu Wikipedia-Artikel: Strepsiptera" target="_blank" href="http://de.wikipedia.org/wiki/Strepsiptera">http://de.wikipedia.org/wiki/Fächerflügler</a>)
+					</li>
+					<li>
+					Tardigrada (<a class="ext" title="Link zu Wikipedia-Artikel: Tardigrada" target="_blank" href="http://de.wikipedia.org/wiki/Tardigrada">http://de.wikipedia.org/wiki/Bärtierchen</a>)
+					</li>
+					<li>
+					Thysanoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Thysanoptera" target="_blank" href="http://de.wikipedia.org/wiki/Thysanoptera">http://de.wikipedia.org/wiki/Fransenflügler</a>)
+					</li>
+					<li>
+					Trichoptera (<a class="ext" title="Link zu Wikipedia-Artikel: Trichoptera" target="_blank" href="http://de.wikipedia.org/wiki/Trichoptera">http://de.wikipedia.org/wiki/Köcherfliegen</a>)
+					</li>
+					<li>
+					Zoraptera (<a class="ext" title="Link zu Wikipedia-Artikel: Zoraptera" target="_blank" href="http://de.wikipedia.org/wiki/Zoraptera">http://de.wikipedia.org/wiki/Bodenläuse</a>)
+					</li>
+					<li>
+					Zygentoma (<a class="ext" title="Link zu Wikipedia-Artikel: Zygentoma" target="_blank" href="http://de.wikipedia.org/wiki/Zygentoma">http://de.wikipedia.org/wiki/Zygentoma</a>)
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu-projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-5");
+		</script>
+	</div>
+</html>

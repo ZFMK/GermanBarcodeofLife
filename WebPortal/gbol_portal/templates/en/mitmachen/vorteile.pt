@@ -1,0 +1,36 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="vorteile" class="site-content">
+
+	<h1 id="page-title" class="title">Benefits of a GBOL participation</h1>
+	<div class="field-item even" property="content:encoded">
+	<p style="text-align: justify; ">The active participation in GBOL offers the following benefits to taxon experts:</p>
+	<p style="text-align: justify; ">
+	<img class="media-image" width="530" height="223" src="/static/images/ringelnatter.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 223px; position: relative; left: 65px;" alt="">
+	</p>
+	<p style="text-align: justify; "> </p>
+	<ul style="padding-left: 0px;">
+	<li style="text-align: justify; ">Free access to sequences and metadata in the BOLD database. GBOL partners can use the analytical tools of BOLD to solve taxonomic questions.
+</li>
+	<li style="text-align: justify; ">Comprehensive intraspecific sequence coverage (˃ 10 individuals per species) is available on request for species with an interesting taxonomy</li>
+	<li style="text-align: justify; ">Possibility of co-authorship in joint publications with GBOL members.</li>
+	<li style="text-align: justify; ">Reliable and experienced citizen scientists will receive an expert certification as an official GBOL partner.</li>
+	<li style="text-align: justify; ">GBOL partners should follow the species and nature protection laws during fieldwork. GBOL supports their partners in obtaining collection permits.</li>
+	<li style="text-align: justify; ">Visualization of citizen scientist´s contributions on the GBOL-website</li>
+	<li style="text-align: justify; ">Building DNA, voucher and tissue collections of local biodiversity. </li>
+	<li style="text-align: justify; ">Payment of a standard allowance for usefully collected and identified material.</li>
+	</ul>
+	</div>
+
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_mitmachen.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+	</div>
+	<script type="text/javascript">
+	    setMenu("menu-mitmachen-3");
+	</script>
+    </div>
+</html>

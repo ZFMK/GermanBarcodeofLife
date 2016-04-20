@@ -1,0 +1,29 @@
+<html>
+    <div id="mitmachen-block" class="token menu-li">
+        <h2 class="pane-title">Get Involved...</h2>
+        <ul class="mitmachenblock">
+	    <li class="first button-highlight">
+	        <a title="All functions for the experts!" href="/sammeln/dashboard">
+		    <strong>Expert-Area!</strong>
+		    Your settings and activities...
+	        </a>
+	    </li>
+        </ul>
+        <ul class="mitmachenblock">
+	    <li>
+	        <a title="You will go to the home screen after the logout!" href="/sammeln/logout">
+		    <strong>Logout!</strong>
+		    Please logout if you are done...
+	        </a>
+	    </li>
+       </ul>
+       <ul class="mitmachenblock">
+	    <li class="last">
+	        <a title="Subscribe to our newsletter!" href="/newsletter">
+		    <strong>Newsletter</strong>
+		    Stay up to date!
+	        </a>
+	    </li>
+        </ul>
+    </div>
+</html>

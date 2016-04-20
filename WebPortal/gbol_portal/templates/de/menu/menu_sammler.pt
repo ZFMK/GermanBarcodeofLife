@@ -1,0 +1,67 @@
+<div class="menu-red menu-li">
+	<h2 class="pane-title">F&uuml;r Taxon-Experten</h2>
+	<ul>
+		<li id="menu-sammeln-1">
+			<a title="" href="/sammeln/dashboard">Start</a>
+		</li>
+		<li id="menu-sammeln-2">
+			<a title="" href="/sammeln/userEdit">Pers&ouml;nliche Daten bearbeiten</a>
+		</li>
+		<li id="menu-sammeln-3">
+			<a title="" href="/sammeln/sammeln-versenden">Sammeln und versenden</a>
+		</li>
+		<li id="menu-sammeln-4">
+			<a title="" href="/sammeln/versandmaterial-anfordern">Versandmaterial anfordern</a>
+		</li>
+		<li id="menu-sammeln-5">
+			<a title="" href="/sammeln/sammeltabelle-herunterladen">Sammeltabelle herunterladen</a>
+		</li>
+		<li id="menu-sammeln-6">
+			<a title="" href="/sammeln/versandanschreiben">Sammeltabelle hochladen</a>
+		</li>
+		<li id="menu-sammeln-7">
+			<a title="" href="/sammeln/versandanschreiben-anzeigen">Versandanschreiben</a>
+		</li>
+		<li>
+			<a href="/sammeln/logout">Abmelden</a>
+		</li>
+	</ul>
+</div>
+<div class="menu-black menu-li" tal:condition="python:1 in request.session.role or 2 in request.session.role or 4 in request.session.role">
+	<h2 class="pane-title">Administrator</h2>
+	<ul>
+		<li id="menu-sammeln-9" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+			<a href="/admin/certify-users">
+				Nutzer zertifizieren
+				<span class="circle" tal:condition="python:request.session.new_users>0" tal:content="request.session.new_users">0</span>
+			</a>
+		</li>
+		<li id="menu-admin-2" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+			<a href="/admin/certify-expertise">Expertise zertifizieren
+				<span class="circle" tal:condition="python:request.session.new_expertise>0" tal:content="request.session.new_expertise">0</span>
+			</a>
+		</li>
+		<li id="menu-sammeln-12" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+			<a href="/admin/sammeltabellen">Hochgeladene Sammeltabellen
+				<span class="circle" tal:condition="python:request.session.shipping_requests>0" tal:content="request.session.shipping_requests">0</span>
+			</a>
+		</li>
+		<li id="menu-sammeln-12" tal:condition="python:4 in request.session.role">
+			<a href="/news/news">News</a>
+		</li>
+		<li id="menu-sammeln-12" tal:condition="python:4 in request.session.role">
+			<a href="/news/publikationen">Publikationen</a>
+		</li>
+		<li id="menu-sammeln-11" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+			<a href="/admin/user-management">Nutzerverwaltung</a>
+		</li>
+	</ul>
+</div>
+<div class="menu-black menu-li autosuggest-frame" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+	<h2 class="pane-title">Maskieren</h2>
+	<form id="masq-user-form" accept-charset="UTF-8" method="post" action="/admin/masq_user" enctype="multipart/form-data">
+	<input type="text" name="masq_uid_label" id="MasqUserList" class="small" /><br />
+	<input type="hidden" name="masq_uid" id="MasqUserList_ID" />
+	<input id="MasqUserSubmit" class="button-red" value=" maskiere " name="masq" type="submit" /><br />
+	</form>
+</div>

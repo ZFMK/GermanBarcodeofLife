@@ -1,0 +1,39 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="organisation" class="site-content">
+			<h1 id="page-title" class="title">Organisation von GBOL</h1>
+			<div class="field-item even" property="content:encoded">
+				<p style="margin-left: -20px;">
+					<img id="dit07_organigramm_0_2" class="fullwidth media-image attr__typeof__foaf:Image img__fid__40 img__view_mode__media_original" width="700" border="0" height="600" usemap="#GBOL_Organization" typeof="foaf:Image" src="/static/images/organigramm_04032016.jpg" name="dit07_organigramm_0_2" title="Organisation von GBOL" alt="Organigramm des GBOL-Projekts">
+					<map name="GBOL_Organization"> <!-- #$VERSION: 16062014 --> <!-- #$AUTHOR: Team GBOL 1 -->
+						<area shape="rect" coords="245,10,445,73" alt="GBOL Sprecher kontaktieren" href="mailto:w.waegele@zfmk.de" />
+						<area shape="rect" coords="245,74,445,132" alt="Vertretung des GBOL Sprechers kontaktieren" href="mailto:haszi@zsm.mwn.de" />
+						<area shape="rect" coords="228,156,465,213" alt="Zentrale Projektkoordination kontaktieren" href="mailto:info@bol-germany.de" />
+						<area shape="rect" coords="72,313,248,354" alt="GBOL 1: Fauna in NW-Deutschland" href="/team/projekte#GBOL1" />
+						<area shape="rect" coords="266,313,444,354" alt="GBOL 2: Fauna in SO-Deutschland" href="/team/projekte#GBOL2" />
+						<area shape="rect" coords="459,313,636,354" alt="GBOL 3: Fauna und Fungi in SW-Deutschland" href="/team/projekte#GBOL3" />
+						<area shape="rect" coords="78,371,236,412" alt="GBOL 4: Bodenfauna in Deutschland" href="/team/projekte#GBOL4" />
+						<area shape="rect" coords="255,371,430,412" alt="GBOL 5: Botanik" href="/team/projekte#GBOL5" />
+						<area shape="rect" coords="452,371,613,413" alt="Best&auml;uber" href="mailto:a.hamm@uni-bonn.de" />
+						<area shape="rect" coords="44,429,294,470" alt="Funga" href="mailto:dominik.begerow@rub.de" />
+						<area shape="rect" coords="309,429,517,470" alt="Pollen" href="mailto:birgit.gemeinholzer@bot1.bio.uni-giessen.de" />
+						<area shape="rect" coords="532,429,661,470" alt="Diatomeen" href="mailto:r.jahn@bgbm.org" />
+						<area shape="rect" coords="53,528,182,567" alt="Marine Organismen DZMB" href="http://www.senckenberg.de/root/index.php?page_id=2159" target="_blank" />
+						<area shape="rect" coords="198,528,421,567" alt="Subterrane Fauna" href="http://www.höhlentiere.de/" target="_blank" />
+						<area shape="rect" coords="439,528,558,567" alt="EU COST action" href="http://www.cost.eu/COST_Actions/ca/CA15219" target="_blank" />
+						<area shape="rect" coords="580,528,639,567" alt="FREDIE" href="http://www.fredie.eu" target="_blank" />
+					</map>
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_team.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-team-2");
+		</script>
+	</div>
+</html>

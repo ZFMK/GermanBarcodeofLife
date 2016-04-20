@@ -1,0 +1,659 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="projekte" class="site-content">
+			<h1 id="page-title" class="title">GBOL-Projekte</h1>
+			<div class="field-item even" property="content:encoded">
+				<ul>
+					<li><a href="#GBOL1">GBOL 1: Fauna in NW-Deutschland (ZFMK)</a></li>
+					<li><a href="#GBOL2">GBOL 2: Fauna in SO-Deutschland (ZSM)</a></li>
+					<li><a href="#GBOL3">GBOL 3: Fauna in SW-Deutschland (SMNS)</a></li>
+					<li><a href="#GBOL4">GBOL 4: Bodenfauna in Deutschland (SMNG, Uni Bielefeld)</a></li>
+					<li><a href="#GBOL5">GBOL 5: Flora und Anwendungsstudie &quot;Verifikation und Artbestimmung von Saatgut und Baumschulware&quot; (Nees, BGBM, SMNS, AvHI, IEB, BSM)</a></li>
+					<li><a href="#BGBM">Erfassung von Diatomeen sowie Massensequenzierung von Umweltproben (BGBM)</a></li>
+					<li><a href="#INRES">DNA Barcoding im Kontext der Best&auml;ubung in der Landwirtschaft (INRES, Uni Giessen, ZFMK)</a></li>
+					<li><a href="#RUB">Pilzliche Pathogene und Nekrosen verursachende Pilze in Obstplantagen (RUB, HZI, SMNG, SMNK, SMNS, TI, Uni Bayreuth)</a></li>
+					<li><a href="#SMNS">Eiparasitoide der Gattung Trichogramma f&uuml;r die biologische Sch&auml;dlingsbek&auml;mpfung (SMNS, ZFMK)</a></li>
+					<li><a href="#UNID">DNA-Metabarcoding zur Bewertung des Zustands von Flie&szlig;gew&auml;ssern (Uni Duisburg-Essen, ZFMK)</a></li>
+					<li><a href="#ZSM">Entwicklung einer NGS-gest&uuml;tzten Monitoring Strategie am Beispiel invasiver Arten im NP Bayerischer Wald (ZSM)</a></li>
+					<li><a href="#NGS">NGS-gest&uuml;tztes Biomonitoring im NP Eifel via Metabarcoding von Bodenproben und Insektenfallen (ZFMK)</a></li>
+					<li><a href="#FORE">DNA-Referenz-Katalogerstellung f&uuml;r wichtige Organismen in Forensik, Lebensmittelkontrolle und Getr&auml;nkeherstellung (ZFMK, ZSM)</a></li>
+					<li><a href="#MarOrg">Marine Organismen Deutschlands (Senckenberg am Meer) (assoziiert)</a></li>
+					<li><a href="#SubterrFauna">Subterrane Fauna (Universit&auml;t Duisburg-Essen) (assoziiert)</a></li>
+					<li><a href="#BiodivFliess">Flie&szlig;gew&auml;sser Biodiversit&auml;t (Universit&auml;t Duisburg-Essen) (assoziiert)</a></li>
+				</ul><hr>
+
+				<h2>
+					<a name="GBOL1">GBOL 1</a>: Fauna in NW-Deutschland (
+					<a class="ext" title="Link zu www.zfmk.de" href="http://www.zfmk.de" target="_blank">ZFMK</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/collage_gbol1.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Prof. Dr. J. Wolfgang W&auml;gele:
+					<a class="mailto" href="mailto:w.waegele@zfmk.de">w.waegele@zfmk.de</a>,<br>Vertretung: Dr. Jonas Astrin:
+					<a class="mailto" href="mailto:j.astrin@zfmk.de">j.astrin@zfmk.de</a>,<br>Taxonomischer Koordinator: Bj&ouml;rn Rulik:
+					<a class="mailto" href="mailto:B.Rulik@zfmk.de">B.Rulik@zfmk.de</a>
+				</p>
+				<ul>
+					<li>
+						<em>Coleoptera:</em>
+						<ul>
+							<li>
+								Dr. Dirk Ahrens:
+								<a class="mailto" href="mailto:d.ahrens@zfmk.de">d.ahrens@zfmk.de</a>
+							</li>
+							<li>
+								Dr. Jonas Astrin:
+								<a class="mailto" href="mailto:j.astrin@zfmk.de">j.astrin@zfmk.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Andere Invertebraten (Arachnida, Myriapoda, Crustacea, Hemiptera, Mecoptera, Phthiraptera, Psocoptera, Siphonaptera, Strepsiptera, Thysanoptera, Tardigrada, Neuropteroidea):</em>
+						<ul>
+							<li>
+								Bj&ouml;rn Rulik:
+								<a class="mailto" href="mailto:B.Rulik@zfmk.de">B.Rulik@zfmk.de</a>
+							</li>
+							<li>
+								Dr. Jonas Astrin:
+								<a class="mailto" href="mailto:j.astrin@zfmk.de">j.astrin@zfmk.de</a>
+							</li>
+							<li>
+								Prof. Dr. Bernhard Misof:
+								<a class="mailto" href="mailto:b.misof@zfmk.de">b.misof@zfmk.de</a>
+							</li>
+							<li>
+								Dr. Thomas Wesener:
+								<a class="mailto" href="mailto:twesener@uni-bonn.de">twesener@uni-bonn.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Diptera:</em>
+						<ul>
+							<li>
+								Bj&ouml;rn Rulik:
+								<a class="mailto" href="mailto:B.Rulik@zfmk.de">B.Rulik@zfmk.de</a>
+							</li>
+							<li>
+								Dr. Ximo Mengual:
+								<a class="mailto" href="mailto:X.Mengual@zfmk.de">X.Mengual@zfmk.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Heteroptera:</em>
+						<ul>
+							<li>
+								Dr. Carsten Morkel:
+								<a class="mailto" href="mailto:cmorkel@angewandte-entomologie.de">cmorkel@angewandte-entomologie.de</a>
+							</li>
+							<li>
+								Bj&ouml;rn Rulik:
+								<a class="mailto" href="mailto:B.Rulik@zfmk.de">B.Rulik@zfmk.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Vertebrata:</em>
+						<ul>
+							<li>
+								<em>Mammalia:</em>
+								Dr. Jan Decher:
+								<a class="mailto" href="mailto:j.decher@zfmk.de">j.decher@zfmk.de</a>
+							</li>
+							<li>
+								<em>Aves:</em>
+								Dr. Till T&ouml;pfer:
+								<a class="mailto" href="mailto:t.toepfer@zfmk.de">t.toepfer@zfmk.de</a>
+							</li>
+							<li>
+								<em>Reptilia & Amphibia:</em>
+								Dr. Dennis R&ouml;dder:
+								<a class="mailto" href="mailto:d.roedder@zfmk.de">d.roedder@zfmk.de</a>
+							</li>
+							<li>
+								<em>Pisces:</em>
+									Dr. Fabian Herder:
+									<a class="mailto" href="mailto:f.herder@zfmk.de">f.herder@zfmk.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>DNA Barcode Praxistests:</em>
+						<ul>
+							<li>
+								<em>Monitoring S&uuml;sswasserfauna:</em>
+								<ul>
+									<li>
+										Dr. Fabian Herder:
+										<a class="mailto" href="mailto:f.herder@zfmk.de">f.herder@zfmk.de</a>
+									</li>
+									<li>
+										Dr. Jonas Astrin:
+										<a class="mailto" href="mailto:j.astrin@zfmk.de">j.astrin@zfmk.de</a>
+									</li>
+									<li>
+										Ivar Steinmann:
+										<a class="mailto" href="mailto:fischereibiologie@t-online.de">fischereibiologie@t-online.de</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<em>Massensequenzierung von Umweltproben:</em>
+								<ul>
+									<li>
+										Dr. Vera Fonseca:
+										<a class="mailto" href="mailto:v.fonseca@zfmk.de">v.fonseca@zfmk.de</a>
+									</li>
+									<li>
+										Dr. Jonas Astrin:
+										<a class="mailto" href="mailto:j.astrin@zfmk.de">j.astrin@zfmk.de</a>
+									</li>
+									<li>
+										Prof. Dr. Bernhard Misof:
+										<a class="mailto" href="mailto:b.misof@zfmk.de">b.misof@zfmk.de</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="GBOL2">GBOL 2</a>: Fauna in SO-Deutschland (
+					<a class="ext" title="Link zu www.zsm.mwn.de" href="http://www.zsm.mwn.de" target="_blank">ZSM</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/collage_gbol2.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Prof. Dr. G. Haszprunar (ZSM):
+					<a class="mailto" href="mailto:haszi@zsm.mwn.de">haszi@zsm.mwn.de</a>,<br>Vertretung: Dr. Axel Hausmann:
+					<a class="mailto" href="mailto:Axel.Hausmann@zsm.mwn.de">Axel.Hausmann@zsm.mwn.de</a>,<br>Taxonomischer Koordinator: Jerome Moriniere:
+					<a class="mailto" href="mailto:moriniere@zsm.mwn.de">moriniere@zsm.mwn.de</a>
+				</p>
+				<ul>
+					<li>
+						<em>Coleoptera:</em>
+						<ul>
+							<li>
+								Dr. Michael Balke:
+								<a class="mailto" href="mailto:Coleoptera-ZSM@zsm.mwn.de">Coleoptera-ZSM@zsm.mwn.de</a>
+							</li>
+							<li>
+								Dr. Lars Hendrich:
+								<a class="mailto" href="mailto:hendrich@zsm.mwn.de">hendrich@zsm.mwn.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Macrolepidoptera:</em>
+						<ul>
+							<li>
+								Dr. Axel Hausmann:
+								<a class="mailto" href="mailto:Axel.Hausmann@zsm.mwn.de">Axel.Hausmann@zsm.mwn.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Microlepidoptera:</em>
+						<ul>
+							<li>
+								Dr. Andreas H. Segerer:
+								<a class="mailto" href="mailto:Andreas.Segerer@zsm.mwn.de">Andreas.Segerer@zsm.mwn.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Hymenoptera:</em>
+						<ul>
+							<li>
+								Dr. Stefan Schmidt:
+								<a class="mailto" href="mailto:Hymenoptera@zsm.mwn.de">Hymenoptera@zsm.mwn.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Andere Insektengruppen (Ephemeroptera, Plecoptera, Trichoptera, Odonata, Orthoptera, Myriapoda):</em>
+						<ul>
+							<li>
+								Jerome Moriniere:
+								<a class="mailto" href="mailto:moriniere@zsm.mwn.de">moriniere@zsm.mwn.de</a>
+							</li>
+							<li>
+								Dr. Lars Hendrich:
+								<a class="mailto" href="mailto:hendrich@zsm.mwn.de">hendrich@zsm.mwn.de</a>
+							</li>
+							<li>
+								Prof. Dr. G. Haszprunar (ZSM):
+								<a class="mailto" href="mailto:haszi@zsm.mwn.de">haszi@zsm.mwn.de</a>
+							</li>
+							<li>
+								Prof. Dr. Roland Melzer:
+								<a class="mailto" href="mailto:melzer@zsm.mwn.de">melzer@zsm.mwn.de</a>
+							</li>
+							<li>
+								Prof. Dr. Klaus Sch&ouml;nitzer:
+								<a class="mailto" href="mailto:Schoenitzer@zsm.mwn.de">Schoenitzer@zsm.mwn.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>DNA Barcoding Praxistests (Sch&auml;dlingsmonitoring im Wald, Erfassung von Quellenfauna und Parasitenmonitoring bei Nutztieren):</em>
+						<ul>
+							<li>
+								Jerome Moriniere:
+								<a class="mailto" href="mailto:moriniere@zsm.mwn.de">moriniere@zsm.mwn.de</a>
+							</li>
+							<li>
+								Dr. Lars Hendrich:
+								<a class="mailto" href="mailto:hendrich@zsm.mwn.de">hendrich@zsm.mwn.de</a>
+							</li>
+							<li>
+								Dr. Axel Hausmann:
+								<a class="mailto" href="mailto:Axel.Hausmann@zsm.mwn.de">Axel.Hausmann@zsm.mwn.de</a>
+							</li>
+							<li>
+								Dr. Stefan Schmidt:
+								<a class="mailto" href="mailto:Hymenoptera@zsm.mwn.de">Hymenoptera@zsm.mwn.de</a>
+							</li>
+							<li>
+								Dr. Michael Balke:
+								<a class="mailto" href="mailto:Coleoptera-ZSM@zsm.mwn.de">Coleoptera-ZSM@zsm.mwn.de</a>
+							</li>
+							<li>
+								Prof. Dr. G. Haszprunar (ZSM):
+								<a class="mailto" href="mailto:haszi@zsm.mwn.de">haszi@zsm.mwn.de</a>
+							</li>
+							<li>
+								Dr. J&ouml;rg M&uuml;ller:
+								<a class="mailto" href="mailto:joerg.mueller@npv-bw.bayern.de">joerg.mueller@npv-bw.bayern.de</a>
+							</li>
+						</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="GBOL3">GBOL 3</a>: Fauna in SW-Deutschland (
+					<a class="ext" title="Link zu www.naturkundemuseum-bw.de" href="http://www.naturkundemuseum-bw.de" target="_blank">SMNS</a>,
+					<a class="ext" title="Link zu www.smnk.de" href="http://www.smnk.de" target="_blank">SMNK</a>,
+					<a class="ext" href="http://www.jki.bund.de/" target="_blank">JKI</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/collage_gbol3.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Dr. Lars Krogmann (SMNS):
+					<a class="mailto" href="mailto:lars.krogmann@smns-bw.de">lars.krogmann@smns-bw.de</a>,<br>Vertretung: Prof. Dr. J. Eder (SMNS):
+					<a class="mailto" href="mailto:Johanna.eder@smns-bw.de">Johanna.eder@smns-bw.de</a>,<br>Taxonomischer Koordinator (Arachnida u. parasitoide Hymenoptera): Dr. Juan Carlos Monje (SMNS):
+					<a class="mailto" href="mailto: carlos.monje@smns-bw.de"> carlos.monje@smns-bw.de</a>
+				</p>
+				<ul>
+					<li>
+						<em>Arachnida (excl. Acari):</em>
+						<ul>
+							<li>
+								Dr. Joachim Holstein (SMNS):
+								<a class="mailto" href="mailto:holstein.smns@naturkundemuseum-bw.de">holstein.smns@naturkundemuseum-bw.de</a>
+							</li>
+							<li>
+								Dr. Hubert H&ouml;fer (SMNK):
+								<a class="mailto" href="mailto:hubert.hoefer@smnk.de">hubert.hoefer@smnk.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Parasitoide Hymenoptera (Chalcidoidea):</em>
+						<ul>
+							<li>
+								Dr. Lars Krogmann (SMNS):
+								<a class="mailto" href="mailto:lars.krogmann@smns-bw.de">lars.krogmann@smns-bw.de</a>
+							</li>
+						</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="GBOL4">GBOL 4</a>: Bodenfauna in Deutschland (
+					<a class="ext" title="Link zu www.naturkundemuseum-goerlitz.de" href="http://www.naturkundemuseum-goerlitz.de" target="_blank">SMNG</a>,
+					<a class="ext" href="http://www.uni-bielefeld.de/biologie/Zoooekologie/mitarbeiter/wtraunspurger.html" target="_blank">Uni Bielefeld</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/collage_gbol4.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Prof. Dr. Willi Xylander (SNMG):
+					<a class="mailto" href="mailto:willi.xylander@senckenberg.de">willi.xylander@senckenberg.de</a>,<br>Vertretung und Taxonomische Koordinatorin: Dr. Karin Hohberg (SMNG):
+					<a class="mailto" href="mailto:karin.hohberg@senckenberg.de">karin.hohberg@senckenberg.de</a>
+				</p>
+				<ul>
+					<li>
+						<em>Collembola:</em>
+						<ul>
+							<li>
+								Dr. Ulrich Burkhardt (SMNG):
+								<a class="mailto" href="mailto:ulrich.burkhardt@senckenberg.de">ulrich.burkhardt@senckenberg.de</a>
+							</li>
+							<li>
+								Dr. Hans-J&uuml;rgen Schulz (SMNG):
+								<a class="mailto" href="mailto:juergen.schulz@senckenberg.de">juergen.schulz@senckenberg.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Nematoda:</em>
+						<ul>
+							<li>
+								Dr. Karin Hohberg (SMNG):
+								<a class="mailto" href="mailto:karin.hohberg@senckenberg.de">karin.hohberg@senckenberg.de</a>
+							</li>
+							<li>
+								<em>S&uuml;&szlig;wasser Nematoden:</em><br>
+								Prof. Dr. Walter Traunspurger (Uni Bielefeld):
+								<a class="mailto" href="mailto:traunspurger@uni-bielefeld.de">traunspurger@uni-bielefeld.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Acari (Mesostigmata and Oribatida):</em>
+						<ul>
+							<li>
+								Dr. Axel Christian (SMNG):
+								<a class="mailto" href="mailto:axel.christian@senckenberg.de">axel.christian@senckenberg.de</a>
+							</li>
+							<li>
+								Ricarda Lehmitz (SMNG):
+								<a class="mailto" href="mailto:Ricarda.Lehmitz@senckenberg.de">Ricarda.Lehmitz@senckenberg.de</a>
+							</li>
+						</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="GBOL5">GBOL 5</a>: Flora und Anwendungsstudie &quot;Verifikation und Artbestimmung von Saatgut und Baumschulware&quot; (
+					<a class="ext" href="http://www.nees.uni-bonn.de/" target="_blank">Nees</a>,
+					<a class="ext" href="http://www.bgbm.org/default.htm" target="_blank">BGBM</a>,
+					<a class="ext" href="http://www.naturkundemuseum-bw.de/" target="_blank">SMNS</a>,
+					<a class="ext" href="http://ieb.uni-muenster.de/plantsevol" target="_blank">IEB</a>,
+					<a class="ext" href="http://www.botanischestaatssammlung.de/" target="_blank">BSM</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/collage_gbol5.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Prof. Dr. Dietmar Quandt (Nees):
+					<a class="mailto" href="mailto:quandt@uni-bonn.de">quandt@uni-bonn.de</a>,<br>Vertretung: Prof. Dr. Thomas Borsch (BGBM, Freie Universit&auml;t Berlin):
+					<a class="mailto" href="mailto:direktor@bgbm.org">direktor@bgbm.org</a>,<br>Taxonomischer Koordinator (Spermatophytina): Dr. Ralf Hand:
+					<a class="mailto" href="mailto:r.hand@bgbm.org">r.hand@bgbm.org</a>,<br>Taxonomischer Koordinator (Marchantiophytina, Bryophytina, Anthocerotophytina, Lycophytina und Monilophytina): Dr. Martin Nebel:
+					<a class="mailto" href="mailto:martin.nebel@smns-bw.de">martin.nebel@smns-bw.de</a>,<br>Taxonomischer Koordinator (Lichenes): Dr. Andreas Beck:
+					<a class="mailto" href="mailto:beck@bsm.mwn.de">beck@bsm.mwn.de</a>
+				</p>
+				<ul>
+					<li>
+						<em>Spermatophytina:</em>
+						<ul>
+							<li>
+								Prof. Dr. Thomas Borsch (BGBM, Freie Universit&auml;t Berlin):
+								<a class="mailto" href="mailto:direktor@bgbm.org">direktor@bgbm.org</a>
+							</li>
+							<li>
+								Dr. Ralf Hand (BGBM, Freie Universit&auml;t Berlin):
+								<a class="mailto" href="mailto:r.hand@bgbm.org">r.hand@bgbm.org</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Marchantiophytina, Bryophytina, Anthocerotophytina, Lycophytina und Monilophytina:</em>
+						<ul>
+							<li>
+								Dr. Martin Nebel (SMNS):
+								<a class="mailto" href="mailto:martin.nebel@smns-bw.de">martin.nebel@smns-bw.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>Lichenes:</em>
+						<ul>
+							<li>
+								Dr. Andreas Beck (BSM) (assoziiert):
+								<a class="mailto" href="mailto:beck@bsm.mwn.de">beck@bsm.mwn.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>DNA Barcoding Analysen:</em>
+						<ul>
+							<li>
+								Prof. Dr. Kai M&uuml;ller (IEB):
+								<a class="mailto" href="mailto:kaimueller@uni-muenster.de">kaimueller@uni-muenster.de</a>
+							</li>
+							<li>
+								Prof. Dr. Dietmar Quandt (Nees):
+								<a class="mailto" href="mailto:quandt@uni-bonn.de">quandt@uni-bonn.de</a>
+							</li>
+						</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="BGBM">Erfassung von Diatomeen sowie Massensequenzierung von Umweltproben als zuk&uuml;nftige Technik für die Identifikation von Diatomeen im Kontext der Gew&auml;sserg&uuml;tebestimmung</a> (
+					<a class="ext" href="https://www.bgbm.org/de/wissenschaft-diatomeen" target="_blank">BGBM</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/diatoms-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Dr. Regine Jahn (BGBM, Freie Universit&auml;t Berlin - Zentraleinrichtung Botanischer Garten und Botanisches Museum Berlin-Dahlem):
+					<a class="mailto" href="mailto:r.jahn@bgbm.org">r.jahn@bgbm.org</a>,<br>Vertretung: Dr. Jonas Zimmermann:
+					<a class="mailto" href="mailto:j.zimmermann@bgbm.org">j.zimmermann@bgbm.org</a><br><br>
+					Mitarbeiter:<br>
+					Juliane Bettig (TA)<br>
+					Dr. Nelida Abarca (Wiss)<br>
+					Dr. Oliver Skibbe (Wiss)<br>
+					Katja Luther (Wiss)<br>
+					Ahn Van (SHK)<br>
+					Dr. Jonas Zimmermann (Wiss)
+				</p><hr>
+
+				<h2>
+					<a name="INRES">DNA Barcoding im Kontext der Best&auml;ubung in der Landwirtschaft</a> (
+					<a class="ext" href="https://www.apoek.uni-bonn.de/" target="_blank">INRES</a>,
+					<a class="ext" href="http://www.uni-giessen.de/index.html" target="_blank">JLU</a>, ZFMK)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/pollination-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<ul>
+					<li>
+						<em>Entwicklung von Standards für die DNA-basierte Pollenidentifikation:</em>
+						<ul>
+							<li>
+								Sprecher: PD Dr. Birgit Gemeinholzer (JLU, Justus Liebig Universität Giessen):
+								<a class="mailto" href="mailto:birgit.gemeinholzer@bot1.bio.unigiessen">birgit.gemeinholzer@bot1.bio.unigiessen</a>;<br>Doktorandin Stephanie Swenson-Friedrich:
+								<a class="mailto" href="mailto:Stephanie.Swenson-Friedrich@bot1.bio.uni-giessen.de">Stephanie.Swenson-Friedrich@bot1.bio.uni-giessen.de</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<em>DNA Barcoding im Kontext der Best&auml;ubung in der Landwirtschaft: Daten und Ma&szlig;nahmen zur Ertragssteigerung und zur Erhaltung der biologischen Vielfalt:</em>
+						<ul>
+							<li>
+								Sprecher: Dr. Andre&eacute; Hamm (INRES, Rheinische Friedrich-Wilhelms-Universit&auml;t Bonn - Landwirtschaftliche Fakult&auml;t - Institut f&uuml;r Nutzpflanzenwissenschaften und Ressourcenschutz - Agrar- und Produktions&ouml;kologie):
+								<a class="mailto" href="mailto:a.hamm@uni-bonn.de">a.hamm@uni-bonn.de</a>;<br>Doktorandin Dipl.-Ing.agr. Nina Schwarz:
+								<a class="mailto" href="mailto:nschwarz@uni-bonn.de">nschwarz@uni-bonn.de</a>
+							</li>
+						</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="RUB">Pilzliche Pathogene und Nekrosen verursachende Pilze in Obstplantagen</a> (
+					<a class="ext" href="http://www.ruhr-uni-bochum.de/geobot/" target="_blank">RUB</a>,
+					<a class="ext" href="http://www.helmholtz-hzi.de/de/forschung/forschungsschwerpunkte/neue_wirkstoffe_gegen_infektionen/mikrobielle_wirkstoffe/unsere_forschung/" target="_blank">HZI</a>,
+					<a class="ext" href="http://www.senckenberg.de/root/index.php?page_id=5254&preview=true" target="_blank">SMNG</a>,
+					<a class="ext" href="http://www.smnk.de/museum/wir-ueber-uns/" target="_blank">SMNK</a>,
+					<a class="ext" href="http://www.naturkundemuseum-bw.de/forschung/botanik/mitarbeiter" target="_blank">SMNS</a>,
+					<a class="ext" href="https://www.ti.bund.de/de/fg/" target="_blank">TI</a>,
+					<a class="ext" href=" http://www.mycology.uni-bayreuth.de/mycology/de/forschung/proj/forschung.php" target="_blank">Uni Bayreuth</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/fungi-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Prof. Dr. Dominik Begerow (RUB, Ruhr-Universit&auml;t Bochum):
+					<a class="mailto" href="mailto:dominik.begerow@rub.de">dominik.begerow@rub.de</a>,<br>Vertretung: Julia Steffen (RUB):
+					<a class="mailto" href="mailto:julia.steffen@rub.de">julia.steffen@rub.de</a>,<br>Taxonomischer Koordinator: Dr. Martin Kemler (RUB):
+					<a class="mailto" href="mailto:Martin.kemler@rub.de">Martin.kemler@rub.de</a>
+				</p>
+				<ul>
+					<li>
+					<em>Taxonomische Koordinatoren & Entwicklung EcoChip:</em>
+					<ul>
+						<li>Dr. Ben Bubner: <a class="mailto" href="mailto:ben.bubner@ti.bund.de">ben.bubner@ti.bund.de</a></li>
+						<li>Dr. Ulrike Damm: <a class="mailto" href="mailto:ulrike.damm@senckenberg.de">ulrike.damm@senckenberg.de</a></li>
+						<li>Dr. Ursula Eberhardt: <a class="mailto" href="mailto:ursula.eberhardt@smns-bw.de">ursula.eberhardt@smns-bw.de</a></li>
+						<li>Prof. Dr. Gerhard Rambold: <a class="mailto" href="mailto:gerhard.rambold@uni-bayreuth.de">gerhard.rambold@uni-bayreuth.de</a></li>
+						<li>Dr. Markus Scholler: <a class="mailto" href="mailto:markus.scholler@smnk.de">markus.scholler@smnk.de</a></li>
+						<li>Prof. Dr. Marc Stadler: <a class="mailto" href="mailto:Marc.Stadler@helmholtz-hzi.de">Marc.Stadler@helmholtz-hzi.de</a></li>
+					</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="SMNS">Eiparasitoide der Gattung Trichogramma f&uuml;r die biologische Sch&auml;dlingsbek&auml;mpfung</a> (
+					<a class="ext" href="http://www.naturkundemuseum-bw.de/forschung/entomologie" target="_blank">SMNS</a>,
+					<a class="ext" href="https://www.zfmk.de/de/zfmk/ralph-s-peters#projekte" target="_blank">ZFMK</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/para-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Dr. Lars Krogmann (SMNS):
+					<a class="mailto" href="mailto:lars.krogmann@smns-bw.de">lars.krogmann@smns-bw.de</a>,<br>Vertretung: Dr. Ralph S. Peters (ZFMK):
+					<a class="mailto" href="mailto:r.peters@zfmk.de">r.peters@zfmk.de</a>,<br>Taxonomischer Koordinator: Dr. Juan Carlos Monje (SMNS):
+					<a class="mailto" href="mailto:carlos.monje@smns-bw.de">carlos.monje@smns-bw.de</a>
+				</p><hr>
+
+				<h2>
+					<a name="UNID">DNA-Metabarcoding zur Bewertung des Zustands von Flie&szlig;gew&auml;ssern</a> (
+					<a class="ext" href="https://www.uni-due.de/aquatische_oekosystemforschung/aquabiodiv" target="_blank">Uni Duisburg-Essen</a>,
+					<a class="ext" href="https://www.zfmk.de/de/zfmk/matthias-geiger" target="_blank">ZFMK</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/wfd-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Prof. Florian Leese (UDE):
+					<a class="mailto" href="mailto:florian.leese@uni-due.de">florian.leese@uni-due.de</a>,<br>Vertretung: Dr. Matthias F. Geiger (ZFMK):
+					<a class="mailto" href="mailto:m.geiger@zfmk.de">m.geiger@zfmk.de</a>,<br>Doktorandin M.Sc. Vera Zizka
+				</p><hr>
+
+				<h2>
+					<a name="ZSM">Entwicklung einer NGS-gest&uuml;tzten Monitoring Strategie am Beispiel invasiver Arten im NP Bayerischer Wald</a> (
+					<a class="ext" href="http://www.zsm.mwn.de" target="_blank">ZSM</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/ZSM_NPBay-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Prof. Dr. G. Haszprunar (ZSM):
+					<a class="mailto" href="mailto:haszi@zsm.mwn.de">haszi@zsm.mwn.de</a>,<br>Vertretung: Dr. Axel Hausmann:
+					<a class="mailto" href="mailto:Axel.Hausmann@zsm.mwn.de">Axel.Hausmann@zsm.mwn.de</a>,<br>Taxonomischer Koordinator: Jerome Moriniere:
+					<a class="mailto" href="mailto:moriniere@zsm.mwn.de">moriniere@zsm.mwn.de</a>
+				</p><hr>
+
+				<h2>
+					<a name="NGS">NGS-gest&uuml;tztes Biomonitoring im NP Eifel via Metabarcoding von Bodenproben und Insektenfallen</a> (
+					<a class="ext" href="https://www.zfmk.de/de/zfmk/vera-g-fonseca#projekte" target="_blank">ZFMK</a>)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/NPEifel-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Dr. Vera G. Fonseca (ZFMK):
+					<a class="mailto" href="mailto:v.fonseca@zfmk.de">v.fonseca@zfmk.de</a>,<br>Vertretung: Dr. Jonas Astrin:
+					<a class="mailto" href="mailto:j.astrin@zfmk.de">j.astrin@zfmk.de</a>,<br>Doktorand nn
+				</p><hr>
+
+				<h2><a name="FORE">DNA-Referenz-Katalogerstellung für wichtige Organismen in Forensik, Lebensmittelkontrolle und Getr&auml;nkeherstellung</a> (<a class="ext" href="https://www.zfmk.de/" target="_blank">ZFMK</a>, <a class="ext" href="http://www.zsm.mwn.de" target="_blank">ZSM</a>)</h2>
+				<p>
+					<img class="media-image media-element file-media-original" width="540" height="115" src="/static/images/forensik-banner.jpg" typeof="foaf:Image" title="" alt="" style="width: 540px; height: 115px;">
+				</p>
+				<p>
+					Sprecher: Dr. Axel Hausmann (ZSM):
+					<a class="mailto" href="mailto:Axel.Hausmann@zsm.mwn.de">Axel.Hausmann@zsm.mwn.de</a>,<br>Vertretung: Dr. Jonas Astrin:
+					<a class="mailto" href="mailto:j.astrin@zfmk.de">j.astrin@zfmk.de</a>,<br>Doktorand nn
+				</p><hr>
+
+				<h2>
+					<a name="MarOrg">Marine Organismen Deutschlands</a> (
+					<a class="ext" href="http://www.senckenberg.de/root/index.php?page_id=154" target="_blank">Senckenberg am Meer</a>) (assoziiert)
+				</h2>
+				<p>
+					<img class="media-image media-element file-media-large" width="530" height="169" alt="" src="/static/images/Raupach_0.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 169px;">
+				</p>
+				<p>
+					Taxonomischer Koordinator: Dr. Michael Raupach:
+					<a class="mailto" href="mailto:mraupach@senckenberg.de">mraupach@senckenberg.de</a>
+				</p>
+				<ul>
+					<li>
+						<em>Marine Organismen:</em>
+						<ul>
+							<li>
+								Dr. Michael Raupach (Senckenberg am Meer, DZMB, AG Molekulare Taxonomie mariner Organismen):
+								<a class="mailto" href="mailto:mraupach@senckenberg.de">mraupach@senckenberg.de</a>
+							</li>
+						</ul>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="SubterrFauna">Subterrane Fauna</a> (
+					<a class="ext" href="https://www.uni-due.de/aquatische_oekosystemforschung/aquabiodiv" target="_blank">Universit&auml;t Duisburg-Essen</a>) (assoziiert)
+				</h2>
+				<p>
+					<img class="media-element file-media-original" width="540" height="115" title="" alt="" src="/static/images/collage_subFauna.jpg" typeof="foaf:Image">
+				</p>
+				<p>
+					Taxonomischer Koordinator: Dr. Alexander M. Weigand:
+					<a class="mailto" href="mailto:weiganda@gmx.net">weiganda@gmx.net</a>
+				</p>
+				<ul>
+					<li>
+						<em>H&ouml;hlen, k&uuml;nstliche Hohlr&auml;ume, Quellen und Grundwasser: <a class="ext" href="http://höhlentiere.de/" target="_blank">http://h&ouml;hlentiere.de/</a> </em>
+					</li>
+				</ul><hr>
+
+				<h2>
+					<a name="BiodivFliess">Flie&szlig;gew&auml;sserfauna</a> (
+					<a class="ext" href="http://genestream.de/" target="_blank">Universit&auml;t Duisburg-Essen</a>) (assoziiert)
+				</h2>
+				<p>
+					<img class="media-element file-full" width="530" height="96" title="" alt="" src="/static/images/fliessgewaesserfauna.jpg" typeof="foaf:Image">
+				</p>
+				<p>
+					Taxonomischer Koordinator: Dr. Florian Leese:
+					<a class="mailto" href="mailto:florian.leese@uni-due.de">florian.leese@uni-due.de</a>
+				</p>
+				<ul>
+					<li>
+						<em>GeneStream Projekt: Biodiversit&auml;t in Flie&szlig;gew&auml;ssern auf allen Organisationsebenen <a class="ext" href="www.genestream.de/" target="_blank">www.genestream.de/</a></em>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_team.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-team-3");
+		</script>
+	</div>
+</html>

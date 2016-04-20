@@ -1,0 +1,24 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+	<div id="organisation" class="site-content">
+		<h1 id="page-title" class="title">GBOL Experts</h1>
+		<div class="field-item even">
+		<p>
+		<super>*</super>
+		<small>Experts with public names in the registration</small>
+		</p>
+		<p></p>
+			${structure: experten}
+		</div>
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_team.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+		<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+	</div>
+	<script type="text/javascript">
+		setMenu("menu-team-4");
+	</script>
+	</div>
+</html>

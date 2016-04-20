@@ -1,0 +1,35 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="sammeln-versenden" class="site-content user-area">
+
+	<h1 id="page-title" class="title">Collecting and shipping</h1>
+	<div class="field-item even" property="content:encoded">
+	<ol style="padding-left: 0px;">
+	<li>
+	<a href="/sammeln/versandmaterial-anfordern">Requesting collecting material (e.g. tubes) </a>
+	</li>
+	<li>
+	<a href="/sammeln/sammeltabelle-herunterladen">Download collection table (Excel) </a>
+	</li>
+	<li>Collecting</li>
+	<li>
+	<a href="/sammeln/versandanschreiben"> Upload complete collection tables to the GBOL Portal </a>
+	</li>
+	<li>Cover letter for the sample shipping is automatically generated on the GBOL Directory</li>
+	<li>Print cover letter (or at least write down the order number and inlclude with the sample package) </li>
+	<li>Shipping (with prepaid return voucher, if provided)</li>
+	</ol>
+	</div>
+
+	</div>
+	<div id="left-menu" class="left-menu">
+	    <div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block">
+	    </div>
+	    <div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block">
+	    </div>
+	</div>
+	<script type="text/javascript">
+	    setMenu("menu-sammeln-3");
+	</script>
+    </div>
+</html>

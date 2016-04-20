@@ -1,0 +1,39 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="teilnahmeinfos" class="site-content">
+		<h1 id="page-title" class="title">Wie kann ich teilnehmen?</h1>
+			<div class="field-item even" property="content:encoded">
+				<p style="text-align: justify;">Wir suchen deutschlandweit nach erfahrenen Artenkennern, die durch ihre Sammelaktivit&auml;t gezielt zur GBOL-Bioinventur beitragen wollen!</p>
+				<p style="text-align: justify;">
+				<img class="media-image" width="530" height="228" src="/static/images/gbol_raupe.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 228px;" alt="">
+				</p>
+				<p style="text-align: justify;">In wenigen Schritten zum offiziellen GBOL-Partner werden:</p>
+				<ol style="padding-left: 0px;">
+					<li style="text-align: justify;">Anmeldung zur Registrierung als offizieller GBOL-Taxon-Experte</li>
+					<li style="text-align: justify;">
+						R&uuml;ckmeldung durch GBOL-Mitarbeiter:
+						<ul>
+							<li>Einweisung in Probennahme, Datenaufzeichnung</li>
+							<li>Unterstützung bei der Einholung von Sammelgenehmigungen</li>
+							<li>Vergabe von GBOL-Proben-IDs</li>
+						</ul>
+					</li>
+					<li style="text-align: justify;">Sammlung von frischem Tier- oder Pflanzenmaterial</li>
+					<li style="text-align: justify;">Konservierung und taxonomische Bestimmung des gesammelten Materials</li>
+					<li style="text-align: justify;">Ausf&uuml;llen der GBOL-Sammlungsdatenb&ouml;gen mit relevanter Zusatzinformation (Fundort, -Zeit, Koordinaten, taxonomische Einordnung etc.)</li>
+					<li style="text-align: justify;">Hochladen der Sammlungsdatenb&ouml;gen (Excel-Tabelle) oder Ausf&uuml;llen der Online-Datenmaske auf der GBOL-Webpage</li>
+					<li style="text-align: justify;">Versendung des Materials an die entsprechende GBOL-Kontaktperson</li>
+				</ol>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_mitmachen.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-mitmachen-2");
+		</script>
+	</div>
+</html>

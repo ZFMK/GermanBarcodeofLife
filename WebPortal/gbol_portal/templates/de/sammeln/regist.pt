@@ -1,0 +1,159 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+	<div id="dashboard" class="site-content">
+		<h1 id="page-title" class="title">Benutzerkonto</h1>
+		<form id="user-regist" accept-charset="UTF-8" method="post" action="/sammeln/regist" enctype="multipart/form-data">
+			<fieldset id="user_user_form_group_user_login">
+				<legend>Login-Daten</legend>
+				<label for="edit-name">Benutzername<span class="form-required" title="Diese Angabe wird benötigt.">*</span></label>
+				<br/>
+				<input id="edit-name" type="text" maxlength="60" size="60" value="${form['name']}" name="name" />
+				<div class="description">Leerzeichen sind erlaubt; Satzzeichen sind nicht erlaubt außer Kommata, Bindestriche, Apostrophe und Unterstriche.</div>
+				<br/>
+
+				<label>Passwort<span class="form-required" title="Diese Angabe wird benötigt.">*</span></label>
+				<div class="password-strength">
+					<div id="password-text" class="password-strength-text" aria-live="assertive">Schwach</div>
+					<div class="password-strength-title">Passwortstärke:</div>
+					<div class="password-indicator">
+						<div id="password-bar" class="indicator" style="width: 0%;"></div>
+					</div>
+				</div>
+				<br/>
+				<input id="edit-pass-pass1" type="password" maxlength="128" size="25" value="${form['pass1']}" name="pass1" onkeyup="BOL.checkStrength()" onfocus="changeSuggestionBox()" />
+				<br/>
+
+				<label for="edit-pass-pass2">Passwort bestätigen<span class="form-required" title="Diese Angabe wird benötigt.">*</span></label>
+				<br/>
+				<input id="edit-pass-pass2" class="password-confirm form-text required" type="password" maxlength="128" size="25" value="${form['pass2']}" name="pass2" />
+				<br/>
+				<div id="password-suggestion" class="password-suggestions description" style="display:none;">
+				<p>Um die Sicherheit des Passworts zu erhöhen:</p>
+					<ul>
+						<li id="sixLetter">Verwenden Sie mindestens 6 Zeichen</li>
+						<li id="smallLetter">Verwenden Sie Kleinbuchstaben</li>
+						<li id="bigLetter">Verwenden Sie Großbuchstaben</li>
+						<li id="numberLetter">Verwenden Sie Zahlen</li>
+						<li id="specialLetter">Verwenden Sie Satzzeichen</li>
+					</ul>
+				</div>
+				<div class="description">Geben Sie das Passwort für das neue Konto in beide Felder ein.</div>
+			</fieldset>
+			<fieldset id="user_user_form_group_user_contact" class="field-group-fieldset group-user-contact form-wrapper">
+				<legend>
+					<span class="fieldset-legend">Kontaktdaten</span>
+				</legend>
+				<label for="anrede">Anrede</label>
+				<br/>
+				<input id="anrede" type="text" name="salutation" value="${form['salutation']}" class="small-small" />
+				<br />
+
+				<label for="titel">Titel</label>
+				<br/>
+				<input id="titel" type="text" name="title" value="${form['title']}" class="small-small" />
+				<br />
+
+				<label for="edit-field-user-givenname-und-0-value">Vorname<span class="form-required" title="Diese Angabe wird benötigt.">*</span></label>
+				<br/>
+				<input id="edit-field-user-givenname-und-0-value" class="text-full form-text required" type="text" value="${form['vorname']}" name="vorname" />
+				<br/>
+
+				<label for="edit-field-user-agentname-und-0-value">
+					Nachname
+					<span class="form-required" title="Diese Angabe wird benötigt.">*</span>
+				</label>
+				<br/>
+				<input id="edit-field-user-agentname-und-0-value" class="text-full form-text required" type="text" value="${form['nachname']}" name="nachname" />
+				<br/>
+
+				<label for="edit-field-user-telephone-und-0-value">Telefonnummer </label>
+				<br/>
+				<input id="edit-field-user-telephone-und-0-value" class="text-full form-text" type="text" value="${form['phone']}" name="phone" />
+				<br/>
+
+				<label for="edit-mail">
+					Email-Adresse
+					<span class="form-required" title="Diese Angabe wird benötigt.">*</span>
+				</label>
+				<br/>
+				<input id="edit-mail" class="form-text required" type="text" value="${form['mail']}" name="mail" />
+				<br/>
+				<p class="description">Eine gültige Email-Adresse. Alle Emails der Website werden an diese Adresse geschickt.
+					Die Adresse wird nicht veröffentlicht und wird nur verwendet, wenn Sie ein neues Passwort anfordern oder
+					wenn Sie einstellen, bestimmte Informationen oder Benachrichtigungen per Email zu erhalten.</p>
+				<br/>
+			</fieldset>
+			<fieldset class="user-url-form">
+				<label for="user-url">
+					Benutzer Webadresse
+					<span class="form-required" title="Diese Angabe wird benötigt.">*</span>
+				</label>
+				<br/>
+				<input id="user-url" class="form-text required user-url" type="text" value="" name="user-url" />
+			</fieldset>
+			<fieldset id="user_user_form_group_user_references" class="field-group-fieldset group-user-references required-fields form-wrapper">
+				<legend>Referenzen <span class="form-required" title="Diese Angabe wird benötigt.">*</span></legend>
+				<p>Für die Erstellung einer genetischen Referenzbibliothek des Lebens sind wir im GBOL-Projekt
+				auf die enge Zusammenarbeit mit sehr guten Artenkennern angewiesen, um eine sichere und
+				zuverlässige morphologische Artidentifikation gewährleisten zu können. Damit wir möglichst
+				schnell feststellen können, ob Sie ein potentieller GBOL-Partner mit derartigen Qualifikationen
+				sind, möchten wir sie an dieser Stelle bitten, uns Kontaktpersonen (inkl. Telefonnummer) zu nennen,
+				die Ihre Expertise zusätzlich bestätigen können. Alternativ oder zusätzlich ist auch die Angabe
+				Ihrer Mitgliedschaft bei einem entsprechenden Verein oder Arbeitskreis, oder Ihrer Publikationsdaten möglich.</p>
+
+				<label for="edit-field-user-reference-und-0-value">Referenzen </label>
+				<br/>
+				<textarea id="edit-field-user-reference-und-0-value" class="text-full form-textarea" rows="5" cols="60" name="referenzen">${form['referenzen']}</textarea>
+				<div class="description">Bitte geben Sie hier Ihre Referenzen ein.</div>
+			</fieldset>
+			<fieldset id="user_user_form_group_user_expertise" class="field-group-fieldset group-user-expertise required-fields form-wrapper">
+				<legend>Expertise</legend>
+				<p>Bitte geben Sie anhand der vorhandenen Taxaliste Ihre Expertise für bestimmte Organismengruppen an.
+				Es ist auch möglich, Expertise für mehrere Taxa anzumelden. Im Feld „Weitere Angaben zur Expertise"
+				können Sie bei Bedarf Ihre Expertise noch genauer spezifizieren.</p>
+				<br/>
+
+				<label for="edit-field-user-expertise-und">
+					Expertise beantragen
+					<span class="form-required" title="Diese Angabe wird benötigt.">*</span>
+				</label>
+				<br/>
+				<select id="edit-field-user-expertise-und" class="form-select required" name="expertise">${structure: expertises}</select>
+				<div class="description">Hier w&auml;hlen Sie die Expertise aus, die Sie für ihr Profil beantragen wollen.</div>
+				<br/>
+
+				<label for="edit-field-user-expertise-other-und-0-value">Weitere Angaben zur Expertise </label>
+				<textarea id="edit-field-user-expertise-other-und-0-value" class="text-full form-textarea" rows="5" cols="60" name="expertiseangaben"></textarea>
+				<br />
+			</fieldset>
+			<fieldset id="edit-gbol-terms" class="form-wrapper">
+				<legend>Nutzungsbedingungen<span class="form-required" title="Diese Angabe wird benötigt.">*</span></legend>
+
+				<input id="edit-gbol-termsofuse" class="form-checkbox" type="checkbox" value="1" name="gbol_termsofuse" />
+				<label class="option" for="edit-gbol-termsofuse">Ich stimme den Allgemeinen Gesch&auml;ftsbedingungen zu. </label>
+				<div class="description">
+					Bitte best&auml;tigen Sie, dass Sie die
+					<a class="ext" href="/download?fileName=gbol_agb_201204.pdf" target="_blank">Allgemeinen Gesch&auml;ftsbedingungen</a>
+					gelesen haben und Ihnen zustimmen.
+				</div>
+			</fieldset>
+			<input id="regist-check" class="hidden" type="hidden" value="${form['check']}" name="check" />
+			<input id="edit-submit" class="form-submit" type="submit" value="Registrieren" name="op" />
+		</form>
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block">
+		</div>
+			<div metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block">
+		</div>
+	</div>
+	<script type="text/javascript">
+		function changeSuggestionBox() {
+			document.getElementById("password-suggestion").style.display = "block";
+		}
+	</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+	</div>
+</html>

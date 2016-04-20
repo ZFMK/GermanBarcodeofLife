@@ -1,0 +1,258 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="anwendungsgebiete" class="site-content">
+			<h1 id="page-title" class="title">Applications</h1>
+			<div>
+				<p>
+					<img class="media-image" width="660" src="/static/images/divbanner_apps.jpg" typeof="foaf:Image" title="" alt="">
+					<br>
+					<br>
+					A well-established DNA barcoding system offers an automated, fast, reliable and cost-effective tool for
+					species identification even for non-experts. All GBOL metadata (validated DNA barcodes, laboratory protocols,
+					species lists, species distribution maps, etc.) will be made available in public databases (DNA sequence
+					data currently mainly via
+					<a class="ext" href="http://v4.boldsystems.org/index.php/Public_BINSearch?searchtype=records" target="_blank">BOLD</a>). 
+					Free and unrestricted online access to GBOL data allows various applications such as:
+				</p>
+				<ul style="padding-left: 0px;">
+					<li class="justify">Biodiversity monitoring and environmental assessment</li>
+					<li class="justify">Rapid assessment opportunity for planning and monitoring of conservation programs</li>
+					<li class="justify">Species identification and species composition analyses of mixed environmental samples (e.g. soil, water, insect traps)</li>
+					<li class="justify">Detection and monitoring of endangered and invasive species, pests and disease vectors</li>
+					<li class="justify">Controlling illegal wildlife trade</li>
+					<li class="justify">DNA-based diet analysis of scat samples </li>
+					<li class="justify">Detection of food labeling fraud </li>
+					<li class="justify">Trace analysis in forensics and criminology</li>
+					<li class="justify">Discovery of new species</li>
+					<li class="justify">Identification of larval stages in species (i.e. larvae, eggs and spores)</li>
+				</ul>
+				<br>
+				<p>
+					For some specific applications we will - together with partners from the practice - develop and test
+					protocols and Standard Operating Procedures (SOPs) for new methodological approaches in the second phase:
+					<ol style="list-style-type: lower-alpha; padding-left: 0" start="1">
+						<li class="justify"><a href="#erf">Innovative, NGS-based tool to assess Water Framework Directive relevant diatoms</li>
+						<li class="justify"><a href="#ver">Verification of seed and nursery products</li>
+						<li class="justify"><a href="#dna">Barcoding pollination in agriculture</li>
+						<li class="justify"><a href="#sta">Identification of airborne pollen and pollen in honey</li>
+						<li class="justify"><a href="#pil">Fungal pathogens & necrotic fungi in orchards</li>
+						<li class="justify"><a href="#eip">Egg-parasitoids in Trichogramma for biological pest control</li>
+						<li class="justify"><a href="#met">Innovative, NGS-based tool to assess Water Framework Directive relevant aquatic taxa from mixed samples</li>
+						<li class="justify"><a href="#mon">Environmental DNA from terrestrial mass samples and identification of forensically and medically important insect species</li>
+					</ol>
+					<p>
+						<h3><a name="erf" style="text-decoration: none">Innovative, NGS-based tool to assess Water Framework Directive relevant diatoms</a></h3>
+						<br>
+						BGBM, Freie Universit&auml;t Berlin - Zentraleinrichtung Botanischer Garten und Botanisches Museum Berlin-Dahlem
+						<br><br>
+						<u>Contact:</u>
+						<br>
+						Dr. Regine Jahn (<a class="mailto" href="mailto:r.jahn@bgbm.org">r.jahn@bgbm.org</a>)
+						<br><br>
+						Team:<br>
+						Juliane Bettig (TA)<br>
+						Dr. Nelida Abarca (Wiss)<br>
+						Dr. Oliver Skibbe (Wiss)<br>
+						Katja Luther (Wiss)<br>
+						Ahn Van (SHK)<br>
+						Dr. Jonas Zimmermann (Wiss)<br>
+						<br>
+						See also:
+						<ul>
+							<br>
+							<li>Zimmermann J, Abarca N, Enk N, Skibbe O, Kusber WH, Jahn R (2014) Taxonomic Reference Libraries for Environmental Barcoding: A Best Practice Example from Diatom Research. PLoS ONE 9, e108793.</li>
+							<li>Zimmermann J, Gl&ouml;ckner G, Jahn R, Enke N, Gemeinholzer B (2014) Metabarcoding vs. morphological identification to assess diatom diversity in environmental studies. Molecular Ecology Resources, 15(3), 526-542.</li>
+							<li>Zimmermann J, Jahn R, Gemeinholzer B (2011) Barcoding diatoms: evaluation of the V4 subregion on the 18S rRNA gene, including new primers and protocols. Organisms Diversity & Evolution 11, 173‐192.</li>
+						</ul>
+					</p>
+					<p>
+						<h3><a name="ver" style="text-decoration: none">Verification of seed and nursery products</a></h3>
+						<br>
+						BGBM, Freie Universit&auml;t Berlin - Zentraleinrichtung Botanischer Garten und Botanisches Museum Berlin-Dahlem
+						<br>
+						Rheinische Friedrich-Wilhelms-Universit&auml;t Bonn, Nees-Institut f&uuml;r Biodiversit&auml;t der Pflanzen
+						<br>
+						IEB, Westf&auml;lische Wilhelm-Universit&auml;t M&uuml;nster, AG Evolution und Biodiversit&auml;t der Pflanzen
+						<br><br>
+						<u>Contact::</u>
+						<br>
+						Prof. Dr. Thomas Borsch (<a class="mailto" href="mailto:t.borsch@bgbm.org">t.borsch@bgbm.org</a>)
+						<br>
+						Prof. Dr. Dietmar Quandt (<a class="mailto" href="mailto:quandt@uni-bonn.de">quandt@uni-bonn.de</a>)
+						<br>
+						Prof. Dr. Kai M&uuml;ller (<a class="mailto" href="mailto:kaimueller@uni-muenster.de">kaimueller@uni-muenster.de</a>)
+						<br><br>
+						See also:
+						<ul>
+							<br>
+							<li><a class="ext" href="http://gbol5.de" target="_blank">http://gbol5.de/</a></li>
+						</ul>
+					</p>
+					<p>
+						<h3><a name="dna" style="text-decoration: none">Barcoding pollination in agriculture - recommendations for enhancement of pollinators, biodiversity and yield</a></h3>
+						<br>
+						INRES, Rheinische Friedrich-Wilhelms-Universit&auml;t Bonn - Landwirtschaftliche Fakult&auml;t -
+						<br>
+						Institut f&uuml;r Nutzpflanzenwissenschaften und Ressourcenschutz - Agrar- und Produktions&ouml;kologie
+						<br>
+						ZFMK, Zoologisches Forschungsmuseum A. Koenig, Bonn
+						<br><br>
+						<u>Contact::</u>
+						<br>
+						Dr. Andre&eacute; Hamm (<a class="mailto" href="mailto:a.hamm@uni-bonn.de">a.hamm@uni-bonn.de</a>)
+						<br>
+						Dipl.-Ing.agr. Nina Schwarz (<a class="mailto" href="mailto:nschwarz@uni-bonn.de">nschwarz@uni-bonn.de</a>)
+						<br>
+						Dr. Ralph Peters (<a class="mailto" href="mailto:r.peters@zfmk.de">r.peters@zfmk.de</a>)
+						<br>
+						Dr. Ximo Mengual (<a class="mailto" href="mailto:x.mengual@zfmk.de">x.mengual@zfmk.de</a>)
+						<br>
+						Dipl.-Biol. Bj&ouml;rn Rulik (<a class="mailto" href="mailto:b.rulik@zfmk.de">b.rulik@zfmk.de</a>)
+						<br><br>
+						See also:
+						<ul>
+							<br>
+							<li>Ssymank A, Hamm A, Vischer-Leopold M (Eds.) (2009) Caring for Pollinators, Safeguarding Agro-biodiversity and Wild Plant Diversity.
+								BfN-Skripten 250. Bonn, p. 191. <a class="ext" href="http://www.bfn.de/fileadmin/MDB/documents/service/Skript250.pdf" target="_blank">http://www.bfn.de/fileadmin/MDB/documents/service/Skript250.pdf</a> (accessed 25.01.16)</li>
+						</ul>
+					</p>
+					<p>
+						<h3><a name="sta" style="text-decoration: none">Identification of airborne pollen and pollen in honey</a></h3>
+						<br>
+						JLU, Justus Liebig Universit&auml;t Giessen
+						<br>
+						TIEM (Team Integrierte Umwelt&uuml;berwachung GbR)
+						<br><br>
+						<u>Contact::</u>
+						<br>
+						PD Dr. Birgit Gemeinholzer (<a class="mailto" href="mailto:birgit.gemeinholzer@bot1.bio.unigiessen">birgit.gemeinholzer@bot1.bio.unigiessen</a>)
+						<br>
+						Dipl.-Biol. Frieder Hofmann
+						<br><br>
+						Team:<br>
+						Stephanie Swenson-Friedrich (<a class="mailto" href="mailto:Stephanie.Swenson-Friedrich(@)bot1.bio.uni-giessen.de">Stephanie.Swenson-Friedrich(@)bot1.bio.uni-giessen.de</a>)
+						<br><br>
+						See also:
+						<ul>
+							<br>
+							<li><a class="ext" href="http://ökologiebüro.com/Pollenmonitoring_Vortrag%20Linz%2020100128-pdf.pdf" target="_blank">Vortrag zu GVO - Pollenmonitoring</a></li>
+							<li>Keller, A., Danner, N., Grimmer, G., Ankenbrand, M., Ohe, K., Ohe, W., ... & Steffan‐Dewenter, I. (2015). Evaluating multiplexed next‐generation sequencing as a method in palynology for mixed pollen samples. Plant Biology, 17(2), 558-566.</li>
+						</ul>
+					</p>
+					<p>
+						<h3><a name="pil" style="text-decoration: none">Fungal pathogens & necrotic fungi in orchards</a></h3>
+						<br>
+						RUB, Ruhr-Universit&auml;t Bochum (Koordination)
+						<br>
+						TI, Th&uuml;nen-Institut f&uuml;r Forstgenetik
+						<br>
+						SMNG, Senckenberg, Naturkundemuseum G&ouml;rlitz
+						<br>
+						SMNS, Staatliches Museum f&uuml;r Naturkunde Stuttgart
+						<br>
+						Universit&auml;t Bayreuth
+						<br>
+						SMNK, Staatliches Museum f&uuml;r Naturkunde Karlsruhe
+						<br>
+						HZI, Helmholtz-Zentrum f&uuml;r Infektionsforschung
+						<br><br>
+						<u>Contact::</u>
+						<br>
+						Prof. Dr. Dominik Begerow (<a class="mailto" href="mailto:dominik.begerow@rub.de">dominik.begerow@rub.de</a>)
+						<br>
+						Dr. Ben Bubner (<a class="mailto" href="mailto:ben.bubner@ti.bund.de">ben.bubner@ti.bund.de</a>)
+						<br>
+						Dr. Ulrike Damm (<a class="mailto" href="mailto:ulrike.damm@senckenberg.de">ulrike.damm@senckenberg.de</a>)
+						<br>
+						Dr. Ursula Eberhardt (<a class="mailto" href="mailto:ursula.eberhardt@smns-bw.de">ursula.eberhardt@smns-bw.de</a>)
+						<br>
+						Prof. Dr. Gerhard Rambold (<a class="mailto" href="mailto:gerhard.rambold@uni-bayreuth.de">gerhard.rambold@uni-bayreuth.de</a>)
+						<br>
+						Dr. Markus Scholler (<a class="mailto" href="mailto:markus.scholler@smnk.de">markus.scholler@smnk.de</a>)
+						<br>
+						Prof. Dr. Marc Stadler (<a class="mailto" href="mailto:Marc.Stadler@helmholtz-hzi.de">Marc.Stadler@helmholtz-hzi.de</a>)
+						<br><br>
+						See also:
+						<ul>
+							<br>
+							<li>Eberhardt U, Verbeken A, Nuytinck,J (2014) DNA barcoding, Pilze und das German Barcode of Life-Projekt (GBOL). Zeitschrift f&uuml;r Mykologie 80: 627-641</li>
+							<li>Eberhardt U (2012). Methods for DNA barcoding fungi. In: Kress, J.W., Erickson, D.L. (ed.) DNA Barcodes: Methods and Protocols. Humana Press, pp. 183-205</li>
+							<li>Stielow JB, Lévesque CA, Seifert KA, Meyer W, Irinyi L, Smits D, Renfurm R, Verkley GJM, Groenewald M, Chaduli D, Lomascolo A, Welti S,
+								Lesage-Meessen L, Favel A, Al-Hatmi AMS, Damm U, Yilmaz N, Houbraken J, Lombard L, Quaedvlieg W, Binder M, Vaas LAI, Vu D, Yurkov A, Begerow D,
+								Roehl O, Guerreiro M, Fonseca A, Samerpitak K, van Diepeningen AD, Dolatabadi S, Moreno LF, Casaregola S, Mallet S, Jacques N, Roscini L, Egidi E,
+								Bizet C, Garcia-Hermoso D, Martín MP, Deng S, Groenewald JZ, Boekhout T, de Beer ZW, Barnes I, Duong TA, Wingfield MJ, de Hoog GS, Crous PW, Lewis CT,
+								Hambleton S, Moussa TAA, Al-Zahrani HS, Almaghrabi OA, Louis-Seize G, Assabgui R, McCormick W, Omer G, Dukik K, Cardinali G, Eberhardt U, de Vries M,
+								Robert V. (2015) One fungus, which genes? Development and assessment of universal primers for potential secondary fungal DNA barcodes. Persoonia 35:
+								242-263 <a class="ext" href="http://dx.doi.org/10.3767/003158515X689135" target="_blank">http://dx.doi.org/10.3767/003158515X689135</a></li>
+						</ul>
+					</p>
+					<p>
+						<h3><a name="eip" style="text-decoration: none">Egg-parasitoids in Trichogramma for biological pest control</a></h3>
+						<br>
+						SMNS, Staatliches Museum f&uuml;r Naturkunde Stuttgart
+						<br>
+						ZFMK, Zoologisches Forschungsmuseum A. Koenig, Bonn
+						<br><br>
+						<u>Contact::</u>
+						<br>
+						Dr. Lars Krogmann (<a class="mailto" href="mailto:lars.krogmann@smns-bw.de">lars.krogmann@smns-bw.de</a>)
+						<br>
+						Dr. Ralph S. Peters (<a class="mailto" href="mailto:r.peters@zfmk.de">r.peters@zfmk.de</a>)
+						<br><br>
+						See also:
+						<ul>
+							<br>
+							<li>Samara, R., Monje, J.C., Zebitz, C.P.W. & Qubbaj, T. (2011) Comparative biology and life tables of Trichogramma aurosum on Cydia pomonella at constant temperatures. Phytoparasitica 39(2), 109-119</li>
+							<li>Alkarrat, H. (2013) Inter- and intraspecific variation of nutritional and environmental adaptation of egg-parasitoids of the genus Trichogramma (Hymenoptera, Trichogrammatidae). PhD Thesis</li>
+						</ul>
+					</p>
+					<p>
+						<h3><a name="met" style="text-decoration: none">Innovative, NGS-based tool to assess Water Framework Directive relevant aquatic taxa from mixed samples</a></h3>
+						<br>
+						UDE, Universit&auml;t Duisburg-Essen
+						<br>
+						ZFMK, Zoologisches Forschungsmuseum A. Koenig, Bonn
+						<br><br>
+						<u>Contact::</u>
+						<br>
+						Prof. Dr. Florian Leese (<a class="mailto" href="mailto:florian.leese@uni-due.de">florian.leese@uni-due.de</a>)
+						<br>
+						Dr. Matthias Geiger (<a class="mailto" href="mailto:m.geiger@zfmk.de">m.geiger@zfmk.de</a>)
+						<br><br>
+						See also:
+						<ul>
+							<br>
+							<li>Elbrecht V & Leese F (2015) Can DNA-based ecosystem assessments quantify species abundance? Testing primer bias and biomass - sequence relationships with an innovative metabarcoding protocol. PLOS ONE 10:e0130324</li>
+							<li>Macher J-N, Salis RK, Blakemore K, Tollrian R, Matthaei C & Leese F (2015) Multiple-stressor effects on stream invertebrates: DNA barcoding reveals contrasting responses of cryptic mayfly species. Ecological Indicators 61(2): 159-169</li>
+						</ul>
+					</p>
+					<p>
+						<h3><a name="mon" style="text-decoration: none">Environmental DNA from terrestrial mass samples and identification of forensically and medically important insect species</a></h3>
+						<br>
+						ZSM, Generaldirektion der Staatlichen Naturwissenschaftlichen Sammlungen Bayerns – Zoologische Staatssammlung M&uuml;nchen
+						<br><br>
+						<u>Contact::</u>
+						<br>
+						Dr. Axel Hausmann (<a class="mailto" href="mailto:Axel.Hausmann@zsm.mwn.de">Axel.Hausmann@zsm.mwn.de</a>)
+						<br>
+						Dipl.-Biol. Jerome Moriniere (<a class="mailto" href="mailto:moriniere@zsm.mwn.de">moriniere@zsm.mwn.de</a>)
+						See also:
+						<ul>
+							<br>
+							<li><a class="ext" href="https://www.zfmk.de/dateien/atoms/files/verbundbericht_gbol_f2014.pdf" target="_blank">Interim report GBOL phase I (2014)</a></li>
+						</ul>
+					</p>
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-4");
+		</script>
+	</div>
+</html>

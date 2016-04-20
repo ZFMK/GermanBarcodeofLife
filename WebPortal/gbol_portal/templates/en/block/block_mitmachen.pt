@@ -1,0 +1,28 @@
+<div id="mitmachen-block" class="token menu-li">
+	<h2 class="pane-title">Get Involved...</h2>
+	<ul class="mitmachenblock">
+		<li class="first button-highlight">
+			<a title="Sign the register site!" href="/sammeln/regist">
+				<strong>Sign in!</strong>
+				Register today as a<br>taxonomic expert...
+			</a>
+		</li>
+	</ul>
+	<ul class="mitmachenblock">
+		<li>
+			<a title="Log in with your registered data!" href="/sammeln/login">
+				<strong>Login!</strong>
+				Already registered?<br>Please log in...
+			</a>
+		</li>
+	</ul>
+	<ul class="mitmachenblock">
+		<li class="last">
+			<a title="Subscribe to our newsletter!" href="/newsletter">
+				<strong>Newsletter</strong>
+				Stay up to date!
+			</a>
+		</li>
+	</ul>
+</div>
+

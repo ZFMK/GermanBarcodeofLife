@@ -1,0 +1,38 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="js-head">
+		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+		<div id="versandsanaschreiben-anzeigen" class="site-content user-area">
+			<h1 id="page-title" class="title">Cover letter</h1>
+			<div class="panel-content table-content">
+				<table id="tableCovLetter">
+					<thead>
+						<tr>
+							<th>Transaction key</th>
+							<th>Taxon</th>
+							<th>Request date</th>
+							<th>Upload date</th>
+							<th>Cover letter</th>
+						</tr>
+					</thead>
+					<tbody id="sammeltabelle">${structure: data}</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript" src="/static/jquery-v1-10-2.js"></script>
+		<script type="text/javascript">
+			$('#tableCovLetter').DataTable({
+				stateSave: true
+			});
+			setMenu("menu-sammeln-7");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${message}</div></p>
+	</div>
+</html>

@@ -1,0 +1,74 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="js-head">
+		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+		<div id="download-collection-sheet" class="site-content user-area">
+			<h1 id="page-title" class="title">Download collection table</h1>
+			<p>
+				To document your collection activities please use the GBOL collection table and the corresponding Guidelines for collecting.
+				<br />
+				You will be able to download the GBOL collection table here after a
+				<a href="/sammeln/versandmaterial-anfordern">request of shipping material</a>.
+			</p>
+			<h2>Collection tables requested by you:</h2>
+			<div class="panel-content table-content">
+				<table width="100%" id="tableCollSheetDownload" class="display">
+					<thead>
+						<tr>
+							<th>Taxon</th>
+							<th>Count</th>
+							<th>Kind of</th>
+							<th>Request date</th>
+							<th>Excel file</th>
+						</tr>
+					</thead>
+					<tbody>${structure: data}</tbody>
+				</table>
+			</div>
+			<h2>The guidelines for collecting can be downloaded here:</h2>
+			<ul>
+				<li>
+					<a href="/download?fileName=Sammelinfos_Tierproben_GBOL_2012-08-04.pdf" class="ext">Guidelines for collecting Animals </a>
+				</li>
+				<li>
+					<a href="/download?fileName=GBOL_Sammelanleitung_Bluetenpflanzen3.pdf" class="ext">Guidelines for collecting flowering plants </a>
+				</li>
+				<li>
+					<a href="/download?fileName=Sammelinfos_Flechtenproben_GBOL_20120409.pdf" class="ext">Guidelines for collecting lichens </a>
+				</li>
+				<li>
+					<a href="/download?fileName=Sammelinfos_Rostpilze_GBOL_26.04.2012.pdf" class="ext">Guidelines for collecting rust fungi</a>
+				</li>
+			</ul>
+			<p>The Guidelines for the collection of liverworts, mosses, hornworts, ferns & Lycopodiopsida coming soon - Please contact us with any questions for now:
+				<br />
+				Dr. Ralf Hand (Spermatophytina):
+				<a class="mailto" href="mailto:r.hand@bgbm.org"> r.hand@bgbm.org</a>
+				<br />
+				Dr. Martin Nebel (Marchantiophytina, Bryophytina, Anthocerotophytina, Lycophytina and Monilophytina):
+				<a class="mailto" href="mailto:martin.nebel@smns-bw.de">martin.nebel@smns-bw.de</a></p>
+			<p>The table is intended for the input of data, which is collected within the framework of the
+				German Barcode of Life (GBOL) project. These data is based on samples that are submitted
+				to one of GBOL partner for DNA barcoding.
+				<br />
+				Which GBOL project partner is responsible for the collection of samples depends on the particular taxonomic group.</p>
+			<p>All fields in the collection shett are explained by short comments;
+				please refer to these comments to ensure the correct completion of the table.</p>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			$('#tableCollSheetDownload').DataTable({
+				"order": [[ 3, "desc" ]],
+				"scrollX": true
+			});
+			setMenu("menu-sammeln-5");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${message}</div></p>
+	</div>
+</html>

@@ -1,0 +1,101 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+	<div id="dashboard" class="site-content admin-area">
+		<h1 id="page-title" class="title">User Certify</h1>
+		<form id="user-regist" accept-charset="UTF-8" method="post" action="/admin/certify-users" enctype="multipart/form-data">
+			<input type="hidden" id ="userIds" value="" name="userIds">
+			<input type="submit" value="Decline User" name="decline" class="button left-red">
+			<input type="submit" value="Certify User" name="accept"  class="button right-green">
+		</form>
+		<br>
+		<br>
+		<input type="hidden" id="column" value="uid" />
+		<input type="hidden" id="order" value="asc" />
+		<div class="panel-content">
+			<table width="660px">
+				<thead><tr>
+					<th></th>
+					<th id="name">
+						<a onclick="startSort('name')">Username</a>
+					</th>
+					<th id="anrede">
+						<a onclick="startSort('anrede')">Titel</a>
+					</th>
+					<th id="vorname">
+						<a onclick="startSort('vorname')">Firstname</a>
+					</th>
+					<th id="nachname">
+						<a onclick="startSort('nachname')">Lastname</a>
+					</th>
+					<th id="mail">
+						<a onclick="startSort('mail')">Mail</a>
+					</th>
+					<th id="expertise">
+						<a onclick="startSort('expertise')">Expertise</a>
+					</th>
+				</tr></thead>
+				<tbody id="certifyUser">${structure: value}</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+	</div>
+	<script type="text/javascript">
+		function deselectHeader() {
+		document.getElementById('name').className = "";
+		document.getElementById('vorname').className = "";
+		document.getElementById('nachname').className = "";
+		document.getElementById('anrede').className = "";
+		document.getElementById('mail').className = "";
+		document.getElementById('expertise').className = "";
+		}
+
+		function startSort(sortColumn) {
+				deselectHeader();
+		document.getElementById(sortColumn).className ="active"
+		if(document.getElementById('column').value == sortColumn) {
+			if(document.getElementById('order').value == "asc") {
+			document.getElementById('order').value = "desc";
+			}
+			else{
+			document.getElementById('order').value = "asc";
+			}
+		}
+		else {
+			document.getElementById('column').value = sortColumn;
+			document.getElementById('order').value = "asc";
+		}
+		var _column = document.getElementById('column').value;
+		var _order = document.getElementById('order').value;
+		$.ajax({
+			url: "/static/orderTable",
+			method: 'post',
+			//dataType:'json',
+			data:{ table: "user", column: _column , order: _order},
+			success: function(data){
+				fillTable(data);
+			},
+			error:function(xhr,textStatus,errorThrown){
+				//fillTable(data);
+				alert("Fehler bei der Suche." + textStatus);
+			}
+		});
+		}
+			function changeUsers(id) {
+				users = document.getElementById("userIds");
+				if (users.value.indexOf("$" + id + ",") > -1) {
+					users.value = users.value.replace("$" + id + ",", "");
+				}
+				else {
+					users.value = users.value + "$" + id + ",";
+				}
+		}
+		setMenu("menu-sammeln-9");
+	</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+	</div>
+</html>

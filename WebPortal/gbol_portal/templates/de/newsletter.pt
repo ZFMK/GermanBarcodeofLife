@@ -1,0 +1,31 @@
+<html metal:use-macro="load: master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="newsletter-block" class="site-content">
+			<h1 id="page-title" class="title">Newsletter</h1>
+			<form id="simplenews-subscriptions-page-form" accept-charset="UTF-8" method="post" action="/newsletter/subscriptions">
+			<div>
+				<legend>
+				<span class="fieldset-legend">Hier k&ouml;nnen Sie Ihre Newsletter-Abonnements verwalten.</span>
+				</legend>
+				<div class="fieldset-description">W&auml;hlen Sie die Newsletter, die Sie abonnieren oder abbestellen wollen.</div>
+				<div class="form-item form-type-checkbox form-item-newsletters-1">
+				<input id="edit-newsletters-1" class="form-checkbox" type="checkbox" value="1" name="newsletters">
+				<label class="option" for="edit-newsletters-1">GBOL-Newsletter </label>
+				</div>
+				<label for="edit-mail">
+				E-Mail
+				<span class="form-required" title="Diese Angabe wird ben&ouml;tigt.">*</span>
+				</label>
+				<input id="edit-mail" class="form-text required" type="text" maxlength="128" size="20" value="" name="mail">
+			</div>
+			<input id="edit-subscribe" class="form-submit" type="submit" value="Abonnieren" name="op">
+			<input id="edit-unsubscribe" class="form-submit" type="submit" value="Abbestellen" name="op">
+			</form>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+	</div>
+</html>

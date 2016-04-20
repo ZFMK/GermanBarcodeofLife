@@ -1,0 +1,75 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="was-ist-gbol" class="site-content">
+			<h1 id="page-title" class="title">Was ist GBOL?</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					<h2><b>Willkommen beim GBOL-Projekt!</b></h2>
+					<br>
+					<strong>GBOL</strong>
+					-
+					<strong class="space">G</strong> erman
+					<strong class="space">B</strong> arcode
+					<strong class="space">o</strong> f
+					<strong class="space">L</strong> ife: → Inventarisierung und genetische Charakterisierung der Tiere, Pflanzen und Pilze Deutschlands.
+				</p>
+				<p>
+					<img class="media-image media-element file-media-small" width="220" height="135" alt="" src="/static/images/Misumena.jpg" typeof="foaf:Image" title="" style="width: 220px; height: 135px; left: 190px; position: relative;">
+					<br>
+					<br>
+					Das GBOL-Projekt hat das Ziel die Artenvielfalt aller deutschen Tiere, Pilze und Pflanzen anhand ihres
+					genetischen DNA-Barcodes (Fingerabdrucks) zu erfassen. Damit &uuml;bernimmt Deutschland als Wissenschaftsnation
+					eine f&uuml;hrende Rolle in einem internationalen Konsortium aus Naturkundemuseen, Zoos, Herbarien,
+					<a title="Erfahren Sie mehr &uuml;ber unsere internationalen Kooperationspartner." href="/links#kooperationspartner">Forschungseinrichtungen und staatlichen Institutionen</a>,
+					die den Aufbau einer "DNA Barcode Bibliothek des Lebens" (<a class="ext" href="/download?fileName=iBOL_FactSheet_German.pdf" target="_blank">pdf</a>) zum Ziel haben.
+					Bis heute sind weltweit ~4,6 Millionen <a title="Erfahren Sie mehr &uuml;ber DNA Barcoding." href="/dna-barcoding/was-ist-dna-barcoding">DNA Barcodes</a> von ~250.000
+					beschriebenen Arten von Pflanzen, Pilzen und Tieren in der BOLD Datenbank erfasst (Stand: Januar 2016).
+					F&uuml;r Tiere alleine gibt es zudem <a class="ext" href="http://v4.boldsystems.org/index.php/Public_BarcodeIndexNumber_Home" target="_blank">in BOLD</a> knapp 440.000
+					Arthypothesen, sog. <a class="ext" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066213" target="_blank">BINs (barcode index number)</a>
+					, das sind molekulare Einheiten basierend auf DNA barcodes, deren Artzugeh&ouml;rigkeit teilweise noch
+					ungekl&auml;rt ist. Durch deren systematischer Erfassung in einer Datenbank k&ouml;nnen aber auch diese
+					eventuell noch unbeschriebenen Arten zuverl&auml;ssig eingeordnet oder beim Monitoring erfasst werden.
+				</p>
+				<p>
+					GBOL ist ein deutschlandweites Netzwerk aus verschiedenen Naturkundemuseen und anderen
+					<a title="Erfahren Sie mehr &uuml;ber die GBOL-Institute." href="/team/gbol-institute">Biodiversit&auml;tsforschungsinstite</a>.
+					Die GBOL Partner stellen ihre professionelle taxonomische Expertise und ihre bereits existierende Infrastruktur
+					(Sammlungen/Biobanken, Datenbanken, Bioinformatik-Plattformen und Labore) zur Verf&uuml;gung, um umfassend und
+					fl&auml;chendeckend die Tier- und Pflanzenarten Deutschlands zu sammeln, zu katalogisieren, wissenschaftlich zu beschreiben,
+					zu sequenzieren und in die globale Referenz-Barcode Datenbank
+					„<a title="Erfahren Sie mehr &uuml;ber unsere internationalen Kooperationspartner." href="/links">BOLD</a>“ einzuspeisen.
+					Nachdem in der ersten Phase (2012-2015) vornehmlich an der Erstellung der Referenzdatenbank gearbeitet wurde, werden nun
+					in der zweiten Projektphase (2016-2018) ganz gezielt einzelne,
+					<a title="Erfahren Sie mehr &uuml;ber die Anwendungsgebiete." href="/gbol/anwendungsgebiete">praxisorientierte Anwendungen von DNA Barcoding</a> entwickelt.
+				</p>
+				<p>
+					Die morphologische Artidentifikation erfolgt in GBOL durch spezialisierte Experten (Taxonomen), die ihr Wissen
+					&uuml;ber die Morphologie, &Ouml;kologie, Reproduktionsmodus und Lebenszyklus bestimmter Taxa einbringen.
+					Mit modernen DNA Sequenziermethoden wird in einem zweiten Schritt der DNA Barcode entschl&uuml;sselt. Jede
+					Art wird dann mit ihrem DNA Barcode verkn&uuml;pft und in weiteren,
+					&ouml;ffentlich zug&auml;nglichen Referenz-Datenbanken wie
+					<a class="ext" href="http://v4.boldsystems.org/index.php/Public_BINSearch?searchtype=records" target="_blank">BOLD</a>,
+					<a class="ext" href="http://www.ncbi.nlm.nih.gov/nuccore/" target="_blank">NCBI GenBank</a> oder
+					<a class="ext" href="http://www.algaterra.org/default.htm" target="_blank">AlgaTerra</a> verf&uuml;gbar gemacht.
+				</p>
+				<p>
+					Die professionellen GBOL Taxonomen sind bei dieser Aufgabe besonders auf die tatkr&auml;ftige Unterst&uuml;tzung und Kooperation von
+					<a title="Erfahren Sie mehr &uuml;ber die Teilnahmem&ouml;glichkeiten f&uuml;r Sammler." href="/mitmachen/teilnahmeinfos">ehrenamtlichen Taxon-Experten aus ganz Deutschland</a>
+					angewiesen.
+				</p>
+				<p>
+					Hier k&ouml;nnen Sie unsere <a class="ext" href="/download?fileName=GBOL_Broschuere_2014.pdf" target="_blank"><strong>GBOL-Brosch&uuml;re</strong></a> herunterladen.
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-1");
+		</script>
+	</div>
+</html>

@@ -1,0 +1,56 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="dashboard" class="site-content user-area">
+
+		<h1 id="page-title" class="title">Dashboard</h1>
+
+		<h2 id="nameTag">Welcome, ${uData}</h2>
+		<p>You are now in your "User area". Here you can edit your data and settings, and use the GBOL-Expert tools.</p>
+		<p>
+			Please inform yourself first about the procedure for
+			<a href="/sammeln/sammeln-versenden">collecting and sending</a>.
+		</p>
+		<div class="dashboard-block left">
+			<h2>My GBOL</h2>
+			<ul><li>
+				<a href="/sammeln/userEdit">Edit Personal Data</a></li>
+				<li>
+				<a href="/newsletter">Manage Newsletter Subscription</a></li>
+				<li>
+				<a href="/sammeln/logout">Logout</a></li>
+			</ul>
+		</div>
+		<div class="dashboard-block right">
+			<h2>Collect and send</h2>
+			<ul><li>
+				<a href="/sammeln/versandmaterial-anfordern">Request shipping material</a></li>
+				<li>
+				<a href="/sammeln/sammeltabelle-herunterladen">Download collection table</a></li>
+				<li>
+				<a href="/sammeln/versandanschreiben">Create a cover letter for sampling shipment</a></li>
+			</ul>
+		</div>
+		<div class="dashboard-block left" tal:condition="request.session.role in (1, 2)">
+			<h2>Number of new users</h2>
+			<span class="field-content" tal:content="request.session.new_users">0</span>
+			<p tal:condition="request.session.new_users>0">
+				<a class="red" href="/admin/certify-users">Certify new users</a>
+			</p>
+		</div>
+		<div class="dashboard-block right" tal:condition="python: request.session.role in (1, 2)">
+			<h2>Number of new expertises</h2>
+			<span class="field-content" tal:content="request.session.new_expertise">0</span>
+			<p tal:condition="request.session.new_expertise>0">
+				<a class="red" href="/admin/certify-expertise">Certify new expertise for users</a>
+			</p>
+		</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-sammeln-1");
+		</script>
+	</div>
+</html>

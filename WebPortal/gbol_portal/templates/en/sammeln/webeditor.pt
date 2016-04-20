@@ -1,0 +1,21 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="webeditor" class="site-content user-area">
+
+	<div>
+	<iframe id="myIframe" width="100%" scrolling="no" height="800px" frameborder="0" src="https://dwb2.snsb.info/DiversityWebEditor/index.html?Server=zfmk.diversityworkbench.de&Port=5432&User=Tedsoft&Database=DiversityCollection_ZFMK&Projekte=GBOL">
+	</iframe>
+	</div>
+
+	</div>
+	<div id="left-menu" class="left-menu">
+	    <div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block">
+	    </div>
+	    <div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block">
+	    </div>
+	</div>
+	<script type="text/javascript">
+	    setMenu("menu-sammeln-8");
+	</script>
+    </div>
+</html>

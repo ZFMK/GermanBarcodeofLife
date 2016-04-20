@@ -1,0 +1,98 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+	<div id="versandmaterial-anfordern" class="site-content user-area">
+		<h1 id="page-title" class="title">Request collection material</h1>
+		<div class="content">
+			<h2>Your address</h2>
+			<p tal:content="structure address" class="align-left"></p>
+			<br />
+			<div tal:condition="addrTag" class="status" id="adressWarning">
+				<p>
+					Please check your address. If your address is not correct, change it in
+					<a href="/sammeln/userEdit">your profile</a>.
+				</p>
+			</div>
+			<form id="webform-98" class="webform-client-form" accept-charset="UTF-8" method="post" action="/sammeln/versandmaterial-anfordern" enctype="multipart/form-data">
+				<div class="form-item webform-component webform-component-select">
+					<label for="select-material">
+						Type of collection tube
+						<span class="form-required" title="This is a required entry.">*</span>
+					</label>
+					<br />
+					<input id="select-material" type="radio" name="material" value="2" />2ml Tubes, shipping units: 95 tubes<br />
+					<input id="select-material" type="radio" name="material" value="5" />5ml Tubes, shipping units: 36 tubes<br />
+					<input id="select-material" type="radio" name="material" value="x" />Other (please specify amount below)<br />
+					<br />
+				</div>
+				<div class="form-item webform-component webform-component-number">
+					<label for="input-amount">
+						Number of units
+						<span class="form-required" title="Diese Angabe wird benötigt." >*</span>
+					</label>
+					<br />
+					<input id="input-amount" class="small_small required" type="number" step="1" max="999" min="1" size="4" name="amount"  value="1" />
+				</div>
+				<br />
+				<div id="webform-component-taxonomische-gruppe" class="form-item webform-component webform-component-select">
+					<label for="select-taxongroup">
+						Taxonomic group
+						<span class="form-required" title="Diese Angabe wird benötigt.">*</span>
+					</label>
+					<br />
+					<select id="select-taxongroup" class="form-select required" name="taxgroup" >
+						${structure: options}
+					</select>
+					<br />
+					<div class="description">Please indicate for which taxon you require sampling tubes and from which institute you want to order them.</div>
+				</div><br/>
+				<b><div id="orderCount"></div></b><br/>
+				<input id="submit_order" class="form-submit" type="submit" value=" Send order " name="op">
+			</form>
+		</div>
+
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#orderCount").hide();
+				var material;
+				$("input[type='number']").bind('keyup mouseup', function () {
+					material = $('input[name=material]:checked').val();
+					if (material==2) {
+						var material = 95 }
+					else if (material==5){
+						var material = 36 }
+					else {
+						var material = 1 }
+					var value = $( this ).val() * material;
+					document.getElementById("orderCount").textContent = "You want to order "+value+" vials.";
+					$("#orderCount").show();
+					if (value > 190) {
+						$("#orderCount").addClass("orderRed");
+					}
+					else {
+						$("#orderCount").removeClass("orderRed");
+					}
+					if ($( "#input-amount" ).val()>=5) {
+						$("input[type=submit]").attr("disabled", "disabled");
+						document.getElementById("orderCount").textContent = "You want to order "+value+" vials, that is too much!";
+						$("#orderCount").addClass("orderRed");
+					}
+					else {
+						$("input[type=submit]").removeAttr("disabled");
+					}
+				});
+			});
+			$('#webform-98').submit(function( event ) {
+				BOL.loadingOverlay($('#webform-98'), 'display', 'Your order is processed.<br /><strong>This can take up to 45 seconds</strong><br />Please be patient.');
+			});
+			setMenu("menu-sammeln-4");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div></p>
+	</div>
+</html>

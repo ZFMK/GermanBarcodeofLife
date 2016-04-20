@@ -1,0 +1,76 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="warum-dna-barcoding" class="site-content">
+			<h1 id="page-title" class="title">Why DNA Barcoding?</h1>
+				<div class="field-item even" property="content:encoded">
+				<p>
+					Recent estimates suggest that there are about 8.7 million species on Earth
+					<a href="#Mora">[1]</a>. To date, only about 1.7 million species are scientifically described and cataloged
+					<a href="#IUCN">[2]</a>. In spite of 250 years of taxonomic classification and over 1.7 million species already catalogued in a central database, about 7 million (~80%) of existing species on Earth still await description. An experienced specialist (taxonomist) can reliably identify 1000 - 2000 species. Consequently, this means that for describing the above-mentioned biodiversity estimate, at least 8,700 experts would be required. Worldwide there are only about 4000 - 6000 professional taxonomists
+					<a href="#GTI">[3]</a>, whose numbers are steadily declining
+					<a href="#Eros">[4]</a> and whose capacity limits have been reached. The taxonomists themselves can be considered an 'endangered species'. Furthermore species determination using morphological characteristics is quite time-consuming and cost-intensive.
+				</p>
+				<p>
+					<img class="media-image" width="660" height="76" src="/static/images/div_banner_small_02.jpg" typeof="foaf:Image" title="" alt="">
+					<br><br>
+					The rapid progression of species extinction and climate change constitute a global demand for biodiversity conservation and make the establishment of a fast, reliable and cost-efficient species identification a world-wide need. A global biodiversity assessment is urgently required to implement appropriate measures for nature protection. The GBOL project (German Barcode of Life) realizes this global vision on a national level. GBOL will create the first comprehensive genetic library of biodiversity and thus develops a powerful expert system for rapid species identification in Germany. With the GBOL initiative Germany joins concerted
+					<a title="Overview of international partner." href="/links">international efforts for the global assessment of biodiversity</a>
+					<a href="#IBOL">[5]</a>.
+				</p>
+				<h3>Are taxonomists still needed in the age of DNA barcoding?</h3>
+				<h3>Chances and fears</h3>
+				<p>
+					<br>
+					In the past few years there is a drastic global decline of professional taxonomists and a reduction of research funding in the field of alpha taxonomy. Thus many taxonomists are very suspicious of any changes, which could potentially result in a diminished appreciation of their work. DNA barcoding is a successful model with global dissemination and thus represents a potential “threat” for some taxonomists. There is no longer a debate on the avoidance of DNA barcoding, since it has already become a well-established technology successfully applied in
+					<a class="ext" href="http://ibol.org/about-us/partner-nations/" target="_blank">27 countries</a>
+					(including GBOL in
+					<a href="/team/gbol-institute">Germany</a>). There is a unique opportunity to use the synergy effects of
+					<a href="/dna-barcoding/was-ist-dna-barcoding">DNA barcoding </a> and
+					<a href="/mitmachen/vorteile">taxonomy </a> for the GBOL project in order to make a real quantum leap in future biodiversity research. For this reason, it seems useful to draw attention to important potential fears and arguments of some taxonomists to remove misunderstandings and build awareness of the enormous potential
+					<a href="/gbol/anwendungsgebiete">applications</a> of DNA barcoding.
+				</p>
+				<p>
+					⇒ Read more about this subject in the following review article (
+					<a href="/download?fileName=DNA-Taxonomie_Chancen%20und%20%C3%84ngste_15_2005.pdf">PDF</a>)
+					<a href="#GfBS">[6]</a>.
+				</p>
+				<p>
+					<strong>Sources:</strong>
+				</p>
+				<p>
+					<a name="Mora">[1]</a> Mora et al. 2011(
+					<a target="_blank" href="/download?fileName=journal.pbio_.1001127-1.pdf">pdf</a>, english)
+				</p>
+				<p>
+					<a name="IUCN">[2]</a> IUCN Red List Version 2011 (
+					<a target="_blank" href="/download?fileName=How_many_species_IUCN_Data.pdf">pdf</a>, english)
+				</p>
+				<p>
+					<a name="GTI">[3]</a>
+					<a class="ext" title="Link to site www.gti-kontaktstelle.de/taxonomen" href="http://www.gti-kontaktstelle.de/taxonomen" target="_blank">www.gti-kontaktstelle.de</a>
+				</p>
+				<p>
+					<a name="Eros">[4]</a> Report &quot;Erosion der Artenkenner&quot;
+					<a class="ext" href="http://ibol.org/wp-content/uploads/2014/11/GS-2013-Bericht-Erosion-Artenkenner-End-2.pdf" target="_blank">pdf</a>
+				</p>
+				<p>
+					<a name="IBOL">[5]</a> see also IBOL Factsheet (
+					<a target="_blank" href="/download?fileName=iBOL_FactSheet_German.pdf">pdf</a>, german)
+				</p>
+				<p>
+					<a name="GfBS">[6]</a> W. W&auml;gele (2005): "DNA taxonomy: prospects and fears" GfBS Newsletter 15/2005 (
+					<a href="/download?fileName=DNA-Taxonomie_Chancen_und_Aengste_15_2005.pdf">pdf</a>, german)
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_barcoding.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-barcoding-1");
+		</script>
+	</div>
+</html>

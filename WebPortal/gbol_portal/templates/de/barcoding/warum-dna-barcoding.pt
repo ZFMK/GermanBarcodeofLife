@@ -1,0 +1,76 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">	
+		<div id="warum-dna-barcoding" class="site-content">
+			<h1 id="page-title" class="title">Warum DNA-Barcoding?</h1>
+			<div class="field-item even" property="content:encoded">
+				<p style="text-align: justify; ">
+					Neuesten Sch&auml;tzungen zufolge gibt es auf der Erde ca. ~ 8,7 Millionen Arten von Organismen
+					<a href="#Mora">[1]</a>. Bis heute sind davon lediglich ca. 1,7 Millionen Arten wissenschaftlich beschrieben und katalogisiert
+					<a href="#IUCN">[2]</a>. Weltweit warten also derzeit noch ca. 7 Millionen Arten (80% der Arten) auf ihre Entdeckung und Beschreibung! Ein geschulter Experte (Taxonom) kann ca. 1000-2000 Arten verl&auml;sslich identifizieren. Das bedeutet, dass zur Erfassung der oben genannten Sch&auml;tzung der Artenvielfalt mindestens 8700 Experten ben&ouml;tigt w&uuml;rden. Weltweit gibt es aber nur ca. 4000-6000 professionelle Taxonomen
+					<a href="#GTI">[3]</a>, deren Kapazit&auml;tsgrenzen l&auml;ngst erreicht sind und deren Zahl stetig zur&uuml;ckgeht
+					<a href="#Eros">[4]</a>. Die Taxonomen, selbst gewisserma&szlig;en eine vom Aussterben bedrohte 'Spezies', k&ouml;nnen die morphologische (optische) Artidentifikation zudem nur mit einem hohen Zeit- und Kostenaufwand durchf&uuml;hren.
+				</p>
+				<p>
+					<img class="media-image" width="660" height="76" src="/static/images/div_banner_small_02.jpg" typeof="foaf:Image" title="" alt="">
+					<br><br>
+					Das rasante Fortschreiten von Artensterben und Klimawandel begr&uuml;nden die weltweiten Forderungen nach Erhaltung der Biodiversit&auml;t und machen die Etablierung einer schnellen, zuverl&auml;ssigen und kosteneffizienten Artidentifikation zu einer globalen Notwendigkeit. Es gilt die Artenvielfalt unseres Planeten so schnell und umfassend wie m&ouml;glich zu erfassen, damit effektive Schutzma&szlig;nahmen ergriffen werden k&ouml;nnen. Diese globale Vision soll im Rahmen des GBOL-Projekts (German Barcode of Life) auf deutschlandweiter Ebene verwirklicht werden. GBOL wird die erste umfassende „DNA-Barcoding“-Gendatenbank der Fauna und Flora Deutschlands erstellen und damit ein leistungsf&auml;higes Expertensystem zur schnelleren Artbestimmung entwickeln. Deutschland reiht sich mit der GBOL-Initiative in konzertierte
+					<a title="&uuml;bersicht &uuml;ber die internationalen Kooperationspartner." href="/links">internationale Aktivit&auml;ten zur Erfassung der globalen Biodiversit&auml;t</a> ein
+					<a href="#IBOL">[5]</a>.
+				</p>
+				<h3>Wird der Taxonom im DNA-Barcode Zeitalter noch gebraucht?</h3>
+				<h3>Chancen und &Auml;ngste</h3>
+				<p>
+					<br>
+					Der drastische R&uuml;ckgang von professionellen Taxonomen weltweit und die Reduzierung der Forschungsf&ouml;rderung im Bereich Alpha-Taxonomie haben dazu gef&uuml;hrt, dass viele Taxonomen &auml;u&szlig;erst sensibel gegen&uuml;ber jeder Ver&auml;nderung reagieren, die eine verminderte Wertsch&auml;tzung ihrer Arbeit bedeuten k&ouml;nnte. Die weltweite Ausbreitung der DNA-Barcoding Methode ist eine solche, f&uuml;r manche Taxonomen, „bedrohlich wirkende“ Ver&auml;nderung. Die Frage, ob die DNA-Barcoding Technologie generell gemieden werden sollte, stellt sich nicht mehr, da sie bereits in
+					<a class="ext" href="http://ibol.org/about-us/partner-nations/" target="_blank">27 L&auml;ndern</a>
+					(mit GBOL jetzt auch in
+					<a href="/team/gbol-institute">Deutschland</a>) mit gro&szlig;em Aufwand etabliert und erfolgreich angewendet wurde. Es bleibt daher die gro&szlig;e Chance, die Synergieeffekte von
+					<a href="/dna-barcoding/was-ist-dna-barcoding">DNA-Barcoding</a> und
+					<a href="/mitmachen/vorteile">Taxonomie</a> auch f&uuml;r das GBOL-Projekt zu nutzen, um einen regelrechten Quantensprung in der k&uuml;nftigen Biodiversit&auml;tsforschung zu erm&ouml;glichen. Aus diesem Grund erscheint es sinnvoll, an dieser Stelle auf wichtige potentielle &auml;ngste und Argumente mancher Taxonomen aufmerksam zu machen, die Missverst&auml;ndnisse zu beseitigen und Interesse f&uuml;r das enorme Potential zu wecken, welches die neue DNA-Barcoding Technologie f&uuml;r
+					<a href="/gbol/anwendungsgebiete">diverse Anwendungsbereiche</a> bietet.
+				</p>
+				<p>
+					⇒ Lesen Sie mehr zu diesem Thema im folgenden &Uuml;bersichtsartikel (
+					<a href="/download?fileName=DNA-Taxonomie_Chancen%20und%20%C3%84ngste_15_2005.pdf">PDF</a>)
+					<a href="#GfBS">[6]</a>.
+				</p>
+				<p>
+					<strong>Quellen:</strong>
+				</p>
+				<p>
+					<a name="Mora">[1]</a> Mora et al. 2011 (
+					<a target="_blank" href="/download?fileName=journal.pbio_.1001127-1.pdf">pdf</a>, englisch)
+				</p>
+				<p>
+					<a name="IUCN">[2]</a> IUCN Red List Version 2011 (
+					<a target="_blank" href="/download?fileName=How_many_species_IUCN_Data.pdf">pdf</a>, englisch)
+				</p>
+				<p>
+					<a name="GTI">[3]</a>
+					<a class="ext" title="Link zur Seite www.gti-kontaktstelle.de/taxonomen" href="http://www.gti-kontaktstelle.de/taxonomen" target="_blank">www.gti-kontaktstelle.de</a>
+				</p>
+				<p>
+					<a name="Eros">[4]</a> Bericht &quot;Erosion der Artenkenner&quot;
+					<a class="ext" href="http://ibol.org/wp-content/uploads/2014/11/GS-2013-Bericht-Erosion-Artenkenner-End-2.pdf" target="_blank">pdf</a>
+				</p>
+				<p>
+					<a name="IBOL">[5]</a> siehe auch IBOL Factsheet (
+					<a target="_blank" href="/download?fileName=iBOL_FactSheet_German.pdf">pdf</a>, deutsch)
+				</p>
+				<p>
+					<a name="GfBS">[6]</a> W. W&auml;gele (2005): „DNA-Taxonomie: Chancen und &Auml;ngste“ GfBS Newsletter 15/2005 (
+					<a href="/download?fileName=DNA-Taxonomie_Chancen_und_Aengste_15_2005.pdf" target="_blank">pdf</a>, deutsch)
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_barcoding.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-barcoding-1");
+		</script>
+	</div>
+</html>

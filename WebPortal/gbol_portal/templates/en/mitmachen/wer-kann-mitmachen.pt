@@ -1,0 +1,30 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="wer-kann-mitmachen" class="site-content">
+
+	<h1 id="page-title" class="title">Who can participate?</h1>
+	<div>
+	<p style="margin-left: -20px;">
+	<img class="fullwidth media-image attr__typeof__foaf:Image img__fid__126 img__view_mode__media_original attr__format__media_original" typeof="foaf:Image" title="Graphics by: Fides Friedeberg" style="width: 700px; height: 433px;" src="/static/images/en/Mitmach_Illu_web.jpg" alt="">	
+	</p>
+	<p style="text-align: justify;">Are you an experienced specialist for a certain taxonomic group? </p>
+	<p style="text-align: justify;">You can easily work with morphological species-identification keys in your group and know by experience how the organisms live, and where they occur?</p>
+	<p style="text-align: justify;">You enjoy nature and feel responsibility for our environment? </p>
+	<p style="text-align: justify;">
+	<br>
+	→ You are a highly welcome partner for the GBOL community!
+	</p>
+	</div>
+
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_mitmachen.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+		<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+	</div>
+	<script type="text/javascript">
+	    setMenu("menu-mitmachen-1");
+	</script>
+    </div>
+</html>

@@ -1,0 +1,42 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="versandanschreiben" class="site-content user-area">
+			<h1 id="page-title" class="title">Upload collection table</h1>
+			<p>Please double-check carefully, whether you have uploaded the correct 
+				collection table associated to this sample package. If you accidentally 
+				uploaded the false data table, you can delete it at any time by pressing 
+				the "Remove" button and re-upload the correct document. Only when you press 
+				the "Save" button, your sample table is sent directly by email to the 
+				relevant taxon coordinator.</p>
+			<br />
+			<form accept-charset="UTF-8" method="post" action="/sammeln/versandanschreiben" enctype="multipart/form-data">
+				<label for="no_samples">Number of samples
+					<span class="form-required" title="Required entry.">*</span>
+				</label>
+				<br />
+				<input id="no_samples" class="small_small required" type="text" value="0" name="Number" />
+				<br />
+				<br />
+				<label for="select_file">Collection table
+					<span class="form-required" title="Required entry.">*</span>
+				</label>
+				<br />
+				<input id="select_file" class="form-file" type="file" size="22" name="uploadedDoc" />
+				<div class="description">Upload here your Excel file to match the samples</div>
+				<br />
+				<br />
+				<input id="edit-submit" class="form-submit" type="submit" value="Absenden" name="op" />
+			</form>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-sammeln-6");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${message}</div></p>
+	</div>
+</html>

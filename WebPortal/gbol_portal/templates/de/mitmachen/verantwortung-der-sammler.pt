@@ -1,0 +1,27 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="verantwortung-der-sammler" class="site-content">
+			<h1 id="page-title" class="title">Verantwortung der GBOL-Taxon-Experten</h1>
+			<div class="field-item even" property="content:encoded">
+			<ul style="padding-left: 0px;">
+				<li style="text-align: justify; ">Abgabe korrekt bestimmten und f&uuml;r DNA-Analyse konservierten Materials.</li>
+				<li style="text-align: justify; ">Zuverl&auml;ssige Lieferung detaillierter Information z.B. zur Taxonomie, Sammlungsinformation (Sammlungsdatum- und Ort, GPS Koordinaten), Geschlecht, Lebenszyklus etc..</li>
+				<li style="text-align: justify; ">Das beigesteuerte Material wird den entsprechenden Sammlungen der jeweiligen GBOL-Partner &uuml;bergeben.</li>
+				<li style="text-align: justify; ">Dialog mit den zust&auml;ndigen GBOL-Taxon-Koordinatoren bei Fragen zur taxonomischen Determination.</li>
+			</ul>
+			<p style="text-align: justify; ">
+			<img class="media-image" width="530" height="324" src="/static/images/jd_sympetrum.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 324px; position: relative; left: 65px;" alt="">
+			</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_mitmachen.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-mitmachen-4");
+		</script>
+	</div>
+</html>

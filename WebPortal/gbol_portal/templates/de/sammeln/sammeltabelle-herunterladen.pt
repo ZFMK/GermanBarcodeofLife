@@ -1,0 +1,77 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="js-head">
+		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+		<div id="download-collection-sheet" class="site-content user-area">
+			<h1 id="page-title" class="title">Sammeltabelle herunterladen</h1>
+			<p>
+				Bitte verwenden Sie zur Dokumentation Ihrer Sammlungst&auml;tigkeit die GBOL-Sammeltabelle und den entsprechenden Sammelleitfaden.
+				<br />
+				Die GBOL-Sammeltabelle k&ouml;nnen Sie nach der
+				<a href="/sammeln/versandmaterial-anfordern">Anforderung von Versandmaterial</a>
+				hier herunterladen.
+			</p>
+			<h2>Von Ihnen angeforderte Sammeltabellen:</h2>
+			<div class="panel-content table-content">
+				<table width="100%" id="tableCollSheetDownload" class="display">
+					<thead>
+						<tr>
+							<th>Taxon</th>
+							<th>Anzahl</th>
+							<th>Art</th>
+							<th>Datum</th>
+							<th>Excel Tabelle</th>
+						</tr>
+					</thead>
+					<tbody>${structure: data}</tbody>
+				</table>
+			</div>
+			<h2>Laden Sie die Sammelleitf&auml;den hier herunter:</h2>
+			<ul>
+				<li>
+					<a href="/download?fileName=Sammelinfos_Tierproben_GBOL_2012-08-04.pdf" class="ext">Sammelleitfaden f&uuml;r Tiere</a>
+				</li>
+				<li>
+					<a href="/download?fileName=GBOL_Sammelanleitung_Bluetenpflanzen3.pdf" class="ext">Sammelleitfaden f&uuml;r Bl&uuml;tenpflanzen</a>
+				</li>
+				<li>
+					<a href="/download?fileName=Sammelinfos_Flechtenproben_GBOL_20120409.pdf" class="ext">Sammelleitfaden f&uuml;r Flechten</a>
+				</li>
+				<li>
+					<a href="/download?fileName=Sammelinfos_Rostpilze_GBOL_26.04.2012.pdf" class="ext">Sammelleitfaden f&uuml;r Rostpilze</a>
+				</li>
+			</ul>
+			<p>Der Sammelleitfaden f&uuml;r Lebermoose, Laubmoose, Hornmoose, B&auml;rlapppflanzen & Farne erscheint in K&uuml;rze - bitte kontaktieren Sie bei Fragen vorerst:
+				<br />
+				Dr. Ralf Hand (Spermatophytina):
+				<a class="mailto" href="mailto:r.hand@bgbm.org"> r.hand@bgbm.org</a>
+				<br />
+				Dr. Martin Nebel (Marchantiophytina, Bryophytina, Anthocerotophytina, Lycophytina und Monilophytina):
+				<a class="mailto" href="mailto:martin.nebel@smns-bw.de">martin.nebel@smns-bw.de</a></p>
+			<p>Die Tabelle ist f&uuml;r die Eingabe der Daten bestimmt, die im Rahmen des
+				German Barcode of Life (GBOL) Projekts erhoben werden.
+				Diese Daten beziehen sich auf Proben, die bei einem der GBOL-Partner
+				f&uuml;r DNA-Barcoding eingereicht werden.
+				<br />
+				Welcher GBOL-Projektpartner f&uuml;r die Annahme der Proben zust&auml;ndig ist,
+				h&auml;ngt von der jeweiligen taxonomischen Gruppe ab.</p>
+			<p>	Alle Felder in der Sammeltabelle sind durch kurze Kommentare erkl&auml;rt;
+				bitte beachten Sie diese unbedingt, um das korrekte Ausf&uuml;llen der Tabelle zu gew&auml;hrleisten.</p>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_sammler.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			$('#tableCollSheetDownload').DataTable({
+				"order": [[ 3, "desc" ]],
+				"scrollX": true
+			});
+			setMenu("menu-sammeln-5");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${message}</div></p>
+	</div>
+</html>

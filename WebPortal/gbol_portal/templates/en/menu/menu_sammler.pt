@@ -1,0 +1,59 @@
+<div class="menu-red block menu-li">
+	<h2 class="pane-title">For Taxon Experts</h2>
+	<ul>
+		<li id="menu-sammeln-1">
+			<a title="" href="/sammeln/dashboard">Dashboard</a>
+		</li>
+		<li id="menu-sammeln-2">
+			<a title="" href="/sammeln/userEdit">Edit Personal Data</a>
+		</li>
+		<li id="menu-sammeln-3">
+			<a title="" href="/sammeln/sammeln-versenden">Collecting and shipping</a>
+		</li>
+		<li id="menu-sammeln-4">
+			<a title="" href="/sammeln/versandmaterial-anfordern">Request collection material</a>
+		</li>
+		<li id="menu-sammeln-5">
+			<a title="" href="/sammeln/sammeltabelle-herunterladen">Download collection table</a>
+		</li>
+		<li id="menu-sammeln-6">
+			<a title="" href="/sammeln/versandanschreiben">Upload collection table</a>
+		</li>
+		<li id="menu-sammeln-7">
+			<a title="" href="/sammeln/versandanschreiben-anzeigen">Cover letter</a>
+		</li>
+		<li>
+			<a href="/sammeln/logout">Abmelden</a>
+		</li>
+	</ul>
+</div>
+<div class="menu-black menu-li" tal:condition="python:1 in request.session.role or 2 in request.session.role or 4 in request.session.role">
+	<h2 class="pane-title">Administrator</h2>
+	<ul>
+		<li id="menu-sammeln-9" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+			<a href="/admin/certify-users">
+				Certify new users
+				<span class="circle" tal:condition="python:request.session.new_users>0" tal:content="request.session.new_users">0</span>
+			</a>
+		</li>
+		<li id="menu-admin-2" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+			<a href="/admin/certify-expertise">Certify expertises
+				<span class="circle" tal:condition="python:request.session.new_expertise>0" tal:content="request.session.new_expertise">0</span>
+			</a>
+		</li>
+		<li id="menu-admin-3">
+			<a href="/admin/sammeltabellen">Uploaded collection tables
+				<span class="circle" tal:condition="python:request.session.shipping_requests>0" tal:content="request.session.shipping_requests">0</span>
+			</a>
+		</li>
+		<li id="menu-sammeln-12" tal:condition="python:4 in request.session.role">
+			<a href="/news/news">News</a>
+		</li>
+		<li id="menu-sammeln-12" tal:condition="python:4 in request.session.role">
+			<a href="/news/publikationen">Publications</a>
+		</li>
+		<li id="menu-sammeln-11" tal:condition="python:1 in request.session.role or 2 in request.session.role">
+			<a href="/admin/user-management">User management</a>
+		</li>
+	</ul>
+</div>

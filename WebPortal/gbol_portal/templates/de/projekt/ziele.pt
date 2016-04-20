@@ -1,0 +1,46 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="ziele" class="site-content">
+			<h1 id="page-title" class="title">Ziele des Projekts</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					Im GBOL-Projekt wird mit einer Vielzahl von unterschiedlichen Organismen aus den verschiedensten geographischen
+					Regionen Deutschlands gearbeitet. In der zweiten Projektphase (2016-2018) werden somit nun auch Kieselalgen
+					und weitere Pilzgruppen erfasst, die bisher nur mit wenigen Rostpilzarten vertreten waren. Alle GBOL-Projektpartner
+					verfolgen aber gemeinsame, generelle Interessen und Ziele:
+				</p>
+					<ol style="padding-left: 0px;">
+						<li class="justify">Aufbau einer genetischen Barcode-Bibliothek der Fauna und Flora Deutschlands mit den dazugeh&ouml;rigen Belegexemplar-, Gewebe- und DNA-Sammlungen.</li>
+						<li class="justify">Deutschlandweite Zusammenarbeit von taxonomischen Spezialisten (Artenkennern) und Netzwerken.</li>
+						<li class="justify">Entwicklung von Strategien zur effizienten Erzeugung und wissenschaftlichen, &ouml;konomischen, und naturschutzrelevanten Anwendung von DNA-Barcodes.</li>
+					</ol>
+				<p>
+					<img class="media-image" width="530" height="253" src="/static/images/florfliege.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 253px; position: relative; left: 65px;" alt="">
+				</p>
+				<p>
+					Gegen Ende der ersten GBOL Phase wurde das DNA Barcode System in Kooperation mit potentiellen Nutzern dieser Methode verschiedenen Praxistests unterzogen. Eine allgemeine Zusammenfassung findet man in unserem
+					<a class="ext" href="https://www.zfmk.de/dateien/atoms/files/verbundbericht_gbol_f2014.pdf" target="_blank">Zwischenbericht für 2014</a>.
+					Unter anderem waren folgende Testanwendungen vorgesehen:
+					<ol style="list-style-type: lower-alpha; padding-left: 0" start="1">
+						<li class="justify">In Zusammenarbeit mit einem Fischereibiologen und einem Umweltgutachter wurde die Makrofauna des Sieg-Fluss-Systems bei Bonn mittels DNA-Barcoding untersucht und verschiedene Aspekte dieser Methodik den konventionellen Methoden gegen&uuml;bergestellt.</li>
+						<li class="justify">Im Nationalpark Eifel wurden in verschiedenen Waldregionen Umweltproben (u.a. Insektenfallen) einer DNA-Barcode-Massensequenzierung unterzogen.</li>
+						<li class="justify">In Kooperation mit dem Nationalpark Bayrischer Wald wurde mittels DNA Barcoding eine Schädlingsinventur im Wald durchgef&uuml;hrt.</li>
+						<li class="justify">In einem landwirtschaftlichen Betrieb sollte anhand von DNA Barcodes ein Parasiten-Monitoring im Nutzviehbestand getestet werden.</li>
+						<li class="justify">Im Nationalpark Berchtesgaden wurde die Quellenfauna via DNA Barcoding erfasst.</li>
+					</ol>
+					In der angeschlossenen zweiten GBOL F&ouml;rderphase (2016-2018) werden weitere Anwendungsstudien im Bereich der Forst- und Landwirtschaft, Gew&auml;sserg&uuml;tebestimmung und Forensik durchgef&uuml;hrt. Detail hierzu k&ouml;nnen
+					<a title="Erfahren Sie mehr &uuml;ber die Anwendungsgebiete." href="/gbol/anwendungsgebiete">hier eingesehen werden</a>.
+				</p>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_projekt.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-projekt-3");
+		</script>
+	</div>
+</html>

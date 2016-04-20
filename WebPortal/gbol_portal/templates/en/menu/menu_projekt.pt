@@ -1,0 +1,16 @@
+<div id="content-menu" class="block menu-li">
+	<ul>
+		<li id="menu-projekt-1">
+			<a title="Learn more about the GBOL project, objectives and applications." href="/gbol/was-ist-gbol">What is GBOL?</a>
+			</li>
+		<li id="menu-projekt-2">
+			<a title="Visions of the GBOL project." href="/gbol/vision">Vision</a>
+		</li>
+		<li id="menu-projekt-3">
+			<a title="Objectives of the GBOL project." href="/gbol/ziele">Project Objectives</a>
+		</li>
+		<li id="menu-projekt-4">
+			<a title="The free of charge use of the GBOL data permits a variety of applications." href="/gbol/anwendungsgebiete">Applications</a>
+		</li>
+	</ul>
+</div>

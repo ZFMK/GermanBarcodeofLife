@@ -1,0 +1,29 @@
+<html metal:use-macro="load: ../master.pt">
+    <div metal:fill-slot="body" id="main">
+	<div id="verantwortung-der-sammler" class="site-content">
+
+	<h1 id="page-title" class="title">Responsibilities of GBOL-Taxon-Experts</h1>
+	<div class="field-item even" property="content:encoded">
+	<ul style="padding-left: 0px;">
+	<li style="text-align: justify; ">Delivery of correctly determined and well-preserved specimens for DNA barcode analyses.</li>
+	<li style="text-align: justify; ">Reliable supply of metadata (i.e. taxonomy, collection date and location, GPS coordinates, gender, life cycle etc.)</li>
+	<li style="text-align: justify; ">Sample material collected and determined by GBOL-partners needs to be stored in collections of the respective GBOL institutions.</li>
+	<li style="text-align: justify; ">Dialogue with the relevant GBOL taxon-coordinators to resolve questions concerning the taxonomic determination.</li>
+	</ul>
+	<p style="text-align: justify; ">
+	<img class="media-image" width="530" height="324" src="/static/images/jd_sympetrum.jpg" typeof="foaf:Image" title="" style="width: 530px; height: 324px; position: relative; left: 65px;" alt="">
+	</p>
+	</div>
+
+	</div>
+	<div id="left-menu" class="left-menu">
+		<div metal:use-macro="load: ../menu/menu_mitmachen.pt" id="menu" class="block"></div>
+		<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+		<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+		<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+	</div>
+	<script type="text/javascript">
+	    setMenu("menu-mitmachen-4");
+	</script>
+    </div>
+</html>

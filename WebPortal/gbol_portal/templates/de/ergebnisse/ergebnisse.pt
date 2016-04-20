@@ -1,0 +1,163 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="css-head">
+		<link rel="stylesheet" type="text/css" href="/static/js/DataTables/jquery.dataTables.css">
+		<link rel="stylesheet" type="text/css" href="/static/js/DataTables/TableTools/css/dataTables.tableTools.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.jqplot.css">
+	</metal:js>
+	<metal:js fill-slot="js-head">
+		<script type="text/javascript" src="/static/js/OpenLayer/ol.js"></script>
+		<script type="text/javascript" src="/static/js/jquery-ui.js"></script>
+		<script type="text/javascript" src="/static/js/jqPlot/jquery.jqplot.js"></script>
+		<script type="text/javascript" src="/static/js/jqPlot/jqplot.pieRenderer.js"></script>
+		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="/static/js/DataTables/TableTools/js/dataTables.tableTools.js"></script>
+		<script type="text/javascript" src="/static/js/results.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$('#main').tabs({
+					cache: true
+				});
+			});
+		</script>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+		<div id="headerbox" class="tabsheader">
+			<div id="header" class="site-menu">
+				<ul id="tabs" class="inline">
+					<li><a href="#Checklist">Fundstellen</a></li>
+					<li><a href="#StatisticsDE">Statistik Deutschland</a></li>
+					<li><a href="#StatisticsBL">Statistik Bundesl&auml;nder</a></li>
+					<li><a href="#Missing">Fehlende Arten</a></li>
+				</ul>
+			</div>
+			<div id="main-menu_back" class="tabs-menu_back"></div>
+		</div>
+		<div id="content">
+			<div id="Checklist" class="site-content wide">
+				<h1>Fundstellen</h1>
+				<br>
+				<div id="oberer_teil">
+					<input type="hidden" id="option-user" value="${structure: uid}" />
+					Suche: 
+					<input id="searchCaption" type="text" size="30" maxlength="100" onkeypress="submitTextBox(event)" />
+					Kategorie: 
+					<select id="searchCategory" >
+						<option value="19">Taxon / Art</option>
+					</select>
+					<input type="submit" value="Suchen" onclick="startSearch()" />
+				</div>
+				<br>
+				<div id="mittlerer_teil">
+					<div id="mittlerer_Teil_links">
+						<h2>Taxa</h2>
+						<br>
+						<p class="treeview-legend">
+							Ampel-Legende: Anzahl <span title="Anzahl der in Deutschland erfassten Arten" class="treeview-red"> bekannte </span> / <span title="Anzahl gesammelter Arten" class="treeview-orange"> vorhandene </span > / <span title="Anzahl gebarcodeter Arten" class="treeview-green">  barcode </span > Arten<br />(Anzahl Individuen in Klammer).
+						</p>
+						<div class="treeview-content panel-content">
+							<ul id="Node_Root"></ul>
+							<p style="font-size: 10px;"><small>Plantae: Please visit <a href="http://gbol5.de/" target="_blank"> GBOL5</a> for more details</small></p>
+						</div>
+						<div id="loadingSearchMAP" class="hidden">
+							<img src="/static/images/loading2.png">
+						</div>
+						<p style="font-size: 10px;"><sup>*</sup><small><a href="http://www.diversitymobile.net/wiki/DTN_Taxon_Lists_Services" target="_blank">Taxon lists services for GBOL</a></small></p>
+					</div>
+					<div id="mittlerer_Teil_rechts">
+						<img src="/static/images/plus.png" onclick="expandMap(true)" class="changeMap" id="mapPlus" />
+						<img src="/static/images/minus.png" onclick="expandMap(false)" class="changeMap hidden" id="mapMinus" />
+						<div id="map"></div>
+						<div id="map_info"></div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div id="unterer_teil">
+					<h2>Suchergebnisse</h2>
+					<br>
+					<iframe id="frame1" style="display:none"></iframe>
+					<br>
+					<div id="anzeige-content"></div>
+					<div>
+						<input type="button" onclick="csvExport()" id="exportButton" value="Exportiere als Textdatei" class="invisible" />
+					</div>
+				</div>
+				<p class="align-right text-small">Daten aktualisiert: ${structure: last_updated}</p>
+			</div>
+			
+			<div id="StatisticsDE" class="site-content wide user-area">
+				<!--<h1 i18n:translate="statistik_deutschland">Statistik Deutschland</h1>-->
+				<h1 i18n:translate="statistik_deutschland">Statistik Deutschland</h1>
+				<div id="selection"><br>
+					<label for="choiceTaxaDE">W&auml;hlen Sie ein Taxon: </label>
+					<input id="choiceTaxaDE"/>
+					<input type="button" id="opDE" name="op" value=" Anzeigen " disabled="true" onClick="getValuesdrawPies(lang='${structure: lan}')" />
+					<div id="choiceTaxaDE_value" class="hidden">not_chosen_ta</div>
+				</div>
+				<div id="PromptArea"></div>
+				<br>
+				<div id="ChartArea"></div>
+				<div id="loadingSearchDE" class="hidden">
+					<img src="/static/images/loading2.png">
+				</div>
+				<div id="TableAreaDE" class="datatable"></div>
+				<h2 id="choose_taxon_first_warning_DE">Bitte w&auml;hlen Sie eine Ordnung oder Taxon, um eine &Uuml;bersicht der gesammelten und mit Barcode
+					belegten Arten f&uuml;r Deutschland und pro Bundesland zu erhalten. Dargestellt werden momentan alle verifizierten DNA Barcodes aus GBOL 1 (ZFMK), GBOL 2 (ZSM, über BOLD freigegebene).</h2>
+				<script>
+					autocomplete(page='DE');
+					getValuesdrawPies(lang='${structure: lan}');
+					hideButton(page="DE");
+				</script>
+			</div>
+			
+			<div id="StatisticsBL" class="site-content wide user-area">
+				<h1>Statistik Bundesl&auml;nder</h1>
+				<div id="selection"><br />
+					<label for="choiceTaxaBL">W&auml;hlen Sie ein Taxon und ein Bundesland: </label>
+					<br>
+					<input id="choiceTaxaBL"/>
+					${structure: select_states.format("BL","BL")}
+					<input type="button" id= "opBL" name="op" value=" Anzeigen " disabled="true" onClick="ajaxDataRendererBL(lang='${structure: lan}')"/>
+					<div id="choiceTaxaBL_value" class="hidden">not_chosen_ta</div>
+				</div><br><br>
+				<div id="loadingSearchBL" class="hidden">
+					<img src="/static/images/loading2.png">
+				</div>
+				<div id="TableAreaBL" class="datatable"></div>
+				<h2 id="choose_taxon_first_warning_BL">Um eine Tabelle mit Arten zu sehen, w&auml;hlen Sie bitte ein Taxon und ein Bundesland! Dargestellt werden momentan alle verifizierten DNA Barcodes aus GBOL 1 (ZFMK) und GBOL 2 (ZSM, über BOLD freigegebene).</h2>
+				<script>
+					autocomplete(page='BL');
+				</script>
+			</div>
+
+			<div id="Missing" class="site-content wide user-area">
+				<h1>Fehlende Arten</h1>
+				<div id="selection"><br />
+					<label for="choiceTaxaMI">W&auml;hlen Sie ein Taxon: </label>
+					<input id="choiceTaxaMI"/>
+					<input type="button" id= "opMI" name="op" value=" Anzeigen " disabled="true" onClick="ajaxDataRendererMI(lang='${structure: lan}')"/>
+					<div id="choiceTaxaMI_value" class="hidden">not_chosen_ta</div>
+				</div><br><br>
+				<div id="loadingSearchMI" class="hidden">
+					<img src="/static/images/loading2.png">
+				</div>
+				<div id="TableAreaMI" class="datatable"></div>
+				<h2 id="choose_taxon_first_warning_MI">Um eine Tabelle mit noch nicht gesammelten Arten zu sehen, w&auml;hlen Sie bitte ein Taxon! Dargestellt werden momentan alle verifizierten DNA Barcodes aus GBOL 1 (ZFMK) und GBOL 2 (ZSM, über BOLD freigegebene).</h2>
+				<script>
+					autocomplete(page='MI');
+				</script>
+			</div>
+		</div>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${structure: message}</div><</p>
+	</div>
+	<metal:js fill-slot="js-foot">
+		<script type="text/javascript">
+			after_load();
+			hideButton(page="BL");
+			hideButton(page="MI");
+		</script>
+	</metal:js>
+</html>
+

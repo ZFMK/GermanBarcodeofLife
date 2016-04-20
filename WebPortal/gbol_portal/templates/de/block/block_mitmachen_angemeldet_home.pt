@@ -1,0 +1,27 @@
+<div id="mitmachen-block" class="token block">
+	<h2 class="pane-title">Machen Sie mit...</h2>
+	<ul class="mitmachenblockhome">
+	<li class="first button-highlight">
+		<a title="Alle Funktionen rund ums Sammeln und Versenden!" href="/sammeln/dashboard">
+		<strong>Experten-Bereich!</strong>
+		F&uuml;r Ihre Einstellungen und Aktivit&auml;ten...
+		</a>
+	</li>
+	</ul>
+	<ul class="mitmachenblockhome">
+	<li>
+		<a title="Nach dem Ausloggen gelangen Sie wieder auf die Startseite!" href="/sammeln/logout">
+		<strong>Abmelden!</strong>
+		Bitte melden Sie sich ab, wenn Sie fertig sind...
+		</a>
+	</li>
+   </ul> 
+   <ul class="mitmachenblockhome">
+	<li class="last">
+		<a title="Abonnieren Sie unseren Newsletter!" href="/newsletter">
+		<strong>Newsletter</strong>
+		Bleiben Sie stets aktuell informiert!
+		</a>
+	</li>
+	</ul>
+</div>

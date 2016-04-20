@@ -1,0 +1,63 @@
+<html metal:use-macro="load: ../master.pt">
+	<div metal:fill-slot="body" id="main">
+		<div id="was-ist-dna-barcoding" class="site-content">
+			<h1 id="page-title" class="title">Was ist DNA-Barcoding?</h1>
+			<div class="field-item even" property="content:encoded">
+				<p>
+					<img class="media-image" width="540" height="298" src="/static/images/jd_asiat_marienkaefer.jpg" typeof="foaf:Image" title="" style="width: 540px; height: 298px;" alt="">
+				</p>
+				<p align="JUSTIFY">
+					<a target="_blank" href="/download?fileName=TenReasonsBarcoding.pdf">Ten reasons for Barcoding (pdf, englisch)</a>
+				</p>
+				<p style="text-align: justify;">
+					Jeder von uns kennt die industriellen Strichcodes (Barcodes) die jedes Produkt im Handel individuell kennzeichnen. Analog zu diesen Strichcodes sind auch bestimmte kurze Genabschnitte - sogenannte DNA-Barcodes - f&uuml;r jede Art einzigartig.
+					<a class="ext" title="Lesen Sie auch auf wikipedia.de mehr &uuml;ber DNA Barcoding." href="http://de.wikipedia.org/wiki/DNA_barcoding" target="_blank">DNA-Barcoding</a>
+					hat sich als globaler Standard zur schnellen und zuverl&auml;ssigen genetischen Artidentifizierung von Tieren, Pflanzen und Pilzen entwickelt
+				</p>
+				<p style="text-align: justify;">
+					Anhand einer kurzen DNA-Sequenz eines speziellen Markergens, dem mitochondrialen COI-Gen k&ouml;nnen fast alle Tierarten (z.B. V&ouml;gel, Schmetterlinge, Fische, Fliegen etc.) auf der Erde identifiziert werden. Die Artidentifikation von Landpflanzen erfolgt mittels zwei verschiedener Genregionen in den Chloroplasten, matK und rbcL. Pilze k&ouml;nnen anhand der ITS-Region erkannt werden. Das Ziel von DNA Barcoding ist der Aufbau einer &ouml;ffentlich zug&auml;nglichen Referenzdatenbank mit artspezifischen DNA-Barcode-Sequenzen. Mithilfe von DNA Barcoding k&ouml;nnen Individuen von besonders schwierig zu identifizierenden und artenreichen Gruppen diagnostiziert werden, z.B. spezielle Entwicklungsstadien (Spore, Ei oder Larve) und sogar Teile und Fragmente von Organismen (Fliegenbein, Wurzel, Pilzhyphe oder Haar). Diese Methode erm&ouml;glicht auch Nicht-Spezialisten die schnelle, kosteng&uuml;nstige und zuverl&auml;ssige
+					<a title="Informationen zu den Anwendungsgebieten von GBOL." href="/gbol/anwendungsgebiete">Artidentifikation mit vielf&auml;ltigen Anwendungsgebieten</a>.
+				</p>
+				<h2 style="text-align: justify;">Arbeitsschritte zur Erstellung einer DNA-Barcode Datenbank</h2>
+				<p style="margin-left: -20px;">
+					<img class="fullwidth media-image attr__typeof__foaf:Image img__fid__118 img__view_mode__media_original attr__format__media_original" typeof="foaf:Image" title="Grafikerin: Fides Friedeberg" style="width: 700px; height: 442px;" src="/static/images/Flowchart_web_beschnitten.jpg" alt="">
+				</p>
+				<ol style="padding-left: 0px;">
+					<li style="text-align: justify;">DNA-Barcode-Projekte k&ouml;nnen ihre Proben aus verschiedenen Quellen beziehen: Tier-, Pflanzen- und Pilzmaterial kann aus diversen &ouml;ffentlichen und privaten Sammlungsarchiven (z.B. Naturkundemuseen, Zoos, Botanische G&auml;rten, Saatgutbanken etc.) gewonnen werden, sofern hier die DNA noch erhalten ist. GBOL ist jedoch auch auf die
+						<a title="Erfahren Sie mehr &uuml;ber die Teilnahmem&ouml;glichkeiten f&uuml;r Sammler." href="/mitmachen/teilnahmeinfos">Mitarbeit von hochmotivierten, erfahrenen Artenkennern</a>
+						angewiesen, welche Probenmaterial im Gel&auml;nde sammeln, bestimmen und f&uuml;r die molekulare Analyse konservieren.</li>
+					<li style="text-align: justify;">Zu jeder Probe werden taxonomische Daten und alle Sammeldaten erfasst (z.B. Sammlungs-Ort und Datum, geographische Koordinaten, Sammelmethode, Name des Taxon-Experten, etc.).</li>
+					<li style="text-align: justify;">Jedes Exemplar wird fotografiert.</li>
+					<li style="text-align: justify;">Die Belegexemplare werden den jeweiligen Sammlungsarchiven der
+						<a href="/team/gbol-institute">GBOL-Institute </a> &uuml;bergeben.
+					</li>
+					<li style="text-align: justify;">Im Labor isolieren technische Mitarbeiter ein kleines Gewebest&uuml;ck vom Sammlungsexemplar und extrahieren daraus DNA.</li>
+					<li style="text-align: justify;">Der Prozess der PCR (Polymerase-Kettenreaktion) wird zur Anreicherung/Vervielf&auml;ltigung der spezifischen DNA Barcode-Region eingesetzt.</li>
+					<li style="text-align: justify;">Das fertige PCR-Produkt wird mithilfe von Sequenzierrobotern sequenziert. Eine DNA-Barcode-Sequenz besteht aus einer Abfolge von vier Buchstaben &uuml;ber wenige hundert Positionen (z.B. CAATCGGTAA…), welche die vier Nukleins&auml;uren (
+						<strong>A</strong>denin,
+						<strong>G</strong>uanin,
+						<strong>T</strong>hymin, und
+						<strong>C</strong>ytosin) der DNA repr&auml;sentieren.
+					</li>
+					<li style="text-align: justify;">Die Sequenz- und Metadaten (Sammeldaten, Taxonomie, Fotografien, Aufbewahrungsort und Literatur) der Proben werden von GBOL-Wissenschaftlern auf Qualit&auml;t und Vollst&auml;ndigkeit gepr&uuml;ft.</li>
+					<li style="text-align: justify;">Jeder Artensteckbrief inklusive der DNA-Sequenz wird in die globale Referenz-Datenbank f&uuml;r DNA Barcodes „BOLD - Barcode of Life Data Systems Database“ eingespeist.
+						<a class="ext" title="Link zu www.boldsystems.org" href="http://www.boldsystems.org/" target="_blank">BOLD ist eine &ouml;ffentlich zug&auml;ngliche Online Plattform</a>
+						, die neben den DNA Barcodes auch Daten zum Fundort und Sammler der Probe und relevante Informationen zur Taxonomie, Lagerungsort, Fotos und Literatur liefert. BOLD bietet dem Nutzer zudem noch multiple Anwendungsfunktionen wie Artidentifikation von Sequenzen unbekannter Individuen, Interpretation von Verwandtschaftsbeziehungen und Art-Verbreitungskarten.
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div id="left-menu" class="left-menu">
+			<div metal:use-macro="load: ../menu/menu_barcoding.pt" id="menu" class="block"></div>
+			<div metal:use-macro="load: ../block/block_sponsoren.pt" id="sponsoren" class="block"></div>
+			<div tal:condition="python: not request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen.pt" id="mitmachen-block" class="block"></div>
+			<div tal:condition="python: request.session.get('role')" metal:use-macro="load: ../block/block_mitmachen_angemeldet.pt" id="mitmachen-block" class="block"></div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-barcoding-2");
+		</script>
+	</div>
+</html>
+
+
+
