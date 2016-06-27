@@ -1,0 +1,135 @@
+a, h1, h2, h3, table caption, h4, h5, h6, .fontface body, .fontface h2.block-title, .fontface h2.node-title, .fontface h2.pane-title, .fontface .displaypane-title, .fontface .zfmk-teaser h2, .fontface h3, .fontface table caption, table .fontface caption, .fontface h4, .fontface h5, .fontface .zfmk-focusarea .slide-link a, .fontface .ui-accordion-header, .fontface .zfmk-submenutree h2.pane-title, .fontface .zfmk-submenutree .displaypane-title, .fontface .zfmk-marginalbox h1, .fontface .zfmk-marginalbox h2, .fontface .zfmk-marginalbox h3, .fontface .zfmk-marginalbox table caption, table .fontface .zfmk-marginalbox caption, .fontface .zfmk-marginalbox h4, .fontface .zfmk-marginalbox h5, .calendar-calendar th, p {
+	font-family: "Source Sans Pro",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	letter-spacing: 0;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, img, span, strong, em {
+	margin: 0;
+	padding: 0;
+	outline: 0 none;
+	vertical-align: baseline;
+}
+
+body {
+	background-color: #E1DED5;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0.3em;
+	line-height: 1em;
+	letter-spacing:-0.05em;
+	color: #444;
+}
+
+h1{font-size:36px;}
+h2{font-size:28px;}
+h3{font-size:21px;}
+h4{font-size:19px;}
+h5{font-size:17px;}
+h6{font-size:15px;}
+
+form{
+	background-color:#ffffff;
+	margin:20px;
+	overflow:auto;
+	padding:10px;
+}
+
+ol{list-style:decimal;}
+ul{list-style:disc;}
+ul{list-style:none;}
+
+
+h1 {
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 1em;
+	padding-top: 0;
+}
+
+p, ul, ol {
+    padding-bottom: 0.5em;
+}
+
+table{border-collapse:collapse;border-spacing:0;}
+
+input,button,select,textarea{margin:0;vertical-align:middle;}
+
+button,input[type="reset"],input[type="submit"],input[type="button"]{background-clip:padding-box;border-radius:11px;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;outline:0;overflow:visible;padding:3px 10px 4px;text-shadow:#fff 0 1px 1px;width:auto;}
+textarea,select,input[type="text"]{border-radius:0;box-sizing:border-box;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;font-family:Arial,sans-serif;height:1.8em}
+button:focus,button:active,input:focus,input:active,select:focus,select:active,textarea:focus,textarea:active{box-shadow:#06f 0 0 7px;z-index:1;}
+input[type="file"]:focus,input[type="file"]:active,input[type="radio"]:focus,input[type="radio"]:active,input[type="checkbox"]:focus,input[type="checkbox"]:active{box-shadow:none;}
+button[disabled],input[disabled],select[disabled],select[disabled] option,select[disabled] optgroup,textarea[disabled]{box-shadow:none;color:#888;cursor:default;}
+textarea,select[size],select[multiple]{height:auto;}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+
+a:link,a:visited,a:active{color:#0062A0;text-decoration:underline;padding:2px 5px}
+a:hover{color:#B8BCC9;text-decoration:none;background-color:#0062A0}
+a.active{color:#B8BCC9;background-color:#0062A0;text-decoration:underline;}
+
+table,tr.odd,tr.even,tr.odd td,tr.odd:hover,tr.odd:hover td,tr.even td,tr.even:hover,tr.even:hover td,table tbody td.active{background:transparent;}
+table{margin-top:40px;border-collapse:separate;border-spacing:0;}
+table caption{display:table-caption;text-align:left;}
+td{padding:4px 6px;border-top:1px solid #878785;}
+th{background-color:#ccc;font-weight:normal;padding:4px 6px;}
+th.active img{vertical-align:middle;padding-left:2px;}
+
+/* ---- site layout ---- */
+#login {
+	float: right;
+}
+
+#content {
+	clear:both;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%
+}
+
+#lock {
+	float: left;
+	width: 100px;
+}
+
+.fields {
+	margin-left: 100px;
+}
+
+.status-msg {
+	color:#444444;
+	margin:0 30px 0 30px;
+	font-size: 0.8em}
+
+.white_box {
+	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 2px solid #aaa;
+	box-shadow: inset 0px 0px 8px #aaa;
+	padding:15px;
+	margin: 0 20px 0 20px;}
+
+.small_box {width: 500px;}
+
+h2 .pane-title {
+	margin-bottom: 0;
+	height: 2em;
+	overflow: hidden;
+	vertical-align: bottom}
+
+.pane-content {
+	border: 1px solid #878785;
+	padding: 20px 20px 0 20px}
+	
+.copyright {
+	padding:15px 0 0;
+	margin:10px 0 0;
+	text-align:right}
