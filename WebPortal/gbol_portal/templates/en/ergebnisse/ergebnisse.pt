@@ -11,6 +11,7 @@
 		<script type="text/javascript" src="/static/js/jqPlot/jqplot.pieRenderer.js"></script>
 		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
 		<script type="text/javascript" src="/static/js/DataTables/TableTools/js/dataTables.tableTools.js"></script>
+		<script type="text/javascript" src="/static/js/DataTables/extensions/dataTables.scroller.min.js"></script>
 		<script type="text/javascript" src="/static/js/results.js"></script>
 		<script type="text/javascript">
 			$(function () {

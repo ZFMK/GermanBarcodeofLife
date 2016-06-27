@@ -1,0 +1,11 @@
+documents/collection_table/filled/*
+documents/collection_table/ordered/*
+documents/collection_table/sammeltabellen/*
+documents/download/*.txt
+__pycache__/*
+*.pyc
+.git/*
+.svn/*
+.svn/
+.DS_Store/
+*~

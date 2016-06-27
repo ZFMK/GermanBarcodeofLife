@@ -177,7 +177,7 @@ def download_view(request):
                     return HTTPFound(location=url)
         elif "newsUpload" in request.params:
             # used in: filemanager.js, function: selectItem and in filemanager.class.php
-            filename = filename.split('?')[0]  # workaround for ckeditor always sending a timestamp with the filename
+            filename = filename.split('?')[0].encode('utf-8')  # workaround for ckeditor always sending a timestamp with the filename
             response = FileResponse(
                 os.path.join(config['homepath'], config['news']['media_directory'], filename),
                 request=request

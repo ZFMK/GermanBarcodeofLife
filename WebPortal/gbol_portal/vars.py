@@ -26,6 +26,10 @@ config['dwb']['name_suffix'] = c['option']['dwb_name_suffix']
 config['dwb']['connection_string'] = c['option']['dwb_connection_string']
 config['dwb']['use_dwb'] = int(c['option']['use_dwb'])
 
+if not c.has_option('option', 'dev_group'):
+	log.critical('Option `dev_group` is not defined in production.ini!\nPlease add at least one email to the list.')
+	raise NameError('Option `dev_group` is not defined in production.ini!\nPlease add at least one email to the list.')
+config['dev_group'] = c['option']['dev_group']
 
 taxon_ids = """100408, 100430, 100431, 100451, 100453, 3000243, 3100522, 3200125,
                 3200126, 4000014, 4402020, 4403366, 4403382, 4403383, 4404012,
@@ -284,5 +288,31 @@ Absender:
     {city}
     {country}
     Email: {email}
+
+"""
+
+# -- In case of an error one of these messages are send to the dev_group specified in production.ini
+messages['error'] = {}
+messages['error']['order_processing'] = """
+Eine Bestellung für Versandmaterial konnte nicht verarbeitet werden:
+
+Bestellzeit: {1}
+Koordinator (User-id): {0}
+Möglicher Trasaktions-Key: {9}
+
+Bestellung:
+    Material: {2}
+    Anzahl Verpackungseinheiten: {3}
+    Taxonomische Gruppe (ID): {4}
+
+Nummer erstes Sammelröhrchen: {5}
+Nummer letztes Sammelröhrchen: {6}
+
+Bestellt von:
+    User-ID: {7}
+    Name: {8}
+
+Fehler:
+{10}
 
 """

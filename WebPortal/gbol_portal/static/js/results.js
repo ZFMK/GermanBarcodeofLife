@@ -470,11 +470,105 @@ BOL.sentences = function (text_no) {
 
     /* ============ Search results ============== */
     function createAnzeige(data) {
-        var dataRow = '',
-            e, i = 0, j, l = data.entries.length,
+        var e, i = 0, j, l = data.entries.length,
             lang = data.lang, id,
             barcode_present = ['&#10007;', '&#8730;'];
         createTableHeader(data.fields);
+
+
+
+	var tabledata = [];
+        for ( var i=0 ; i<l; i++ ) {
+	    e = data.entries[i];
+	    tablerow = {};
+
+	    if (e.barcode != '0') {
+                tablerow['DT_RowClass'] = 'has_barcode';
+            }
+
+	    for (var j=0; j < data.fields.length; j++) {
+		id = data.fields[j][0];
+
+                if (id == 93) {
+                    tablerow[j] = barcode_present[e.barcode];
+                } else if (id == 27) {
+                    tablerow[j] = e.species;
+                } else if (id == 28) {
+                    tablerow[j] = e.vernacular;
+                } else if (id == 19) {
+                    tablerow[j] = e.taxon;
+                } else if (id == 22) {
+                    tablerow[j] = e.institute;
+                } else {
+                    if (e.data[id]) {
+                        tablerow[j] = e.data[id];
+                    } else {
+                        tablerow[j] = '';
+                    }
+                }
+	    }
+	    tabledata.push(tablerow);
+	}
+
+
+	var tablecolumns = [];
+
+	for (var j=0; j < data.fields.length; j++) {
+	    // generate array of {tabledata: 'index'} objects  
+	    tablecolumns.push({'data': j})
+	}
+
+
+        if (i > 0) {
+
+	    // set table generation parameters depending on row number
+	    var paging = false;
+	    var defrender = false;
+	    var scroller = false;
+	    if (i > 10000) {
+		paging = true;
+		defrender = true;
+		//scroller = {
+		//    loadingIndicator: true 
+		//}
+		// switch line break off in cells to enable scrollers.js deferred loading capabilities
+		//$('.dataTable').css('white-space', 'nowrap');
+	    }
+
+
+            var resulttable = $('#viewTable').DataTable({
+		'data': tabledata,
+		'columns': tablecolumns,
+		// try scroller
+		"scroller": scroller,
+		"deferRender": defrender,
+                "pagingType": "full_numbers",
+                "scrollX": true,
+                "scrollY": 200,
+                "scrollCollapse": false,
+                "paging": paging,
+		"lengthMenu": [ 10, 50, 100, 500, 1000 ],
+		//wait 400ms between each keypress adding a letter in search field 
+		"searchDelay": 400,
+		// pageLength is set below because of performance problems when set here
+		//"pageLength": "100",
+                "language": {
+                    "url": "/static/js/DataTables/" + BOL.get_lang() + ".txt"
+                }
+                //"order": [[1, "asc"]]
+            });
+
+	    // setting pageLength in parameters kills performance when loading new pages
+	    resulttable.page.len(1000).draw;
+
+           $("#viewTable").removeClass('hidden');
+            $("#viewCounter").html(BOL.sentences(0) + i);
+        }
+    }
+
+
+
+/* this was: loading html first and than style tha table with DataTables
         for (i; i < l; i++) {
             e = data.entries[i]
             if (e.barcode != '0') {
@@ -484,7 +578,7 @@ BOL.sentences = function (text_no) {
             }
             for (j = 0; j < data.fields.length; j++) {
                 id = data.fields[j][0];  // field[id, name]
-                if (id == 20) {
+                if (id == 93) {
                     dataRow += '<td class="tableRow1">' + barcode_present[e.barcode] + '</td>'
                 } else if (id == 27) {
                     dataRow += '<td class="tableRow1">' + e.species + '</td>'
@@ -521,6 +615,7 @@ BOL.sentences = function (text_no) {
             $("#viewCounter").html(BOL.sentences(0) + i);
         }
     }
+*/
 
     function createTableHeader(fields) {
         var id, name,

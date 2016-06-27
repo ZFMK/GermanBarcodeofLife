@@ -1,0 +1,31 @@
+<html metal:use-macro="load: ../master.pt">
+	<metal:js fill-slot="js-head">
+		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
+	</metal:js>
+	<div metal:fill-slot="body" id="main">
+		<div id="content" class="site-content wide">
+			<h1 id="page-title" class="title">${structure: taxon}</h1>
+			<div id="oberer_teil" />
+			<div id="mittlerer_teil">
+				<div id="mittlerer_Teil_links">
+					<h2>Entries:</h2>
+					<p>${structure: entries}</p>
+				</div>
+				<div id="mittlerer_Teil_rechts">
+					<h2>Geo Bounds:</h2>
+					<p>${structure: bounds}</p>
+				</div>
+			</div>
+			<div id="unterer_teil">
+				<h2>Fields:</h2>
+				<p>${structure: fields}</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			setMenu("menu-sammeln-5");
+		</script>
+	</div>
+	<div metal:fill-slot="messages">
+		<p tal:condition="exists:message"><div id="messageBox">${message}</div></p>
+	</div>
+</html>

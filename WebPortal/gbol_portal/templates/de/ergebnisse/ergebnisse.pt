@@ -11,6 +11,7 @@
 		<script type="text/javascript" src="/static/js/jqPlot/jqplot.pieRenderer.js"></script>
 		<script type="text/javascript" src="/static/js/DataTables/jquery.dataTables.min.js"></script>
 		<script type="text/javascript" src="/static/js/DataTables/TableTools/js/dataTables.tableTools.js"></script>
+		<script type="text/javascript" src="/static/js/DataTables/extensions/dataTables.scroller.min.js"></script>
 		<script type="text/javascript" src="/static/js/results.js"></script>
 		<script type="text/javascript">
 			$(function () {
@@ -24,7 +25,7 @@
 		<div id="headerbox" class="tabsheader">
 			<div id="header" class="site-menu">
 				<ul id="tabs" class="inline">
-					<li><a href="#Checklist">Fundstellen</a></li>
+					<li><a href="#Checklist">Entdecken</a></li>
 					<li><a href="#StatisticsDE">Statistik Deutschland</a></li>
 					<li><a href="#StatisticsBL">Statistik Bundesl&auml;nder</a></li>
 					<li><a href="#Missing">Fehlende Arten</a></li>
